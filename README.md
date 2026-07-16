@@ -34,7 +34,7 @@ Suis FICHE-TEMPLATE.md — sources obligatoires, ton neutre.
 2. Édite `astro.config.mjs` si tu changes de compte ou de nom de repo
 3. Push le code sur `main`
 4. GitHub → **Settings → Pages → Source : GitHub Actions**
-5. URL : `https://brulure1.github.io/scriptum-probat/`
+5. URL : `https://brulure1.github.io/`
 
 ## Structure
 
