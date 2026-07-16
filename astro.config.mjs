@@ -26,16 +26,21 @@ export default defineConfig({
 			},
 			lastUpdated: true,
 			customCss: [
-				'@fontsource/cormorant-garamond/500.css',
-				'@fontsource/cormorant-garamond/600.css',
-				'@fontsource/source-sans-3/400.css',
-				'@fontsource/source-sans-3/600.css',
+				'@fontsource/plus-jakarta-sans/400.css',
+				'@fontsource/plus-jakarta-sans/600.css',
+				'@fontsource/plus-jakarta-sans/700.css',
+				'@fontsource/plus-jakarta-sans/800.css',
+				'@fontsource/jetbrains-mono/500.css',
 				'./src/styles/custom.css',
 			],
 			sidebar: [
 				{
-					label: 'Guide',
-					items: [{ label: 'Comment utiliser', slug: 'comment-utiliser' }],
+					label: 'Navigation',
+					items: [
+						{ label: 'Accueil', slug: 'index' },
+						{ label: 'Toutes les fiches', slug: 'fiches' },
+						{ label: 'Comment utiliser', slug: 'comment-utiliser' },
+					],
 				},
 				{
 					label: 'Économie & fiscalité',

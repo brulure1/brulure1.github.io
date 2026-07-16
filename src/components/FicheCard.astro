@@ -1,0 +1,33 @@
+---
+interface Props {
+	href: string;
+	title: string;
+	answer: string;
+	category?: string;
+	categoryLabel?: string;
+	confidence?: string;
+	confidenceClass?: string;
+	confidenceLabel?: string;
+}
+
+const {
+	href,
+	title,
+	answer,
+	categoryLabel,
+	confidenceClass = '',
+	confidenceLabel,
+} = Astro.props;
+---
+
+<li>
+	<a href={href} class="sp-fiche-card">
+		<div class="sp-fiche-card__meta">
+			{categoryLabel && <span class="sp-tag sp-tag--cat">{categoryLabel}</span>}
+			{confidenceLabel && <span class={`sp-badge ${confidenceClass}`}>{confidenceLabel}</span>}
+		</div>
+		<h3>{title}</h3>
+		<p>{answer}</p>
+		<span class="sp-fiche-card__cta">Lire la fiche →</span>
+	</a>
+</li>

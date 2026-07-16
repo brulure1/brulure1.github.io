@@ -1,0 +1,245 @@
+---
+import { getCollection } from 'astro:content';
+import FicheCard from './FicheCard.astro';
+
+interface Props {
+	limit?: number;
+	hideEmpty?: boolean;
+}
+
+const { limit, hideEmpty = false } = Astro.props;
+
+const CATEGORY_LABELS: Record<string, string> = {
+	economie: 'Économie & fiscalité',
+	travail: 'Travail & inégalités',
+	societe: 'Société & justice',
+	sante: 'Santé & nutrition',
+};
+
+const CONFIDENCE_CLASS: Record<string, string> = {
+	elevee: 'sp-badge--high',
+	moyenne: 'sp-badge--mid',
+	faible: 'sp-badge--low',
+	controverse: 'sp-badge--warn',
+};
+
+const CONFIDENCE_LABEL: Record<string, string> = {
+	elevee: 'Élevée',
+	moyenne: 'Moyenne',
+	faible: 'Faible',
+	controverse: 'Controversé',
+};
+
+const docs = await getCollection('docs');
+
+const fiches = docs
+	.filter((doc) => doc.data.answerShort && doc.data.category && doc.data.category !== 'guide')
+	.filter((doc) => !doc.data.draft)
+	.sort((a, b) => a.data.title.localeCompare(b.data.title, 'fr'));
+
+const limitedFiches = limit ? fiches.slice(0, limit) : fiches;
+
+const categories = Object.entries(CATEGORY_LABELS)
+	.map(([key, label]) => ({
+		key,
+		label,
+		items: fiches.filter((f) => f.data.category === key),
+	}))
+	.filter((cat) => !hideEmpty || cat.items.length > 0);
+
+const cardProps = (fiche: (typeof fiches)[number]) => ({
+	href: `/${fiche.id}/`,
+	title: fiche.data.title,
+	answer: fiche.data.answerShort!,
+	categoryLabel: fiche.data.category ? CATEGORY_LABELS[fiche.data.category] : undefined,
+	confidenceClass: fiche.data.confidence ? CONFIDENCE_CLASS[fiche.data.confidence] : '',
+	confidenceLabel: fiche.data.confidence ? CONFIDENCE_LABEL[fiche.data.confidence] : undefined,
+});
+---
+
+<div class="sp-fiche-grid">
+	{
+		limit ? (
+			<ul class="sp-fiche-cards">
+				{limitedFiches.map((fiche) => (
+					<FicheCard {...cardProps(fiche)} />
+				))}
+			</ul>
+		) : (
+			categories.map(({ key, label, items }) => (
+				<section class="sp-fiche-section" id={key}>
+					<div class="sp-fiche-section__head">
+						<h2>{label}</h2>
+						<span class="sp-fiche-section__count">
+							{items.length} fiche{items.length > 1 ? 's' : ''}
+						</span>
+					</div>
+					{items.length === 0 ? (
+						<p class="sp-fiche-empty">Aucune fiche publiée dans cette catégorie pour l'instant.</p>
+					) : (
+						<ul class="sp-fiche-cards">
+							{items.map((fiche) => (
+								<FicheCard {...cardProps(fiche)} />
+							))}
+						</ul>
+					)}
+				</section>
+			))
+		)
+	}
+</div>
+
+<style>
+	.sp-fiche-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+		margin-top: 1rem;
+	}
+
+	.sp-fiche-section__head {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.sp-fiche-section__head h2 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin: 0;
+		letter-spacing: -0.02em;
+	}
+
+	.sp-fiche-section__count {
+		font-size: 0.8125rem;
+		color: var(--sp-muted);
+	}
+
+	.sp-fiche-cards {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+		gap: 1rem;
+	}
+
+	:global(.sp-fiche-card) {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: 1.25rem;
+		border-radius: 1rem;
+		border: 1px solid var(--sp-border);
+		background: var(--sp-surface);
+		text-decoration: none;
+		color: inherit;
+		transition:
+			border-color 0.2s,
+			transform 0.2s,
+			box-shadow 0.2s;
+	}
+
+	:global(.sp-fiche-card:hover) {
+		border-color: var(--sp-accent);
+		transform: translateY(-3px);
+		box-shadow: var(--sp-shadow);
+	}
+
+	:global(.sp-fiche-card__meta) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.375rem;
+		margin-bottom: 0.75rem;
+	}
+
+	:global(.sp-fiche-card h3) {
+		font-size: 1.0625rem;
+		font-weight: 650;
+		line-height: 1.35;
+		margin: 0 0 0.5rem;
+		letter-spacing: -0.02em;
+	}
+
+	:global(.sp-fiche-card p) {
+		flex: 1;
+		font-size: 0.9375rem;
+		line-height: 1.55;
+		color: var(--sp-muted);
+		margin: 0 0 1rem;
+	}
+
+	:global(.sp-fiche-card__cta) {
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--sp-accent);
+	}
+
+	.sp-fiche-empty {
+		color: var(--sp-muted);
+		font-size: 0.9375rem;
+		margin: 0;
+		padding: 1.25rem;
+		border-radius: 0.75rem;
+		border: 1px dashed var(--sp-border);
+	}
+
+	:global(.sp-badge),
+	:global(.sp-tag) {
+		font-size: 0.6875rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		padding: 0.2rem 0.5rem;
+		border-radius: 999px;
+	}
+
+	:global(.sp-badge--high) {
+		background: color-mix(in srgb, #10b981 18%, transparent);
+		color: #059669;
+	}
+	:global(.sp-badge--mid) {
+		background: color-mix(in srgb, #6366f1 18%, transparent);
+		color: #4f46e5;
+	}
+	:global(.sp-badge--low) {
+		background: color-mix(in srgb, #f59e0b 18%, transparent);
+		color: #d97706;
+	}
+	:global(.sp-badge--warn) {
+		background: color-mix(in srgb, #ef4444 15%, transparent);
+		color: #dc2626;
+	}
+
+	:global(.sp-tag) {
+		background: var(--sp-tag-bg);
+		color: var(--sp-muted);
+		text-transform: none;
+		letter-spacing: 0;
+		font-weight: 500;
+	}
+
+	:global(.sp-tag--cat) {
+		background: color-mix(in srgb, var(--sp-accent) 12%, transparent);
+		color: var(--sp-accent);
+		font-size: 0.625rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	:root[data-theme='dark'] :global(.sp-badge--high) {
+		color: #34d399;
+	}
+	:root[data-theme='dark'] :global(.sp-badge--mid) {
+		color: #a5b4fc;
+	}
+	:root[data-theme='dark'] :global(.sp-badge--low) {
+		color: #fbbf24;
+	}
+	:root[data-theme='dark'] :global(.sp-badge--warn) {
+		color: #f87171;
+	}
+</style>

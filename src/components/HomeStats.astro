@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+
+const fiches = (await getCollection('docs')).filter(
+	(d) => d.data.answerShort && d.data.category && d.data.category !== 'guide' && !d.data.draft,
+);
+const count = fiches.length;
+const categories = new Set(fiches.map((f) => f.data.category)).size;
+---
+
+<div class="sp-stats">
+	<div class="sp-stat">
+		<strong>{count}</strong>
+		<span>fiches publiées</span>
+	</div>
+	<div class="sp-stat">
+		<strong>{categories}</strong>
+		<span>thèmes actifs</span>
+	</div>
+	<div class="sp-stat">
+		<strong>100 %</strong>
+		<span>sourcées</span>
+	</div>
+</div>
