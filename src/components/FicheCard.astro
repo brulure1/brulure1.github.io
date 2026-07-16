@@ -5,9 +5,9 @@ interface Props {
 	answer: string;
 	category?: string;
 	categoryLabel?: string;
-	confidence?: string;
 	confidenceClass?: string;
 	confidenceLabel?: string;
+	accent?: string;
 }
 
 const {
@@ -17,11 +17,13 @@ const {
 	categoryLabel,
 	confidenceClass = '',
 	confidenceLabel,
+	accent = 'default',
 } = Astro.props;
 ---
 
-<li>
+<li class="sp-fiche-card-wrap" data-accent={accent}>
 	<a href={href} class="sp-fiche-card">
+		<span class="sp-fiche-card__shine" aria-hidden="true"></span>
 		<div class="sp-fiche-card__meta">
 			{categoryLabel && <span class="sp-tag sp-tag--cat">{categoryLabel}</span>}
 			{confidenceLabel && <span class={`sp-badge ${confidenceClass}`}>{confidenceLabel}</span>}
