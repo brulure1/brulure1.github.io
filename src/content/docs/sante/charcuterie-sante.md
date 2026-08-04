@@ -1,7 +1,7 @@
 ---
 title: Manger beaucoup de charcuterie est-il mauvais pour la santé ?
 description: "Classement de la viande transformée comme cancérogène par le CIRC/OMS et quantification du risque réel de cancer colorectal."
-answerShort: "Oui, avec un risque quantifié et classé « cancérogène certain » (Groupe 1) par le Centre international de recherche sur le cancer (OMS, 2015) : chaque portion quotidienne de 50 g de charcuterie augmente le risque de cancer colorectal d'environ 18 %. Le risque individuel reste faible en absolu, mais l'impact à l'échelle de la population est jugé significatif compte tenu du nombre de consommateurs réguliers."
+answerShort: "Oui, avec un risque quantifié et classé « cancérogène certain » (Groupe 1) par le Centre international de recherche sur le cancer (OMS, 2015) : chaque portion quotidienne de 50 g de charcuterie augmente le risque de cancer colorectal d'environ 18 %. Pris isolément, ce surrisque individuel reste modeste ; mais comme des milliards de personnes en consomment dans le monde, cela représente tout de même environ 34 000 décès par cancer par an à l'échelle mondiale (Global Burden of Disease), ce qui en fait un enjeu de santé publique — à comparer aux ~1 million pour le tabac et 600 000 pour l'alcool."
 confidence: elevee
 category: sante
 tags: [charcuterie, viande-transformee, cancer, circ, oms, nutrition]
@@ -11,7 +11,9 @@ sidebar:
     variant: caution
 ---
 
-> **Réponse courte :** Oui. Le Centre international de recherche sur le cancer (CIRC), agence de l'OMS, a classé la **viande transformée** (charcuterie) dans le **Groupe 1** — la catégorie des agents « cancérogènes certains pour l'homme », au même niveau de certitude scientifique (pas le même niveau de risque) que le tabac ou l'amiante. Le risque est **quantifié** : chaque portion quotidienne de **50 grammes** de charcuterie consommée augmente le risque de **cancer colorectal** d'environ **18 %**. Le risque individuel reste modéré, mais l'ampleur de la consommation à l'échelle mondiale en fait un enjeu de santé publique.
+> **Réponse courte :** Oui. Le Centre international de recherche sur le cancer (CIRC), agence de l'OMS, a classé la **viande transformée** (charcuterie) dans le **Groupe 1** — la catégorie des agents « cancérogènes certains pour l'homme », au même niveau de certitude scientifique (pas le même niveau de risque) que le tabac ou l'amiante. Le risque est **quantifié** : chaque portion quotidienne de **50 grammes** de charcuterie consommée augmente le risque de **cancer colorectal** d'environ **18 %**.
+
+**Ce que signifie concrètement « risque individuel modéré, mais enjeu de santé publique » :** pour une seule personne, ce surrisque de 18 % reste limité — il fait passer un risque de base d'environ 5 % à environ 5,9 % sur toute une vie (voir calcul détaillé plus bas). Mais ce petit surrisque, **multiplié par les milliards de personnes qui consomment de la charcuterie chaque jour dans le monde**, se traduit en nombre absolu de cas par une charge de santé publique bien réelle : le Global Burden of Disease Project (organisme de recherche indépendant cité par l'OMS) estime qu'**environ 34 000 décès par cancer par an dans le monde** sont attribuables à une alimentation riche en viande transformée — à comparer à environ 1 million pour le tabac, 600 000 pour l'alcool, et plus de 200 000 pour la pollution de l'air. C'est cette différence entre l'échelle individuelle (risque faible par personne) et l'échelle collective (nombreux cas cumulés) que résume la phrase.
 
 ## Contexte
 
@@ -71,9 +73,11 @@ Une association positive a également été mise en évidence entre la consommat
 2. [CIRC — Communiqué de presse : IARC Monographs evaluate consumption of red meat and processed meat (2015)](https://www.iarc.who.int/wp-content/uploads/2018/07/pr240_E.pdf)
 3. [CIRC — FAQ sur la cancérogénicité de la consommation de viande rouge et de viande transformée (version française)](https://www.iarc.who.int/wp-content/uploads/2018/11/Monographs-QA_Vol114_F.pdf)
 4. [Cancer-environnement.fr — Monographie Vol. 114 du CIRC : synthèse détaillée](https://www.cancer-environnement.fr/fiches/publications-du-circ/monographies-vol-114-cancerogenicite-consommation-viande-rouge-et-viande-transformee/)
+5. [OMS/IARC — Q&A : estimation Global Burden of Disease Project des décès par cancer attribuables à la viande transformée (34 000/an) et comparaison avec le tabac, l'alcool, la pollution](https://www.iarc.who.int/wp-content/uploads/2018/07/Monographs-QA_Vol114.pdf)
 
 ## Historique
 
 | Date | Modification |
 |------|--------------|
 | 2026-08-04 | Création de la fiche |
+| 2026-08-04 | Clarification de la phrase "risque individuel modéré / enjeu de santé publique" avec le chiffre concret du Global Burden of Disease (34 000 décès/an dans le monde) suite à question utilisateur |
