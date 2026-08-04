@@ -11,7 +11,9 @@ sidebar:
     variant: note
 ---
 
-> **Réponse courte :** Non, pas en soi. Les pâtes ont un **index glycémique naturellement bas à modéré** (32 à 65 selon la cuisson et le type), plus bas que le riz blanc ou la pomme de terre, grâce à une structure protéique qui ralentit la digestion de l'amidon. Le risque réel identifié par les études (syndrome métabolique, hypertension, carences nutritionnelles) concerne une consommation **excessive** de pâtes **blanches raffinées**, en grande quantité, avec des sauces peu nutritives et une alimentation peu variée — pas les pâtes en tant qu'aliment.
+> **Réponse courte :** Non, pas en soi. Les pâtes ont un **index glycémique naturellement bas à modéré** (32 à 65 selon la cuisson et le type), plus bas que le riz blanc ou la pomme de terre, grâce à une structure protéique qui ralentit la digestion de l'amidon. Le risque réel identifié par les études (syndrome métabolique, hypertension, carences nutritionnelles) concerne une consommation **excessive** de pâtes **« blanches raffinées »** — c'est-à-dire fabriquées à partir de farine de blé dont on a retiré le son et le germe lors de la mouture (voir définition ci-dessous) — en grande quantité, avec des sauces peu nutritives et une alimentation peu variée — pas les pâtes en tant qu'aliment.
+
+**Petit lexique — que veut dire « raffiné » ?** Un grain de blé est composé de trois parties : le **son** (enveloppe externe, riche en fibres), le **germe** (riche en vitamines B et minéraux) et l'**amande** (le cœur, riche en amidon). La farine dite « raffinée » (ou « farine blanche », type 45/55) ne conserve que cette amande centrale : le son et le germe sont retirés lors de la mouture, ce qui donne une farine plus blanche, plus fine, mais aussi appauvrie en fibres, vitamines et minéraux par rapport à la farine complète (type 110/150), qui conserve l'intégralité du grain. « Pâtes blanches raffinées » désigne donc simplement les **pâtes classiques du commerce**, par opposition aux **pâtes complètes/intégrales**.
 
 ## Contexte
 
@@ -71,3 +73,4 @@ Les pâtes sont souvent accusées de « faire grossir » ou d'être un aliment �
 | Date | Modification |
 |------|--------------|
 | 2026-08-04 | Création de la fiche |
+| 2026-08-04 | Ajout d'un lexique définissant "farine raffinée" vs "farine complète", suite à question utilisateur |
