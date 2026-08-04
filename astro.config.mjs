@@ -59,6 +59,10 @@ export default defineConfig({
 					label: 'Santé & nutrition',
 					items: [{ autogenerate: { directory: 'sante' } }],
 				},
+				{
+					label: 'Science & nature',
+					items: [{ autogenerate: { directory: 'science' } }],
+				},
 			],
 			head: [
 				{

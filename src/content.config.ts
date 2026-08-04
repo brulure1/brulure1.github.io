@@ -10,7 +10,7 @@ const ficheSchema = z.object({
 	/** Niveau de confiance dans les données */
 	confidence: z.enum(['elevee', 'moyenne', 'faible', 'controverse']).optional(),
 	/** Catégorie principale (navigation) */
-	category: z.enum(['economie', 'travail', 'societe', 'sante', 'guide']).optional(),
+	category: z.enum(['economie', 'travail', 'societe', 'sante', 'science', 'guide']).optional(),
 	/** Mots-clés pour recherche et filtrage */
 	tags: z.array(z.string()).default([]),
 });
