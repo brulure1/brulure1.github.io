@@ -25,11 +25,15 @@ Les pâtes sont souvent accusées de « faire grossir » ou d'être un aliment �
 
 | Féculent | Index glycémique | Remarque |
 |---|---|---|
-| Pâtes (blé dur, al dente) | **32-65** | Le plus bas des trois grâce à la structure protéique qui piège l'amidon |
+| **Pâtes blanches raffinées** (blé dur, al dente) | **~40-65** | Déjà bas à modéré **malgré le raffinage** — c'est le point contre-intuitif de cette fiche : voir mécanisme ci-dessous |
+| Pâtes complètes (al dente) | **~35-50** | Légèrement plus bas grâce aux fibres du son et du germe, mais l'écart avec les blanches est **modeste** (contrairement à une idée reçue) |
+| Pain blanc, à titre de comparaison | 70-85 | Autre glucide raffiné, mais **sans** la structure protéique des pâtes — l'IG grimpe beaucoup plus haut |
 | Riz blanc | 50-90 | Très variable selon la cuisson, monte fortement si trop cuit |
-| Pomme de terre (bouillie/vapeur) | ~70 ; en purée ou au four jusqu'à 80-95 | Le plus élevé des trois féculents courants |
+| Pomme de terre (bouillie/vapeur) | ~70 ; en purée ou au four jusqu'à 80-95 | Le plus élevé des féculents courants |
 
-**Mécanisme scientifique (étude Dodi et al., 2023)** : le procédé de fabrication des pâtes (extrusion) crée un réseau dense de protéines qui encapsule les granules d'amidon, limitant leur gonflement et leur digestion enzymatique. Résultat : une part importante d'**amidon à digestion lente**, qui a permis aux pâtes d'obtenir une allégation de santé reconnue par l'EFSA (réduction de la réponse glycémique post-repas) pour les produits contenant au moins 40 % d'amidon à digestion lente.
+**Point important à ne pas manquer :** la ligne « 32-65 » citée dans la réponse courte de cette fiche concerne **d'abord les pâtes blanches raffinées classiques** (celles du commerce, sans mention « complet »/« intégral »), pas seulement une version complète. C'est précisément ce qui rend le cas des pâtes contre-intuitif : à la différence du pain blanc (autre glucide raffiné, IG 70-85), les pâtes **blanches** bénéficient déjà d'un IG bas à modéré, **avant même** de choisir une version complète.
+
+**Mécanisme scientifique (étude Dodi et al., 2023)** : le procédé de fabrication des pâtes (extrusion à travers une filière, séchage à basse température) crée un réseau dense de protéines de gluten qui encapsule les granules d'amidon, limitant leur gonflement et leur digestion enzymatique — **que la farine soit raffinée ou complète**. C'est ce mécanisme, propre à la structure physique des pâtes et non à la présence de fibres, qui explique leur IG relativement bas même en version blanche. Résultat : une part importante d'**amidon à digestion lente**, qui a permis aux pâtes d'obtenir une allégation de santé reconnue par l'EFSA (réduction de la réponse glycémique post-repas) pour les produits contenant au moins 40 % d'amidon à digestion lente. Les versions complètes ajoutent un bénéfice supplémentaire (fibres), mais celui-ci reste **modeste** comparé à l'effet de la structure elle-même.
 
 ### Risques documentés en cas de consommation élevée (études coréennes, 2023-2024)
 
@@ -74,3 +78,4 @@ Les pâtes sont souvent accusées de « faire grossir » ou d'être un aliment �
 |------|--------------|
 | 2026-08-04 | Création de la fiche |
 | 2026-08-04 | Ajout d'un lexique définissant "farine raffinée" vs "farine complète", suite à question utilisateur |
+| 2026-08-04 | Clarification : l'IG bas (32-65) concerne d'abord les pâtes blanches raffinées, pas seulement les complètes ; ajout de valeurs séparées et comparaison au pain blanc |
