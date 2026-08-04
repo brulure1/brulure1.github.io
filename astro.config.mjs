@@ -41,6 +41,7 @@ export default defineConfig({
 						{ label: 'Accueil', slug: 'index' },
 						{ label: 'Toutes les fiches', slug: 'fiches' },
 						{ label: 'Comment utiliser', slug: 'comment-utiliser' },
+						{ label: 'Méthodologie', slug: 'methodologie' },
 					],
 				},
 				{
