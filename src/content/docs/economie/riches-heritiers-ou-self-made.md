@@ -1,7 +1,7 @@
 ---
 title: Quelle proportion des riches sont devenus riches « par eux-mêmes » ?
 description: "Part de l'héritage dans la richesse en France : patrimoine national, top 1 %, et milliardaires self-made vs héritiers (Piketty, Insee, UBS, Forbes)."
-answerShort: "Cela dépend du niveau observé. À l'échelle du patrimoine national, l'héritage représente 60 % de la richesse totale des Français en 2025 (contre 35 % en 1970). Chez les milliardaires spécifiquement, la part d'héritiers oscille entre 43 % et 57 % selon la méthodologie et l'année (UBS/Forbes, 2025) — un chiffre bien inférieur aux 70-97 % observés en Chine, Russie ou au Royaume-Uni, mais l'un des plus élevés d'Europe."
+answerShort: "Cela dépend du niveau observé. À l'échelle du patrimoine national, l'héritage représente 60 % de la richesse totale des Français en 2025 (contre 35 % en 1970). Chez les 500 plus grandes fortunes françaises, deux sources indépendantes et politiquement opposées (Fondation Jean-Jaurès, think tank de gauche, et UBS/Forbes) convergent vers 43 % d'héritiers / 57 % de \"self-made\" — mais ce taux d'héritiers grimpe à 60 % dans le seul top 100, et la moitié des \"self-made\" sont eux-mêmes enfants de cadres ou dirigeants."
 confidence: moyenne
 category: economie
 tags: [patrimoine, heritage, inegalites, richesse, insee, piketty, milliardaires]
@@ -11,7 +11,7 @@ sidebar:
     variant: caution
 ---
 
-> **Réponse courte :** Il n'existe pas une seule bonne réponse — tout dépend du niveau de richesse observé. À l'échelle de **l'ensemble du patrimoine national**, l'héritage représente aujourd'hui **60 %** de la richesse totale des ménages français (contre seulement 35 % en 1970) — la France redevient statistiquement une « société d'héritiers ». Mais chez les **milliardaires** spécifiquement, la part de « self-made » (fortune bâtie sans héritage significatif) se situe entre **43 % et 57 %** selon les études (2025) — un niveau intermédiaire, plus élevé qu'en Chine ou en Russie (où les self-made dominent à plus de 95 %), mais parmi les plus faibles d'Europe de l'Ouest.
+> **Réponse courte :** Il n'existe pas une seule bonne réponse — tout dépend du niveau de richesse observé. À l'échelle de **l'ensemble du patrimoine national**, l'héritage représente aujourd'hui **60 %** de la richesse totale des ménages français (contre seulement 35 % en 1970) — la France redevient statistiquement une « société d'héritiers ». Chez les **500 plus grandes fortunes françaises**, deux sources indépendantes et idéologiquement opposées — la Fondation Jean-Jaurès (think tank de gauche) et UBS/Forbes — convergent vers **43 % d'héritiers et 57 % de « self-made »**, un taux d'héritiers qui grimpe à **60 % dans le seul top 100**. Mais attention : la moitié de ces « self-made » sont eux-mêmes enfants de cadres, dirigeants ou professions libérales — être « self-made » selon ces classements ne signifie pas être parti de rien.
 
 ## Contexte
 
@@ -48,16 +48,19 @@ Les données Insee (2025) sur la structure du patrimoine du top 1 % des ménages
 
 **Plus d'un ménage sur deux du top 1 %** est propriétaire d'au moins une entreprise qu'il dirige, pour une valeur moyenne de 2,5 millions d'euros. Cela suggère qu'une part importante de la richesse du top 1 % provient de la valorisation d'une activité entrepreneuriale — **sans que l'on puisse dire si le capital initial ayant permis de créer ou racheter cette entreprise provenait lui-même d'un héritage**, question sur laquelle les données manquent.
 
-### Chez les milliardaires : entre 43 % et 57 % d'héritiers en France, selon la source
+### Chez les grandes fortunes françaises : entre 43 % et 60 % d'héritiers, deux méthodologies indépendantes convergent
 
-Les classements internationaux utilisent la méthodologie **Forbes « Self-Made Score »** (échelle de 1 à 10, de « entièrement hérité » à « entièrement self-made »), regroupée ensuite en catégories binaires. Les résultats varient significativement selon l'année et le seuil retenu :
+Deux approches totalement indépendantes — l'une utilisant la méthodologie internationale Forbes/UBS, l'autre une analyse originale du classement Challenges par un think tank français — aboutissent à des résultats très proches, ce qui renforce la fiabilité du chiffre :
 
-| Source | Année | Part d'héritiers parmi les milliardaires français |
-|---|---|---|
-| UBS Billionaire Ambitions Report | 2025 | **57 %** |
-| DataPulse Research (méthodologie Forbes) | 2025 | 56 % |
-| Fondation IFRAP (citant une autre étude UBS) | 2023-2024 | 48 % |
-| Forbes / Financial Times | 2021 | ~80 % (méthodologie plus stricte, incluant tout héritage partiel) |
+| Source | Méthodologie | Année | Résultat pour la France |
+|---|---|---|---|
+| **Fondation Jean-Jaurès** (Fourquet, Gariazzo, Manternach) | Analyse originale et indépendante des 500 plus grandes fortunes du classement *Challenges* | Septembre 2025 | **43 % d'héritiers / 57 % de « self-made »** sur les 500 ; mais **60 % d'héritiers dans le seul top 100** |
+| UBS Billionaire Ambitions Report | Score Forbes « Self-Made » (échelle 1-10), agrégé par UBS | 2025 | 57 % d'héritiers parmi les milliardaires français |
+| Forbes / Financial Times | Méthodologie plus stricte (tout héritage partiel compte) | 2021 | ~80 % |
+
+**Pourquoi citer la Fondation Jean-Jaurès en priorité :** c'est un think tank français progressiste, proche du Parti socialiste — donc sans intérêt idéologique à minimiser le poids de l'héritage — qui aboutit, avec sa propre méthodologie de comptage (et non celle de Forbes), à un résultat quasi identique à celui d'UBS (43 % vs 57 % d'héritiers selon le périmètre). Cette convergence entre deux sources aux sensibilités opposées (une banque privée orientée clientèle fortunée, un think tank de gauche) est un bon indice de robustesse du chiffre, indépendamment de la source retenue.
+
+**Note de transparence méthodologique :** une version antérieure de cette fiche citait aussi une étude relayée par la **Fondation IFRAP**, un think tank économiquement libéral proche du patronat (MEDEF), dont le manque de transparence sur son financement et l'absence de contre-expertise dans ses publications sont documentés par plusieurs médias. Ce chiffre a été retiré au profit de la source Jean-Jaurès, méthodologiquement plus solide et politiquement non suspecte de vouloir minimiser le rôle de l'héritage.
 
 **Comparaison internationale (UBS/Forbes, 2025)** — part d'héritiers parmi les milliardaires :
 
@@ -75,8 +78,9 @@ La France se situe donc parmi les pays européens où la part d'héritiers est *
 
 ## Nuances
 
-- **Écarts méthodologiques importants** : les chiffres de 48 % à 80 % pour la France proviennent d'études différentes, d'années différentes, et de seuils de classification différents (Forbes classe « self-made » toute personne ayant construit l'essentiel — pas nécessairement 100 % — de sa fortune). Aucun chiffre unique ne fait consensus ; il faut toujours citer la source et l'année.
-- **« Self-made » n'exclut pas un capital de départ favorable** : un fondateur d'entreprise né dans un milieu aisé, ayant bénéficié d'un capital social, d'un réseau ou d'un premier apport familial modeste, sera classé « self-made » par Forbes tant que l'essentiel de sa fortune actuelle provient de son entreprise — la méthodologie ne mesure pas l'origine sociale, seulement l'origine du patrimoine final.
+- **Écarts méthodologiques importants** : les chiffres de 43 % à 80 % pour la France proviennent d'études différentes, d'années différentes, et de seuils de classification différents (Forbes classe « self-made » toute personne ayant construit l'essentiel — pas nécessairement 100 % — de sa fortune). Aucun chiffre unique ne fait consensus ; il faut toujours citer la source et l'année. Cela dit, les deux sources méthodologiquement les plus solides (Jean-Jaurès et UBS/Forbes, indépendantes l'une de l'autre) convergent vers **43-57 % d'héritiers selon le périmètre observé** — un chiffre donc raisonnablement robuste.
+- **« Self-made » n'exclut pas un capital de départ favorable — et c'est la nuance la plus importante à retenir** : selon la Fondation Jean-Jaurès, **la moitié des « non-héritiers » du classement Challenges sont eux-mêmes enfants de cadres, dirigeants d'entreprise ou professions libérales**. Un fondateur d'entreprise né dans un milieu déjà aisé, ayant bénéficié d'un capital social, d'un réseau ou d'un capital culturel favorable, est classé « self-made » dès lors qu'il n'a pas directement hérité de l'entreprise ou du patrimoine qu'il possède — la méthodologie ne mesure que l'origine du patrimoine final, pas l'origine sociale de la personne. Le pourcentage de « self-made » partis d'un milieu réellement modeste est donc **mécaniquement bien inférieur** à 57 %.
+- **Le sommet de la richesse est plus héréditaire que sa base** : la part d'héritiers grimpe de 43 % (ensemble des 500 plus grandes fortunes) à 60 % dans le seul top 100 — plus on monte dans l'échelle des grandes fortunes, plus la probabilité d'avoir hérité augmente, un effet cohérent avec le temps nécessaire (souvent plusieurs générations) pour accumuler un patrimoine aussi considérable.
 - **Les milliardaires ne représentent qu'une poignée de personnes** (46 en France en 2025) : ces statistiques ne renseignent en rien sur la façon dont les « riches » au sens large (top 1 %, top 10 %) ont constitué leur patrimoine, où le rôle du travail, de l'épargne et de l'immobilier est plus déterminant que pour les ultra-fortunes.
 - **Le rôle croissant de l'immobilier et de la bourse** : sur les 40 dernières années, la valorisation des actifs immobiliers et financiers a rapporté davantage que les revenus du travail, ce qui favorise mécaniquement ceux qui possédaient déjà un patrimoine (ou en héritent) par rapport à ceux qui ne comptent que sur leur salaire.
 - **Fortune française atypique en Europe** : la France ne compte que 46 milliardaires (9,3 % des milliardaires européens) mais leur fortune cumulée représente 21,1 % du total européen — une concentration inhabituelle, portée notamment par le secteur du luxe (Arnault, Bettencourt Meyers, Pinault), dont la richesse provient historiquement de la transmission d'entreprises familiales.
@@ -85,13 +89,13 @@ La France se situe donc parmi les pays européens où la part d'héritiers est *
 
 | Argument | Ce que disent les données | Limite |
 |---|---|---|
-| « Les riches ont tous hérité de leur fortune » | Vrai à l'échelle macro (60 % du patrimoine national vient de l'héritage) et majoritaire chez les milliardaires français (56-57 %) | Faux si on l'applique uniformément : 43-48 % des milliardaires sont considérés self-made selon les sources |
-| « Les grandes fortunes sont toutes des entrepreneurs self-made » | Vrai pour une part significative (jusqu'à 52 % selon IFRAP) et cohérent avec le poids du patrimoine professionnel dans le top 1 % (34 %) | Faux comme généralisation : la France a l'une des parts d'héritiers les plus élevées d'Europe de l'Ouest |
+| « Les riches ont tous hérité de leur fortune » | Vrai à l'échelle macro (60 % du patrimoine national vient de l'héritage) et majoritaire dans le seul top 100 des fortunes françaises (60 % d'héritiers, Jean-Jaurès) | Faux si on l'applique à l'ensemble des 500 plus grandes fortunes : 57 % y sont classées « self-made » |
+| « Les grandes fortunes sont toutes des entrepreneurs self-made » | Vrai pour une majorité des 500 plus grandes fortunes (57 %, Jean-Jaurès/UBS) et cohérent avec le poids du patrimoine professionnel dans le top 1 % (34 %) | Faux comme généralisation : la part d'héritiers grimpe à 60 % dans le top 100, et la moitié des « self-made » viennent déjà de milieux aisés (enfants de cadres/dirigeants) |
 | « L'héritage n'a plus d'importance en France » | Directement contredit par la hausse de 35 % (1970) à 60 % (2025) de la part de l'héritage dans le patrimoine total | Argument non soutenu par les données disponibles |
 
 ## Pensée critique
 
-- **Refuser les deux caricatures symétriques** : dire que « tous les riches sont des héritiers » ignore la réalité entrepreneuriale du top 1 % (patrimoine professionnel dominant) et le fait que 43-52 % des milliardaires sont classés self-made ; dire que « la réussite ne doit rien à l'héritage » ignore une tendance de fond solidement documentée (retour à 60 % de patrimoine hérité) et une fiscalité successorale très peu mordante en pratique (85 % des successions non taxées).
+- **Refuser les deux caricatures symétriques** : dire que « tous les riches sont des héritiers » ignore la réalité entrepreneuriale du top 1 % (patrimoine professionnel dominant) et le fait que 57 % des 500 plus grandes fortunes françaises sont classées self-made (Jean-Jaurès/UBS) ; dire que « la réussite ne doit rien à l'héritage » ignore une tendance de fond solidement documentée (retour à 60 % de patrimoine hérité à l'échelle nationale, 60 % d'héritiers dans le seul top 100), une fiscalité successorale très peu mordante en pratique (85 % des successions non taxées), et le fait que la moitié des « self-made » viennent déjà de milieux favorisés.
 - **Le bon niveau d'analyse dépend de la question posée** : pour juger de la mobilité sociale et de l'équité des chances, l'échelle macro (part de l'héritage dans le patrimoine national) est la plus pertinente. Pour juger de la trajectoire individuelle d'un entrepreneur médiatisé, la classification Forbes est plus adaptée — mais elle ne dit rien sur les inégalités de patrimoine à l'échelle de la société.
 - **Une tendance de fond à surveiller** : la remontée continue de la part de l'héritage depuis 1970 (par exemple avec des taux de croissance du capital structurellement supérieurs à ceux des salaires, cf. la relation « r > g » popularisée par Piketty) pose une question de politique publique indépendante du débat sur les milliardaires : la France construit-elle une société où réussir « par soi-même » devient statistiquement plus difficile qu'il y a cinquante ans ?
 
@@ -104,11 +108,13 @@ La France se situe donc parmi les pays européens où la part d'héritiers est *
 5. [Insee — Les hauts patrimoines (2025)](https://www.insee.fr/fr/statistiques/8272285?sommaire=7941491)
 6. [Observatoire des inégalités — Les inégalités de patrimoine en France](https://www.inegalites.fr/inegalites-patrimoine)
 7. [UBS — Billionaire Ambitions Report 2025](https://www.ubs.com/content/dam/assets/wm/static/billionaire-ambition-report/ubs-billionaire-ambitions-report-2025-sg.pdf)
-8. [DataPulse Research — 90% of UK billionaires are self-made [Data] (méthodologie Forbes)](https://www.datapulse.de/en/billionaires-uk-data/)
-9. [Fondation IFRAP — Haro sur l'héritage des plus riches, une vraie mauvaise idée !](https://www.ifrap.org/budget-et-fiscalite/haro-sur-lheritage-des-plus-riches-une-vraie-mauvaise-idee)
+8. [Fondation Jean-Jaurès — Fourquet, Gariazzo, Manternach, « La roue de la fortune » : analyse des 500 plus grandes fortunes françaises, Challenges (septembre 2025)](https://www.jean-jaures.org/wp-content/uploads/2025/09/roue-fortune.pdf)
+9. [Le Bien Public — Beaucoup d'héritiers : qui sont les Français les plus fortunés ? (septembre 2025)](https://www.bienpublic.com/economie/2025/09/04/beaucoup-d-heritiers-qui-sont-les-francais-les-plus-fortunes-et-ou-vivent-ils)
+10. [Wikipédia — Fondation iFRAP (pour référence sur l'orientation politique de ce think tank, non retenu comme source de données dans cette fiche)](https://fr.wikipedia.org/wiki/Fondation_iFRAP)
 
 ## Historique
 
 | Date | Modification |
 |------|--------------|
 | 2026-08-04 | Création de la fiche |
+| 2026-08-04 | Correction suite à question utilisateur : remplacement de la source Fondation IFRAP (think tank libéral proche du patronat, non transparent sur son financement) par la Fondation Jean-Jaurès (think tank de gauche), dont l'analyse indépendante du classement Challenges confirme le chiffre 43 %/57 % ; ajout de la nuance sur l'origine sociale favorisée des « self-made » |
