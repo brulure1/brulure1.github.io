@@ -38,6 +38,17 @@ Le modèle « Calories In, Calories Out » (CICO) — manger moins de calories q
 | T3 / T4 (hormones thyroïdiennes) | Contrôle du métabolisme basal | **Diminuent**, avec une hausse de la T3 inverse (rT3, forme inactive qui bloque les effets de la T3) |
 | Cortisol | Hormone du stress | **Augmente**, surtout si le régime est strict ou associé à du stress psychologique — favorise le stockage de graisse abdominale |
 
+### Cas pratiques : ne pas confondre « déficit visé » et « adaptation du corps »
+
+**Point de confusion fréquent à éviter :** le chiffre « 70 à 350 kcal/jour » ci-dessus ne désigne **pas** le déficit que vous créez en mangeant moins, mais le montant dont votre **dépense énergétique totale elle-même peut diminuer** en réaction au régime. Ce sont deux grandeurs distinctes qu'il ne faut pas confondre :
+
+| Scénario | Ce qui se passe |
+|---|---|
+| **Vous créez un déficit de 350 kcal/jour** par rapport à votre dépense de départ | Perte de poids **claire et mesurable au début** (~0,3-0,4 kg/semaine, sur la base d'environ 7 700 kcal par kg de graisse). Mais si l'adaptation métabolique de votre corps atteint le maximum observé (-350 kcal/jour de dépense en moins), votre déficit **réel** peut progressivement retomber à **zéro** sans rien changer à votre alimentation : c'est le mécanisme exact d'un plateau de perte de poids. |
+| **Vous mangez exactement votre apport calculé** (déficit = 0, ni surplus ni manque) | En théorie physique pure : poids **stable**, ni perte ni gain. En pratique, deux limites : (1) « l'apport » est une **estimation** (formules type Mifflin-St Jeor + facteur d'activité), avec une marge d'erreur réelle de plusieurs centaines de kcal — rien ne garantit qu'elle corresponde exactement à votre dépense réelle ; (2) le poids sur la balance **fluctue au jour le jour** indépendamment du bilan calorique (eau, glycogène, contenu digestif, cycle hormonal), même à l'équilibre calorique strict. |
+
+**En résumé :** un déficit donné produit toujours une perte de poids **initiale** réelle — mais ni le déficit visé ni le point de « maintenance » ne sont des valeurs fixes dans le temps : le premier peut s'éroder par adaptation métabolique, le second n'est jamais mesuré avec une précision parfaite en pratique.
+
 ### Étude comparative chirurgie bariatrique vs régime hypocalorique (2024, European Journal of Clinical Nutrition)
 
 Cette étude n'a pas retrouvé de différence statistiquement significative d'adaptation métabolique entre un régime hypocalorique et une chirurgie bariatrique à 8 et 52 semaines — suggérant que l'ampleur de l'adaptation métabolique dépend davantage de la perte de poids elle-même que de la méthode utilisée pour l'atteindre.
@@ -76,3 +87,4 @@ Cette étude n'a pas retrouvé de différence statistiquement significative d'ad
 | Date | Modification |
 |------|--------------|
 | 2026-08-04 | Création de la fiche |
+| 2026-08-04 | Ajout d'une section "Cas pratiques" clarifiant la distinction entre déficit visé et adaptation métabolique, suite à question utilisateur |
