@@ -57,6 +57,10 @@ export default defineConfig({
 					items: [{ autogenerate: { directory: 'societe' } }],
 				},
 				{
+					label: 'Culture & médias',
+					items: [{ autogenerate: { directory: 'culture' } }],
+				},
+				{
 					label: 'Santé & nutrition',
 					items: [{ autogenerate: { directory: 'sante' } }],
 				},

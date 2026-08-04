@@ -18,6 +18,7 @@
 	--sp-cat-societe: #8b5cf6;
 	--sp-cat-travail: #f59e0b;
 	--sp-cat-sante: #10b981;
+	--sp-cat-culture: #ec4899;
 
 	--sl-font: var(--sp-sans);
 	--sl-color-accent: var(--sp-accent);
@@ -48,7 +49,7 @@
 	--sl-color-bg: #060b18;
 	--sl-color-bg-nav: rgb(15 23 42 / 0.65);
 	--sl-color-bg-sidebar: rgb(15 23 42 / 0.55);
-	--sl-color-gray-6: #cbd5e1;
+	/* Ne pas écraser gray-6 : Starlight / Expressive Code l’utilisent pour les fonds de blocs code */
 	--sl-color-text: #f1f5f9;
 }
 
@@ -349,6 +350,9 @@ main[data-pagefind-body].splash .sl-markdown-content {
 .sp-fiche-section[data-accent='sante'] .sp-fiche-section__head h2 {
 	color: var(--sp-cat-sante);
 }
+.sp-fiche-section[data-accent='culture'] .sp-fiche-section__head h2 {
+	color: var(--sp-cat-culture);
+}
 
 .sp-fiche-card__meta {
 	display: flex;
@@ -383,6 +387,9 @@ main[data-pagefind-body].splash .sl-markdown-content {
 }
 .sp-fiche-card-wrap[data-accent='sante'] {
 	background: linear-gradient(135deg, rgb(16 185 129 / 0.55), transparent 55%, rgb(6 182 212 / 0.25));
+}
+.sp-fiche-card-wrap[data-accent='culture'] {
+	background: linear-gradient(135deg, rgb(236 72 153 / 0.55), transparent 55%, rgb(244 114 182 / 0.25));
 }
 
 .sp-fiche-card-wrap:hover {
@@ -521,6 +528,35 @@ main[data-pagefind-body].splash .sl-markdown-content {
 .content-panel .sl-markdown-content th {
 	background: var(--sp-surface-2);
 	font-weight: 600;
+}
+
+/* Blocs code (Expressive Code) — contraste thème sombre */
+:root[data-theme='dark'] .content-panel .sl-markdown-content .expressive-code {
+	--ec-codeBg: #131825;
+	--ec-codeFg: #e2e8f0;
+	--ec-frm-edBg: hsl(224, 14%, 16%);
+	--ec-frm-trmBg: hsl(224, 14%, 16%);
+	--ec-brdCol: rgb(148 163 184 / 0.22);
+}
+
+:root[data-theme='dark'] .content-panel .sl-markdown-content .expressive-code .ec-line .code span {
+	color: var(--ec-codeFg);
+}
+
+:root[data-theme='light'] .content-panel .sl-markdown-content .expressive-code .ec-line .code span {
+	color: var(--ec-codeFg);
+}
+
+:root[data-theme='dark'] .content-panel .sl-markdown-content code:not(:where(.expressive-code *)) {
+	background-color: hsl(224, 10%, 23%);
+	color: var(--sl-color-text);
+}
+
+:root[data-theme='light'] .content-panel .sl-markdown-content .expressive-code {
+	--ec-codeBg: #f1f5f9;
+	--ec-codeFg: #0f172a;
+	--ec-frm-edBg: #f8fafc;
+	--ec-brdCol: rgb(148 163 184 / 0.35);
 }
 
 /* ── Header & sidebar glass ── */
@@ -728,6 +764,10 @@ main[data-pagefind-body].splash::after {
 .sp-cat-nav__link[data-cat='sante']:hover {
 	background: rgb(16 185 129 / 0.12);
 	color: var(--sp-cat-sante);
+}
+.sp-cat-nav__link[data-cat='culture']:hover {
+	background: rgb(236 72 153 / 0.12);
+	color: var(--sp-cat-culture);
 }
 
 /* Labels de section homepage */

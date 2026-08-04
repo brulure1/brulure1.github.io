@@ -8,7 +8,7 @@ title: "[Question sous forme de titre ?]"
 description: "[Une phrase résumant la réponse]"
 answerShort: "[Réponse en une phrase avec chiffre(s) clé(s) et source]"
 confidence: elevee  # elevee | moyenne | faible | controverse
-category: economie  # economie | travail | societe | sante
+category: economie  # economie | travail | societe | sante | culture
 tags: [mot-cle1, mot-cle2]
 ---
 ```

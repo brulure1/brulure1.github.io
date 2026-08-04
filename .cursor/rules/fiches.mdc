@@ -16,7 +16,7 @@ Tu travailles sur un référentiel de **chiffres sourcés** en français (écono
 1. Suivre `FICHE-TEMPLATE.md` pour toute nouvelle fiche.
 2. **Ne jamais inventer** de statistique — citer URL + année + méthode.
 3. Ton **neutre** : section « Pensée critique » avec lectures gauche ET droite.
-4. Fichiers dans `src/content/docs/{economie|travail|societe|sante}/`.
+4. Fichiers dans `src/content/docs/{economie|travail|societe|sante|culture}/`.
 5. Retirer `draft: true` quand la fiche est complète.
 6. Mettre à jour « Historique » lors d'un changement de chiffre.
 
