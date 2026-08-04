@@ -55,6 +55,7 @@ Le zinc est essentiel à la production de testostérone et à la fonction reprod
 - **Confusion fréquente entre désir (libido) et fonction érectile** : la plupart des essais positifs mesurent la fonction érectile chez des hommes malades, pas la libido en population générale.
 - **Une seule exception documentée à « aucun aliment n'a d'effet » : l'alcool** — mais son effet est non spécifique (désinhibition), à double tranchant (l'alcool dégrade aussi la performance sexuelle à haute dose), et n'est pas un « aliment aphrodisiaque » au sens recherché.
 - **Risques des compléments** : le ginkgo biloba, parfois cité, peut provoquer des saignements ; les compléments ne sont pas soumis aux mêmes contrôles que les médicaments (pas d'évaluation FDA/EMA systématique de l'efficacité).
+- **Attention à l'autorité mal attribuée d'une source :** on trouve parfois l'affirmation qu'il existe « une revue **Cochrane** » sur la maca concluant à des preuves limitées. En vérifiant la source primaire (Shin et al., 2010, publiée dans *BMC Complementary Medicine*), il s'agit en réalité d'une revue systématique **indépendante** qui a simplement utilisé les **critères Cochrane** pour noter le risque de biais des études — ce n'est pas une revue publiée par la Cochrane Collaboration elle-même (qui a un tout autre niveau de contrôle éditorial). La conclusion (preuves limitées, échantillons trop petits) reste correcte, mais l'attribution à « Cochrane » est une exagération d'autorité à corriger — un piège fréquent quand une information circule de seconde main (y compris via des IA génératives).
 
 ## Arguments courants en débat
 
@@ -79,9 +80,11 @@ Le zinc est essentiel à la production de testostérone et à la fonction reprod
 5. [World Journal of Men's Health — Ginseng for Erectile Dysfunction: A Cochrane Review](https://wjmh.org/pdf/10.5534/wjmh.210071)
 6. [BMC Complementary Medicine and Therapies — Maca (L. meyenii) for improving sexual function: a systematic review](https://pmc.ncbi.nlm.nih.gov/articles/PMC2928177/)
 7. [The Lancet — Reversal of uraemic impotence by zinc (étude historique sur la carence en zinc)](https://pubmed.ncbi.nlm.nih.gov/72240/)
+8. [Shamloul R. — Natural aphrodisiacs, The Journal of Sexual Medicine (2010)](https://pubmed.ncbi.nlm.nih.gov/19796015/)
 
 ## Historique
 
 | Date | Modification |
 |------|--------------|
 | 2026-08-04 | Création de la fiche |
+| 2026-08-04 | Ajout de la référence Shamloul (2010, J Sex Med) et clarification sur l'attribution erronée de la revue maca à "Cochrane", suite à contre-vérification demandée par l'utilisateur |
