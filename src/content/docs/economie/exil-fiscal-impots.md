@@ -11,7 +11,7 @@ sidebar:
     variant: success
 ---
 
-> **Réponse courte :** Les départs fiscaux des **très hauts patrimoines** existent et **réagissent à la fiscalité**, mais restent **modestes en volume** : +1 point de taux effectif ≈ **0,02 à 0,23 %** de foyers supplémentaires expatriés à long terme (**~90 à 900 foyers/an** sur les 385 000 foyers du top 1 % des revenus du capital), selon le **Conseil d'analyse économique** (CAE, Focus n°118, **2 septembre 2025**). Fait notable : ce groupe s'expatrie **2× moins** que la population générale (0,2 %/an contre 0,38 %/an). Le vrai enjeu budgétaire est ailleurs — **l'optimisation fiscale** (marge intensive) fait disparaître **54 centimes par euro** de recette théorique, contre **20 centimes** pour l'exil (marge extensive).
+> **Réponse courte :** Les départs fiscaux des **très hauts patrimoines** existent et **réagissent à la fiscalité**, mais restent **modestes en volume** : +1 point de taux effectif ≈ **0,02 à 0,23 %** de foyers supplémentaires expatriés à long terme (**~90 à 900 foyers/an** sur les 385 000 foyers du top 1 % des revenus du capital), selon le **Conseil d'analyse économique** (CAE, Focus n°118, **2 septembre 2025**). Fait notable : ce groupe s'expatrie **2× moins** que la population générale (0,2 %/an contre 0,38 %/an). Le vrai enjeu budgétaire est ailleurs — sur 1 € de recette théorique espérée, **54 centimes s'évaporent** via **l'optimisation fiscale sans départ du territoire** (le contribuable reste en France mais réduit sa base imposable), contre seulement **20 centimes** via **l'exil fiscal réel** (départ à l'étranger).
 
 ## Contexte
 
@@ -39,11 +39,18 @@ L'étude de référence (CAE, Focus n°118, *Fiscalité du capital : quels sont 
 
 ### Où va l'argent qui « s'évapore » ? (CAE, sept. 2025)
 
-Pour **1 € de recette théorique** d'une hausse de fiscalité sur le patrimoine :
+**Explication simple avant les chiffres :** imaginons que l'État décide d'augmenter un impôt sur le patrimoine, en espérant récolter 100 € supplémentaires par foyer concerné. Dans la réalité, il n'en récoltera qu'une fraction, car les contribuables réagissent de deux façons différentes :
 
-- **20 centimes** disparaissent via la **marge extensive** (exil fiscal réel)
-- **54 centimes** disparaissent via la **marge intensive** (optimisation, évasion, réallocation de l'épargne — sans départ du territoire)
-- → **≈ 74 centimes sur 1 €** échappent in fine à la recette attendue, **majoritairement sans aucun exil**
+- **La « marge extensive »** = le contribuable **part** s'installer à l'étranger pour échapper entièrement à l'impôt français. C'est l'« exil fiscal » au sens propre — il faut déménager sa résidence fiscale.
+- **La « marge intensive »** = le contribuable **reste en France**, mais réduit la partie de son patrimoine ou de ses revenus qui est effectivement soumise à l'impôt (holdings, montages juridiques, changement d'allocation de son épargne vers des supports moins taxés, utilisation de niches fiscales). Pas besoin de partir : il « optimise » sur place.
+
+**Pour 1 € de recette théorique** que l'État espérait obtenir d'une hausse de fiscalité sur le patrimoine, le CAE calcule que :
+
+- **20 centimes** disparaissent via la marge extensive (le contribuable s'exile réellement)
+- **54 centimes** disparaissent via la marge intensive (le contribuable reste en France mais réduit sa base imposable par l'optimisation)
+- → **≈ 74 centimes sur 1 €** échappent in fine à la recette attendue — et **la majorité de cette perte (54 sur 74) ne nécessite aucun départ du territoire**, contrairement à l'image de « l'exil fiscal » souvent mise en avant dans le débat public
+
+**Autrement dit :** si l'on craint qu'une hausse d'impôt ne rapporte pas ce qu'elle promet, le vrai coupable statistique n'est **pas** le départ des riches à l'étranger (phénomène réel mais minoritaire dans la perte), mais **l'optimisation fiscale légale pratiquée sur place**, un phénomène environ 2,7 fois plus important en montant (54 contre 20 centimes).
 
 ### Effet économique agrégé d'un départ (CAE, sept. 2025)
 
