@@ -6,46 +6,24 @@ hero:
   title: Scriptum Probat
   tagline: Chiffres sourcés pour gagner vos débats. Neutre, daté, avec contre-exemples — parce que l'écrit prouve.
   actions:
-    - text: Voir toutes les fiches
-      link: /fiches/
-      icon: right-arrow
     - text: Comment contribuer
       link: /comment-utiliser/
       icon: document
+    - text: Méthodologie
+      link: /methodologie/
+      icon: open-book
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
-import HomeStats from '../../components/HomeStats.astro';
+import CategoryNav from '../../components/CategoryNav.astro';
+import ContribNav from '../../components/ContribNav.astro';
 import FicheGrid from '../../components/FicheGrid.astro';
+import HomeStats from '../../components/HomeStats.astro';
 
 <HomeStats />
 
-## Fiches récentes
+<ContribNav />
 
-<div class="sp-section-label">À la une</div>
+<CategoryNav />
 
-<FicheGrid limit={3} hideEmpty />
-
-<p class="sp-cta-wrap"><a href="/fiches/" class="sp-cta-link">Explorer tout le catalogue →</a></p>
-
-<div class="sp-section-label">Méthode</div>
-
-## Principes
-
-<CardGrid stagger>
-	<Card title="Neutre" icon="approve-check">
-		Les faits d'abord — nuances et limites explicites sur chaque fiche.
-	</Card>
-	<Card title="Sourcé" icon="document">
-		INSEE, ministères, études reconnues. Pas de chiffre sans référence.
-	</Card>
-	<Card title="Critique" icon="open-book">
-		Contre-arguments de gauche et de droite pour éviter la pensée de chapelle.
-	</Card>
-    <Card title="À jour" icon="setting">
-		Date de mise à jour visible — les chiffres évoluent, vérifiez-les.
-	</Card>
-</CardGrid>
-
-<p class="sp-cta-wrap"><a href="/methodologie/" class="sp-cta-link">Voir la méthodologie complète →</a></p>
+<FicheGrid />

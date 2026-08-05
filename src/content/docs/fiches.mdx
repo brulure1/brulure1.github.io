@@ -4,19 +4,22 @@ description: Catalogue de toutes les fiches factuelles publiées — chiffres so
 template: splash
 hero:
   title: Toutes les fiches
-  tagline: Parcourez le référentiel par thème. Chaque carte résume la réponse et le niveau de confiance des sources.
+  tagline: Même catalogue que l'accueil — parcourez par thème. Ouvrez une fiche pour la réponse détaillée et les sources.
   actions:
-    - text: Retour à l'accueil
+    - text: Accueil
       link: /
       icon: right-arrow
       variant: minimal
 ---
 
 import CategoryNav from '../../components/CategoryNav.astro';
+import ContribNav from '../../components/ContribNav.astro';
 import FicheGrid from '../../components/FicheGrid.astro';
 import HomeStats from '../../components/HomeStats.astro';
 
 <HomeStats />
+
+<ContribNav />
 
 <CategoryNav />
 

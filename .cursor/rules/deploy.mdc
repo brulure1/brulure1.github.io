@@ -1,0 +1,14 @@
+---
+description: Déploiement GitHub Pages après modifications du site
+alwaysApply: true
+---
+
+# Scriptum Probat — push systématique
+
+Après toute modification du projet (code, contenu, styles) :
+
+1. Vérifier que `npm run build` passe.
+2. **Commit** avec un message clair (pourquoi).
+3. **Push** sur `origin main` sans attendre que l'utilisateur le redemande.
+
+Ne pas push si l'utilisateur a explicitement demandé de ne pas le faire ou si seuls des fichiers locaux / secrets sont concernés.
