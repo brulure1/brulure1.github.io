@@ -415,11 +415,11 @@ main[data-pagefind-body].splash .sl-markdown-content {
 
 .sp-fiche-card h3 {
 	flex: 1;
-	font-size: 1.0625rem;
+	font-size: clamp(1.125rem, 0.5rem + 1.1vw, 1.3125rem);
 	font-weight: 700;
-	line-height: 1.4;
+	line-height: 1.45;
 	margin: 0;
-	letter-spacing: -0.025em;
+	letter-spacing: -0.028em;
 }
 
 .sp-fiche-card:has(.sp-fiche-card__confidence) h3 {
