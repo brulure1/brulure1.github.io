@@ -61,7 +61,6 @@ const categories = Object.entries(CATEGORY_LABELS)
 const cardProps = (fiche: (typeof fiches)[number], index = 0) => ({
 	href: `/${fiche.id}/`,
 	title: fiche.data.title,
-	categoryLabel: fiche.data.category ? CATEGORY_LABELS[fiche.data.category] : undefined,
 	confidenceClass: fiche.data.confidence ? CONFIDENCE_CLASS[fiche.data.confidence] : '',
 	confidenceLabel: fiche.data.confidence ? CONFIDENCE_LABEL[fiche.data.confidence] : undefined,
 	accent: fiche.data.category ?? 'default',

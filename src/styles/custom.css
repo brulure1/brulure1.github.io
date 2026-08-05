@@ -314,6 +314,48 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	margin-bottom: 0.75rem;
 }
 
+/* Confiance sur cartes catalogue — discret, sous le titre */
+.sp-fiche-card__confidence {
+	display: block;
+	margin-top: 0.5rem;
+	font-size: 0.6875rem;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	text-transform: none;
+	color: var(--sp-muted);
+	opacity: 0.85;
+}
+
+.sp-fiche-card__confidence.sp-badge--high {
+	color: color-mix(in srgb, #10b981 75%, var(--sp-muted));
+}
+.sp-fiche-card__confidence.sp-badge--mid {
+	color: color-mix(in srgb, #6366f1 70%, var(--sp-muted));
+}
+.sp-fiche-card__confidence.sp-badge--low {
+	color: color-mix(in srgb, #f59e0b 75%, var(--sp-muted));
+}
+.sp-fiche-card__confidence.sp-badge--warn {
+	color: color-mix(in srgb, #ef4444 70%, var(--sp-muted));
+}
+
+:root[data-theme='dark'] .sp-fiche-card__confidence.sp-badge--high {
+	color: #6ee7b7;
+	opacity: 0.65;
+}
+:root[data-theme='dark'] .sp-fiche-card__confidence.sp-badge--mid {
+	color: #a5b4fc;
+	opacity: 0.65;
+}
+:root[data-theme='dark'] .sp-fiche-card__confidence.sp-badge--low {
+	color: #fcd34d;
+	opacity: 0.65;
+}
+:root[data-theme='dark'] .sp-fiche-card__confidence.sp-badge--warn {
+	color: #fca5a5;
+	opacity: 0.65;
+}
+
 .sp-fiche-card-wrap {
 	position: relative;
 	border-radius: 1.125rem;
@@ -378,6 +420,10 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	line-height: 1.4;
 	margin: 0;
 	letter-spacing: -0.025em;
+}
+
+.sp-fiche-card:has(.sp-fiche-card__confidence) h3 {
+	flex: 0 1 auto;
 }
 
 /* ── Fiches contenu ── */
