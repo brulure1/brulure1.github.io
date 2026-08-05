@@ -8,20 +8,10 @@ const count = fiches.length;
 const categories = new Set(fiches.map((f) => f.data.category)).size;
 ---
 
-<div class="sp-stats">
-	<div class="sp-stat" data-accent="blue">
-		<span class="sp-stat__icon" aria-hidden="true">📊</span>
-		<strong>{count}</strong>
-		<span>fiches publiées</span>
-	</div>
-	<div class="sp-stat" data-accent="violet">
-		<span class="sp-stat__icon" aria-hidden="true">🗂️</span>
-		<strong>{categories}</strong>
-		<span>thèmes actifs</span>
-	</div>
-	<div class="sp-stat" data-accent="emerald">
-		<span class="sp-stat__icon" aria-hidden="true">✓</span>
-		<strong>100 %</strong>
-		<span>sourcées</span>
-	</div>
-</div>
+<p class="sp-stats-inline" aria-label="Statistiques du référentiel">
+	<span><strong>{count}</strong> fiches</span>
+	<span class="sp-stats-inline__sep" aria-hidden="true">·</span>
+	<span><strong>{categories}</strong> thèmes</span>
+	<span class="sp-stats-inline__sep" aria-hidden="true">·</span>
+	<span>100&nbsp;% sourcées</span>
+</p>
