@@ -222,6 +222,7 @@ main[data-pagefind-body].splash {
 
 main[data-pagefind-body].splash .sl-markdown-content {
 	animation: sp-fade-up 0.6s ease-out both;
+	overflow: visible;
 }
 
 @keyframes sp-fade-up {
@@ -681,7 +682,7 @@ main[data-pagefind-body].splash::after {
 	box-shadow: var(--sp-shadow);
 	position: sticky;
 	top: calc(var(--sl-nav-height) + 0.35rem);
-	z-index: 10;
+	z-index: 9;
 }
 
 .sp-cat-nav__link {
@@ -733,6 +734,10 @@ main[data-pagefind-body].splash::after {
 
 /* ── Header mobile : barre recherche pleine largeur ── */
 @media (max-width: 49.999rem) {
+	:root {
+		--sp-header-search-row: 3.125rem;
+	}
+
 	.hero {
 		padding-block: 2.25rem 1.5rem;
 	}
@@ -745,38 +750,71 @@ main[data-pagefind-body].splash::after {
 		font-size: 1rem;
 	}
 
+	/* Header Starlight fixe : autoriser 2 lignes (titre + recherche) */
+	header.header {
+		height: auto;
+		min-height: calc(var(--sl-nav-height) + var(--sp-header-search-row));
+		overflow: visible;
+		box-sizing: border-box;
+	}
+
+	.main-frame {
+		padding-top: calc(
+			var(--sl-nav-height) + var(--sp-header-search-row) + var(--sl-mobile-toc-height, 3rem)
+		);
+	}
+
 	header.header > .header {
 		flex-wrap: wrap;
 		align-items: center;
 		row-gap: 0.5rem;
 		padding-block: 0.35rem;
+		width: 100%;
+		max-width: 100%;
 		min-height: var(--sl-nav-height);
 		height: auto;
+		box-sizing: border-box;
+	}
+
+	header.header > .header > .title-wrapper {
+		flex: 1 1 auto;
+		min-width: 0;
+		max-width: calc(100% - var(--sl-menu-button-size, 2rem) - 0.5rem);
 	}
 
 	header.header > .header > .sl-flex:has(site-search) {
 		order: 10;
+		display: block;
 		flex: 1 1 100%;
 		width: 100%;
+		max-width: 100%;
 		min-width: 0;
+		box-sizing: border-box;
 	}
 
 	header.header site-search {
-		display: block;
+		display: block !important;
 		width: 100%;
+		max-width: 100%;
 	}
 
-	header.header site-search button {
+	header.header site-search button[data-open-modal] {
 		width: 100%;
+		max-width: 100%;
 		min-height: 2.75rem;
 		justify-content: flex-start;
 		gap: 0.5rem;
 		padding-inline: 0.875rem !important;
+		overflow: hidden;
+		font-size: var(--sl-text-sm) !important;
 	}
 
 	header.header site-search button span[aria-hidden='true'] {
 		display: inline !important;
 		font-weight: 600;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	header.header site-search button kbd {
@@ -784,14 +822,30 @@ main[data-pagefind-body].splash::after {
 	}
 
 	.sp-cat-nav {
-		top: calc(var(--sl-mobile-toc-height, 3rem) + var(--sl-nav-height) + 0.25rem);
+		top: calc(
+			var(--sl-nav-height) + var(--sp-header-search-row) + var(--sl-mobile-toc-height, 3rem) + 0.35rem
+		);
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		overflow-y: visible;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		scroll-snap-type: x proximity;
 		border-radius: 0.875rem;
-		padding: 0.4rem;
+		padding: 0.45rem;
+		margin-inline: 0;
+		max-width: 100%;
+	}
+
+	.sp-cat-nav::-webkit-scrollbar {
+		display: none;
 	}
 
 	.sp-cat-nav__link {
-		padding: 0.4rem 0.75rem;
+		flex-shrink: 0;
+		padding: 0.45rem 0.75rem;
 		font-size: 0.75rem;
+		scroll-snap-align: start;
 	}
 
 	.sp-fiche-cards {
@@ -849,11 +903,43 @@ site-search button {
 	background: var(--sp-surface) !important;
 	backdrop-filter: blur(8px);
 	transition: box-shadow 0.2s, border-color 0.2s;
+	box-sizing: border-box;
+	max-width: 100%;
 }
 
 site-search button:hover:not(:disabled) {
 	border-color: var(--sp-accent) !important;
 	box-shadow: 0 0 0 3px color-mix(in srgb, var(--sp-accent) 20%, transparent);
+}
+
+/* Modal recherche — mobile / petits écrans */
+site-search dialog {
+	box-sizing: border-box;
+	max-width: 100vw;
+	margin: 0;
+	border: none;
+}
+
+site-search .dialog-frame {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	padding: 1rem;
+	padding-top: max(1rem, env(safe-area-inset-top, 0px));
+	overflow-x: hidden;
+}
+
+site-search .search-container,
+site-search #starlight__search {
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+}
+
+site-search .pagefind-ui__form,
+site-search .pagefind-ui__search-input {
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 /* Pages fiches — titre article */
