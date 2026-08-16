@@ -16,6 +16,7 @@
     "@astrojs/starlight": "^0.41.3",
     "@fontsource/jetbrains-mono": "^5.2.8",
     "@fontsource/plus-jakarta-sans": "^5.2.8",
+    "@lucide/astro": "^1.31.0",
     "astro": "^7.0.2",
     "sharp": "^0.34.5"
   }

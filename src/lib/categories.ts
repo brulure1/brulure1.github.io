@@ -1,11 +1,11 @@
 /** Thèmes du catalogue — source unique pour nav, grille et cartes */
 export const CATEGORIES = [
-	{ id: 'economie', label: 'Économie & fiscalité', navLabel: 'Économie', icon: '💶' },
-	{ id: 'societe', label: 'Société & justice', navLabel: 'Société', icon: '⚖️' },
-	{ id: 'culture', label: 'Culture & médias', navLabel: 'Culture', icon: '🎬' },
-	{ id: 'travail', label: 'Travail & inégalités', navLabel: 'Travail', icon: '👷' },
-	{ id: 'sante', label: 'Santé & nutrition', navLabel: 'Santé', icon: '🏥' },
-	{ id: 'science', label: 'Science & nature', navLabel: 'Science', icon: '🔬' },
+	{ id: 'economie', label: 'Économie & fiscalité', navLabel: 'Économie' },
+	{ id: 'societe', label: 'Société & justice', navLabel: 'Société' },
+	{ id: 'culture', label: 'Culture & médias', navLabel: 'Culture' },
+	{ id: 'travail', label: 'Travail & inégalités', navLabel: 'Travail' },
+	{ id: 'sante', label: 'Santé & nutrition', navLabel: 'Santé' },
+	{ id: 'science', label: 'Science & nature', navLabel: 'Science' },
 ] as const;
 
 export type CategoryId = (typeof CATEGORIES)[number]['id'];

@@ -39,7 +39,6 @@ const cardProps = (fiche: (typeof fiches)[number], index = 0) => {
 		title: fiche.data.title,
 		confidenceClass: fiche.data.confidence ? CONFIDENCE_CLASS[fiche.data.confidence] : '',
 		confidenceLabel: fiche.data.confidence ? CONFIDENCE_LABEL[fiche.data.confidence] : undefined,
-		categoryIcon: cat?.icon,
 		categoryLabel: cat?.label,
 		accent: fiche.data.category ?? 'default',
 		index,

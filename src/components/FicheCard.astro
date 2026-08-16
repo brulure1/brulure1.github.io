@@ -1,12 +1,14 @@
 ---
+import type { CategoryId } from '../lib/categories';
+import CategoryIcon from './CategoryIcon.astro';
+
 interface Props {
 	href: string;
 	title: string;
 	confidenceClass?: string;
 	confidenceLabel?: string;
-	categoryIcon?: string;
 	categoryLabel?: string;
-	category?: string;
+	category?: CategoryId;
 	accent?: string;
 	index?: number;
 }
@@ -16,7 +18,6 @@ const {
 	title,
 	confidenceClass = '',
 	confidenceLabel,
-	categoryIcon,
 	categoryLabel,
 	category,
 	accent = 'default',
@@ -39,9 +40,9 @@ const delay = `${index * 0.05}s`;
 				<span class={`sp-badge sp-fiche-card__badge ${confidenceClass}`}>{confidenceLabel}</span>
 			)}
 		</div>
-		{categoryIcon && (
-			<span class="sp-fiche-card__cat-icon" title={categoryLabel} aria-hidden="true">
-				{categoryIcon}
+		{category && (
+			<span class="sp-fiche-card__cat-icon" title={categoryLabel}>
+				<CategoryIcon id={category} size={14} />
 			</span>
 		)}
 	</a>

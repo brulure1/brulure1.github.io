@@ -1,15 +1,16 @@
 ---
 import { CATEGORIES } from '../lib/categories';
+import CategoryIcon from './CategoryIcon.astro';
 ---
 
 <nav class="sp-cat-nav" aria-label="Filtrer par thème">
-	<a href="#" class="sp-cat-nav__link is-active" data-cat="all" data-cat-label="Toutes les fiches">
+	<a href="#sp-fiche-catalog" class="sp-cat-nav__link is-active" data-cat="all" data-cat-label="Toutes les fiches">
 		Tous
 	</a>
 	{
-		CATEGORIES.map(({ id, navLabel, label, icon }) => (
+		CATEGORIES.map(({ id, navLabel, label }) => (
 			<a href={`#${id}`} class="sp-cat-nav__link" data-cat={id} data-cat-label={label}>
-				<span aria-hidden="true">{icon}</span>
+				<CategoryIcon id={id} size={15} />
 				{navLabel}
 			</a>
 		))
@@ -20,6 +21,11 @@ import { CATEGORIES } from '../lib/categories';
 	import { CATEGORIES } from '../lib/categories';
 
 	const VALID = new Set(CATEGORIES.map((c) => c.id));
+	const CATALOG_ID = 'sp-fiche-catalog';
+
+	function scrollToCatalog() {
+		document.getElementById(CATALOG_ID)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	}
 
 	function applyFilter(catId: string) {
 		const head = document.getElementById('sp-fiche-filter-head');
@@ -45,14 +51,14 @@ import { CATEGORIES } from '../lib/categories';
 
 		const activeLink = document.querySelector<HTMLAnchorElement>(`.sp-cat-nav__link[data-cat="${catId}"]`);
 		const label = activeLink?.dataset.catLabel ?? catId;
-		const icon = activeLink?.querySelector('span')?.textContent ?? '';
+		const iconSource = activeLink?.querySelector('.sp-cat-icon');
 
 		head.hidden = false;
 		head.dataset.accent = catId;
 		const iconEl = head.querySelector('.sp-fiche-filter-head__icon');
 		const labelEl = head.querySelector('.sp-fiche-filter-head__label');
 		const countEl = head.querySelector('.sp-fiche-filter-head__count');
-		if (iconEl) iconEl.textContent = icon;
+		if (iconEl && iconSource) iconEl.innerHTML = iconSource.innerHTML;
 		if (labelEl) labelEl.textContent = label;
 
 		let count = 0;
@@ -80,12 +86,20 @@ import { CATEGORIES } from '../lib/categories';
 		if (catId !== 'all') {
 			history.replaceState(null, '', `#${catId}`);
 		} else {
-			history.replaceState(null, '', location.pathname + location.search);
+			history.replaceState(null, '', `#${CATALOG_ID}`);
 		}
+		scrollToCatalog();
 	}
 
 	document.querySelector('.sp-cat-nav')?.addEventListener('click', onFilterClick);
 
-	applyFilter(readHash());
-	window.addEventListener('hashchange', () => applyFilter(readHash()));
+	const initial = readHash();
+	applyFilter(initial);
+	if (initial !== 'all' && location.hash) {
+		requestAnimationFrame(() => scrollToCatalog());
+	}
+	window.addEventListener('hashchange', () => {
+		applyFilter(readHash());
+		scrollToCatalog();
+	});
 </script>
