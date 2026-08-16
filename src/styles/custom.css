@@ -20,15 +20,16 @@ body {
 	--sp-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
 	--sp-mono: 'JetBrains Mono', ui-monospace, monospace;
 
-	--sp-accent: #3b82f6;
-	--sp-accent-2: #8b5cf6;
-	--sp-muted: #64748b;
-	--sp-border: rgb(148 163 184 / 0.25);
-	--sp-surface: rgb(255 255 255 / 0.72);
-	--sp-surface-2: #f1f5f9;
-	--sp-tag-bg: #f1f5f9;
-	--sp-shadow: 0 20px 50px rgb(15 23 42 / 0.1);
-	--sp-glow: rgb(59 130 246 / 0.35);
+	/* Accents bronze/doré — inspirés du masque chouette */
+	--sp-accent: #8f6920;
+	--sp-accent-2: #b8892e;
+	--sp-muted: #6b6358;
+	--sp-border: rgb(140 115 80 / 0.24);
+	--sp-surface: rgb(255 252 246 / 0.78);
+	--sp-surface-2: #f3ece0;
+	--sp-tag-bg: #efe8da;
+	--sp-shadow: 0 20px 50px rgb(40 30 15 / 0.1);
+	--sp-glow: rgb(168 120 40 / 0.32);
 
 	--sp-cat-economie: #3b82f6;
 	--sp-cat-societe: #8b5cf6;
@@ -39,35 +40,35 @@ body {
 
 	--sl-font: var(--sp-sans);
 	--sl-color-accent: var(--sp-accent);
-	--sl-color-accent-low: #eff6ff;
-	--sl-color-accent-high: #1d4ed8;
-	--sl-color-bg: #eef2ff;
-	--sl-color-bg-nav: rgb(255 255 255 / 0.6);
-	--sl-color-bg-sidebar: rgb(255 255 255 / 0.55);
+	--sl-color-accent-low: #f5edd8;
+	--sl-color-accent-high: #6b5018;
+	--sl-color-bg: #f9f5ed;
+	--sl-color-bg-nav: rgb(255 252 246 / 0.72);
+	--sl-color-bg-sidebar: rgb(255 250 242 / 0.65);
 	--sl-color-hairline-light: var(--sp-border);
 	--sl-color-gray-6: #475569;
-	--sl-color-text: #0f172a;
+	--sl-color-text: #1c1812;
 }
 
 :root[data-theme='dark'] {
-	--sp-accent: #60a5fa;
-	--sp-accent-2: #a78bfa;
-	--sp-muted: #94a3b8;
-	--sp-border: rgb(148 163 184 / 0.15);
-	--sp-surface: rgb(30 41 59 / 0.65);
-	--sp-surface-2: #0f172a;
-	--sp-tag-bg: #334155;
+	--sp-accent: #dbb862;
+	--sp-accent-2: #c99548;
+	--sp-muted: #a89f8f;
+	--sp-border: rgb(180 150 100 / 0.18);
+	--sp-surface: rgb(28 24 18 / 0.72);
+	--sp-surface-2: #14110d;
+	--sp-tag-bg: #2a241c;
 	--sp-shadow: 0 24px 60px rgb(0 0 0 / 0.45);
-	--sp-glow: rgb(96 165 250 / 0.25);
+	--sp-glow: rgb(219 184 98 / 0.22);
 
 	--sl-color-accent: var(--sp-accent);
-	--sl-color-accent-low: rgb(59 130 246 / 0.12);
-	--sl-color-accent-high: #bfdbfe;
-	--sl-color-bg: #060b18;
-	--sl-color-bg-nav: rgb(15 23 42 / 0.65);
-	--sl-color-bg-sidebar: rgb(15 23 42 / 0.55);
+	--sl-color-accent-low: rgb(200 160 70 / 0.14);
+	--sl-color-accent-high: #f0dca0;
+	--sl-color-bg: #0e0c09;
+	--sl-color-bg-nav: rgb(18 15 10 / 0.72);
+	--sl-color-bg-sidebar: rgb(18 15 10 / 0.62);
 	/* Ne pas écraser gray-6 : Starlight / Expressive Code l’utilisent pour les fonds de blocs code */
-	--sl-color-text: #f1f5f9;
+	--sl-color-text: #f5f0e6;
 }
 
 /* ── Animations ── */
@@ -116,18 +117,18 @@ body {
 body {
 	letter-spacing: -0.01em;
 	background:
-		radial-gradient(ellipse 120% 80% at 0% -10%, rgb(59 130 246 / 0.18), transparent 50%),
-		radial-gradient(ellipse 80% 60% at 100% 0%, rgb(139 92 246 / 0.14), transparent 45%),
-		radial-gradient(ellipse 60% 50% at 50% 100%, rgb(16 185 129 / 0.08), transparent 50%),
+		radial-gradient(ellipse 120% 80% at 0% -10%, rgb(180 130 50 / 0.14), transparent 50%),
+		radial-gradient(ellipse 80% 60% at 100% 0%, rgb(200 150 70 / 0.1), transparent 45%),
+		radial-gradient(ellipse 60% 50% at 50% 100%, rgb(140 100 40 / 0.06), transparent 50%),
 		var(--sl-color-bg);
 	background-attachment: fixed;
 }
 
 :root[data-theme='dark'] body {
 	background:
-		radial-gradient(ellipse 120% 80% at 0% -10%, rgb(59 130 246 / 0.12), transparent 50%),
-		radial-gradient(ellipse 80% 60% at 100% 0%, rgb(139 92 246 / 0.1), transparent 45%),
-		radial-gradient(ellipse 60% 50% at 50% 100%, rgb(16 185 129 / 0.06), transparent 50%),
+		radial-gradient(ellipse 120% 80% at 0% -10%, rgb(180 130 50 / 0.1), transparent 50%),
+		radial-gradient(ellipse 80% 60% at 100% 0%, rgb(160 110 50 / 0.08), transparent 45%),
+		radial-gradient(ellipse 60% 50% at 50% 100%, rgb(120 90 40 / 0.05), transparent 50%),
 		var(--sl-color-bg);
 }
 
@@ -612,7 +613,7 @@ body::after {
 	content: '';
 	position: fixed;
 	inset: 0;
-	background-image: radial-gradient(rgb(148 163 184 / 0.22) 0.65px, transparent 0.65px);
+	background-image: radial-gradient(rgb(160 140 110 / 0.18) 0.65px, transparent 0.65px);
 	background-size: 28px 28px;
 	mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, black 20%, transparent 75%);
 	pointer-events: none;
@@ -621,7 +622,7 @@ body::after {
 }
 
 :root[data-theme='dark'] body::after {
-	background-image: radial-gradient(rgb(148 163 184 / 0.12) 0.65px, transparent 0.65px);
+	background-image: radial-gradient(rgb(160 140 110 / 0.1) 0.65px, transparent 0.65px);
 	opacity: 0.35;
 }
 
@@ -634,7 +635,7 @@ main[data-pagefind-body].splash::before {
 	top: -8rem;
 	right: -6rem;
 	border-radius: 50%;
-	background: radial-gradient(circle, rgb(139 92 246 / 0.18), transparent 65%);
+	background: radial-gradient(circle, rgb(200 150 70 / 0.16), transparent 65%);
 	filter: blur(40px);
 	pointer-events: none;
 	z-index: -1;
@@ -649,7 +650,7 @@ main[data-pagefind-body].splash::after {
 	bottom: 5rem;
 	left: -4rem;
 	border-radius: 50%;
-	background: radial-gradient(circle, rgb(59 130 246 / 0.15), transparent 65%);
+	background: radial-gradient(circle, rgb(180 120 40 / 0.12), transparent 65%);
 	filter: blur(36px);
 	pointer-events: none;
 	z-index: -1;
