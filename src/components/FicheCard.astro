@@ -33,14 +33,14 @@ const delay = `${index * 0.05}s`;
 	style={`animation-delay: ${delay}`}
 >
 	<a href={href} class="sp-fiche-card" data-has-confidence={confidenceLabel ? 'true' : undefined}>
+		{confidenceLabel && (
+			<span class={`sp-badge sp-fiche-card__badge ${confidenceClass}`}>{confidenceLabel}</span>
+		)}
+		<h3>{title}</h3>
 		{categoryIcon && (
 			<span class="sp-fiche-card__cat-icon" title={categoryLabel} aria-hidden="true">
 				{categoryIcon}
 			</span>
 		)}
-		{confidenceLabel && (
-			<span class={`sp-badge sp-fiche-card__badge ${confidenceClass}`}>{confidenceLabel}</span>
-		)}
-		<h3>{title}</h3>
 	</a>
 </li>
