@@ -14,9 +14,10 @@ export default defineConfig({
 			description:
 				'Référentiel francophone de chiffres sourcés — économie, société, santé. Verba volant, scriptum probat.',
 			logo: {
-				src: './src/assets/logo.svg',
-				alt: 'Scriptum Probat',
+				src: './src/assets/logo.png',
+				alt: 'Scriptum Probat — chouette',
 			},
+			favicon: '/favicon.png',
 			defaultLocale: 'root',
 			locales: {
 				root: {
@@ -73,6 +74,10 @@ export default defineConfig({
 				{
 					tag: 'meta',
 					attrs: { name: 'author', content: 'Scriptum Probat' },
+				},
+				{
+					tag: 'link',
+					attrs: { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
 				},
 			],
 		}),

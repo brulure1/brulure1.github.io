@@ -140,6 +140,12 @@ body {
 	color: transparent;
 }
 
+.site-title img {
+	height: 2.125rem;
+	width: auto;
+	object-fit: contain;
+}
+
 /* ── Hero splash ── */
 .hero {
 	padding-block: 4.5rem 3rem;
