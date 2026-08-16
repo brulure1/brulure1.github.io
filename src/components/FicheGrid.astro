@@ -37,6 +37,7 @@ const cardProps = (fiche: (typeof fiches)[number], index = 0) => {
 	return {
 		href: `/${fiche.id}/`,
 		title: fiche.data.title,
+		tags: fiche.data.tags,
 		confidenceClass: fiche.data.confidence ? CONFIDENCE_CLASS[fiche.data.confidence] : '',
 		confidenceLabel: fiche.data.confidence ? CONFIDENCE_LABEL[fiche.data.confidence] : undefined,
 		categoryLabel: cat?.label,

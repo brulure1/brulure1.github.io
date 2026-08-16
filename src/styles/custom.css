@@ -440,10 +440,15 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	flex: 1;
 	min-width: 0;
 	font-size: clamp(1.125rem, 0.5rem + 1.1vw, 1.3125rem);
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.45;
 	margin: 0;
 	letter-spacing: -0.028em;
+}
+
+.sp-fiche-card h3 strong {
+	font-weight: 800;
+	color: var(--sp-text);
 }
 
 /* ── Fiches contenu ── */
