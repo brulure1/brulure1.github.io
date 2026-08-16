@@ -337,53 +337,23 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	color: var(--sp-cat-science);
 }
 
-.sp-fiche-card__meta {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.375rem;
-	margin-bottom: 0.75rem;
-}
-
-/* Confiance sur cartes catalogue — discret, sous le titre */
-.sp-fiche-card__confidence {
-	display: block;
-	margin-top: 0.5rem;
-	font-size: 0.6875rem;
-	font-weight: 500;
-	letter-spacing: 0.01em;
+/* Badge confiance discret — coin supérieur droit */
+.sp-fiche-card__badge {
+	position: absolute;
+	top: 0.75rem;
+	right: 0.85rem;
+	z-index: 1;
+	font-size: 0.5625rem;
+	font-weight: 600;
 	text-transform: none;
-	color: var(--sp-muted);
-	opacity: 0.85;
+	letter-spacing: 0.01em;
+	padding: 0.12rem 0.4rem;
+	line-height: 1.2;
+	opacity: 0.88;
 }
 
-.sp-fiche-card__confidence.sp-badge--high {
-	color: color-mix(in srgb, #10b981 75%, var(--sp-muted));
-}
-.sp-fiche-card__confidence.sp-badge--mid {
-	color: color-mix(in srgb, #6366f1 70%, var(--sp-muted));
-}
-.sp-fiche-card__confidence.sp-badge--low {
-	color: color-mix(in srgb, #f59e0b 75%, var(--sp-muted));
-}
-.sp-fiche-card__confidence.sp-badge--warn {
-	color: color-mix(in srgb, #ef4444 70%, var(--sp-muted));
-}
-
-:root[data-theme='dark'] .sp-fiche-card__confidence.sp-badge--high {
-	color: #6ee7b7;
-	opacity: 0.65;
-}
-:root[data-theme='dark'] .sp-fiche-card__confidence.sp-badge--mid {
-	color: #a5b4fc;
-	opacity: 0.65;
-}
-:root[data-theme='dark'] .sp-fiche-card__confidence.sp-badge--low {
-	color: #fcd34d;
-	opacity: 0.65;
-}
-:root[data-theme='dark'] .sp-fiche-card__confidence.sp-badge--warn {
-	color: #fca5a5;
-	opacity: 0.65;
+.sp-fiche-card[data-has-confidence='true'] h3 {
+	padding-inline-end: 4.25rem;
 }
 
 .sp-fiche-card-wrap {
@@ -450,10 +420,6 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	line-height: 1.45;
 	margin: 0;
 	letter-spacing: -0.028em;
-}
-
-.sp-fiche-card:has(.sp-fiche-card__confidence) h3 {
-	flex: 0 1 auto;
 }
 
 /* ── Fiches contenu ── */

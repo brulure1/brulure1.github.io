@@ -25,10 +25,10 @@ const delay = `${index * 0.05}s`;
 	data-accent={accent}
 	style={`animation-delay: ${delay}`}
 >
-	<a href={href} class="sp-fiche-card">
-		<h3>{title}</h3>
+	<a href={href} class="sp-fiche-card" data-has-confidence={confidenceLabel ? 'true' : undefined}>
 		{confidenceLabel && (
-			<span class={`sp-fiche-card__confidence ${confidenceClass}`}>{confidenceLabel}</span>
+			<span class={`sp-badge sp-fiche-card__badge ${confidenceClass}`}>{confidenceLabel}</span>
 		)}
+		<h3>{title}</h3>
 	</a>
 </li>
