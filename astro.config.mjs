@@ -8,6 +8,9 @@ const BASE_PATH = '/';
 export default defineConfig({
 	site: SITE_URL,
 	base: BASE_PATH,
+	redirects: {
+		'/fiches/': '/',
+	},
 	integrations: [
 		starlight({
 			title: 'Scriptum Probat',
@@ -40,7 +43,6 @@ export default defineConfig({
 					label: 'Navigation',
 					items: [
 						{ label: 'Accueil', slug: 'index' },
-						{ label: 'Toutes les fiches', slug: 'fiches' },
 						{ label: 'Comment utiliser', slug: 'comment-utiliser' },
 						{ label: 'Méthodologie', slug: 'methodologie' },
 					],
