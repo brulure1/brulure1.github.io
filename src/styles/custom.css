@@ -885,10 +885,54 @@ main[data-pagefind-body].splash::after {
 		gap: 0.35rem;
 	}
 
+	header.header .header-actions starlight-theme-select {
+		display: flex;
+	}
+
 	header.header .header-actions starlight-theme-select label {
-		--sl-select-width: 4.75em;
-		--sl-inline-padding: 0.35rem;
-		font-size: 0.8125rem;
+		--sl-select-width: 0;
+		--sl-inline-padding: 0;
+		--sl-label-icon-size: 1.0625rem;
+		--sl-caret-size: 0;
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.25rem;
+		height: 2.25rem;
+		padding: 0;
+		border-radius: 999px;
+		border: 1px solid var(--sp-border);
+		background: var(--sp-surface);
+		color: var(--sp-muted);
+	}
+
+	header.header .header-actions starlight-theme-select label:hover {
+		color: var(--sp-accent);
+		border-color: color-mix(in srgb, var(--sp-accent) 35%, transparent);
+	}
+
+	header.header .header-actions starlight-theme-select select {
+		position: absolute;
+		inset: 0;
+		width: 100% !important;
+		height: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
+		opacity: 0;
+		cursor: pointer;
+		font-size: 1rem;
+	}
+
+	header.header .header-actions starlight-theme-select .label-icon {
+		position: static;
+		transform: none;
+		pointer-events: none;
+		font-size: var(--sl-label-icon-size);
+	}
+
+	header.header .header-actions starlight-theme-select .caret {
+		display: none;
 	}
 
 	/* Filtres sticky aussi sur mobile */
@@ -1047,13 +1091,15 @@ site-search #starlight__search .pagefind-ui__search-clear:focus::before {
 	background-color: var(--sp-accent);
 }
 
-/* Sélecteur thème header — compact mobile */
-.header-actions starlight-theme-select label {
-	color: var(--sp-muted);
-}
+/* Sélecteur thème header — desktop */
+@media (min-width: 50rem) {
+	.header-actions starlight-theme-select label {
+		color: var(--sp-muted);
+	}
 
-.header-actions starlight-theme-select label:hover {
-	color: var(--sp-accent);
+	.header-actions starlight-theme-select label:hover {
+		color: var(--sp-accent);
+	}
 }
 
 /* Pages fiches — titre article */
