@@ -1,19 +1,17 @@
 /* Scriptum Probat — design premium */
 
-/* Pas de scroll horizontal parasite */
+/* Pas de scroll horizontal parasite — éviter overflow sur .page/.main-frame (casse position: sticky) */
 html {
 	overflow-x: clip;
 }
 
 body {
 	max-width: 100%;
-	overflow-x: clip;
 }
 
 .page,
 .main-frame {
 	max-width: 100%;
-	overflow-x: clip;
 }
 
 :root {
@@ -47,7 +45,7 @@ body {
 	--sl-color-bg-nav: rgb(255 252 246 / 0.72);
 	--sl-color-bg-sidebar: rgb(255 250 242 / 0.65);
 	--sl-color-hairline-light: var(--sp-border);
-	--sl-color-gray-6: #475569;
+	--sl-color-bg-inline-code: var(--sp-tag-bg);
 	--sl-color-text: #1c1812;
 }
 
@@ -484,22 +482,38 @@ main[data-pagefind-body].splash .sl-markdown-content {
 }
 
 .content-panel .sl-markdown-content table {
-	display: table;
 	border-radius: 0.875rem;
 	border: 1px solid var(--sp-border);
-	overflow: hidden;
 	font-size: 0.9rem;
 	box-shadow: 0 4px 16px rgb(0 0 0 / 0.04);
-	width: 100%;
 	max-width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
+/* Tableaux larges — scroll horizontal (mobile + desktop) */
+.content-panel .sl-markdown-content table:not(:has(thead th:nth-child(2):last-child)) {
+	display: block;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+}
+
+.content-panel .sl-markdown-content table:not(:has(thead th:nth-child(2):last-child)) :is(thead, tbody, tr) {
+	display: table;
+}
+
+.content-panel .sl-markdown-content table:not(:has(thead th:nth-child(2):last-child)) :is(thead, tbody) {
+	width: max-content;
+	min-width: 100%;
+}
+
 /* Petits tableaux (ex. Historique) — pas de zone vide à droite */
 .content-panel .sl-markdown-content table:has(thead th:nth-child(2):last-child) {
+	display: table;
 	width: auto;
 	min-width: min(100%, 28rem);
+	overflow-x: visible;
 }
 
 /* Starlight retire le padding gauche/droit des 1re et dernières colonnes — on rétablit */
@@ -549,6 +563,18 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	--ec-codeFg: #0f172a;
 	--ec-frm-edBg: #f8fafc;
 	--ec-brdCol: rgb(148 163 184 / 0.35);
+}
+
+/* Code inline (`Historique`, etc.) — lisible en thème clair */
+:root[data-theme='light'] .content-panel .sl-markdown-content :not(pre) > code:not(:where(.expressive-code *)) {
+	background-color: var(--sp-tag-bg);
+	color: var(--sl-color-text);
+	border: 1px solid color-mix(in srgb, var(--sp-border) 70%, transparent);
+	border-radius: 0.25rem;
+}
+
+.content-panel .sl-markdown-content a:hover:not(:where(.not-content *)) {
+	color: var(--sp-accent-2);
 }
 
 /* ── Header & sidebar glass ── */
@@ -854,9 +880,22 @@ main[data-pagefind-body].splash::after {
 		display: none !important;
 	}
 
-	/* Filtres : pas de sticky (évite crops), chips qui wrap */
+	header.header .header-actions {
+		flex: 0 0 auto;
+		gap: 0.35rem;
+	}
+
+	header.header .header-actions starlight-theme-select label {
+		--sl-select-width: 4.75em;
+		--sl-inline-padding: 0.35rem;
+		font-size: 0.8125rem;
+	}
+
+	/* Filtres sticky aussi sur mobile */
 	.sp-cat-nav {
-		position: static;
+		position: sticky;
+		top: calc(var(--sl-nav-height) + 0.25rem);
+		z-index: 8;
 		flex-wrap: wrap;
 		overflow: visible;
 		padding: 0.5rem;
@@ -976,6 +1015,45 @@ site-search .pagefind-ui__form,
 site-search .pagefind-ui__search-input {
 	max-width: 100%;
 	box-sizing: border-box;
+}
+
+/* Bouton effacer recherche — plus discret */
+site-search #starlight__search {
+	--sl-search-cancel-space: 2.25rem;
+}
+
+site-search #starlight__search .pagefind-ui__search-clear {
+	width: 1.75rem !important;
+	height: 1.75rem !important;
+	min-width: 0 !important;
+	inset-inline-end: 0.35rem;
+	padding: 0 !important;
+	border-radius: 999px;
+	opacity: 0.75;
+}
+
+site-search #starlight__search .pagefind-ui__search-clear:hover {
+	opacity: 1;
+	background-color: color-mix(in srgb, var(--sp-accent) 12%, transparent);
+}
+
+site-search #starlight__search .pagefind-ui__search-clear::before {
+	-webkit-mask-size: 55% !important;
+	mask-size: 55% !important;
+	background-color: var(--sp-muted);
+}
+
+site-search #starlight__search .pagefind-ui__search-clear:focus::before {
+	background-color: var(--sp-accent);
+}
+
+/* Sélecteur thème header — compact mobile */
+.header-actions starlight-theme-select label {
+	color: var(--sp-muted);
+}
+
+.header-actions starlight-theme-select label:hover {
+	color: var(--sp-accent);
 }
 
 /* Pages fiches — titre article */

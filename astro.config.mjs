@@ -30,6 +30,9 @@ export default defineConfig({
 			},
 			lastUpdated: true,
 			credits: false,
+			components: {
+				Header: './src/components/Header.astro',
+			},
 			customCss: [
 				'@fontsource/plus-jakarta-sans/400.css',
 				'@fontsource/plus-jakarta-sans/600.css',
