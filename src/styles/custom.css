@@ -19,6 +19,7 @@ body {
 :root {
 	--sp-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
 	--sp-mono: 'JetBrains Mono', ui-monospace, monospace;
+	--sp-hand: 'Caveat', 'Segoe Script', cursive;
 
 	/* Accents bronze/doré — inspirés du masque chouette */
 	--sp-accent: #8f6920;
@@ -155,24 +156,32 @@ body {
 	overflow-x: clip;
 }
 
-.hero::before {
-	content: 'Verba volant, scriptum probat';
-	display: inline-flex;
-	align-items: center;
-	padding: 0.35rem 0.85rem 0.35rem 1.35rem;
-	margin-bottom: 1.25rem;
-	border-radius: 999px;
-	font-size: 0.75rem;
-	font-weight: 700;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
+.hero .stack::before {
+	content: 'Verba volant,';
+	display: block;
+	width: fit-content;
+	margin-bottom: 0;
+	font-family: var(--sp-hand);
+	font-size: clamp(1.5rem, 1rem + 1.2vw, 1.85rem);
+	font-weight: 600;
+	letter-spacing: 0.015em;
+	text-transform: none;
 	color: var(--sp-accent);
-	background:
-		radial-gradient(circle at 0.65rem center, var(--sp-accent) 3px, transparent 4px),
-		color-mix(in srgb, var(--sp-accent) 10%, var(--sp-surface));
-	border: 1px solid color-mix(in srgb, var(--sp-accent) 25%, transparent);
-	backdrop-filter: blur(8px);
-	box-shadow: 0 4px 16px color-mix(in srgb, var(--sp-accent) 15%, transparent);
+	line-height: 1.1;
+}
+
+.hero .copy::before {
+	content: 'scriptum probat';
+	display: block;
+	width: fit-content;
+	margin: 0.05rem 0 0.85rem 1.85rem;
+	font-family: var(--sp-hand);
+	font-size: clamp(1.65rem, 1.1rem + 1.4vw, 2.05rem);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	color: color-mix(in srgb, var(--sp-accent) 78%, var(--sp-accent-2));
+	line-height: 1.05;
+	transform: rotate(-1.2deg);
 }
 
 .hero::after {
@@ -781,6 +790,11 @@ main[data-pagefind-body].splash::after {
 
 	.hero h1 {
 		font-size: clamp(2rem, 9vw, 2.75rem);
+	}
+
+	.hero .copy::before {
+		margin-inline-start: 1.35rem;
+		font-size: clamp(1.45rem, 4vw, 1.75rem);
 	}
 
 	.hero .tagline {

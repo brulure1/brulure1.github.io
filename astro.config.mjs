@@ -35,6 +35,7 @@ export default defineConfig({
 				'@fontsource/plus-jakarta-sans/600.css',
 				'@fontsource/plus-jakarta-sans/700.css',
 				'@fontsource/plus-jakarta-sans/800.css',
+				'@fontsource/caveat/600.css',
 				'@fontsource/jetbrains-mono/500.css',
 				'./src/styles/custom.css',
 			],
