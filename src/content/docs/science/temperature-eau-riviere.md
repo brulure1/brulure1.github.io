@@ -1,5 +1,6 @@
 ---
 title: Pourquoi l'eau d'une rivière n'est-elle pas à température ambiante ?
+cardTitle: "Pourquoi **l'eau** **d'une** **rivière** **n'est**-elle pas à **température** **ambiante** ?"
 description: "Bilan thermique d'un cours d'eau : rayonnement solaire, évaporation, échanges avec l'air et les nappes souterraines, selon l'hydrologie physique."
 answerShort: "Parce que sa température résulte d'un bilan énergétique complexe, pas d'un simple équilibre avec l'air : rayonnement solaire, refroidissement par évaporation (jusqu'à 40 % de l'énergie dissipée), échanges avec le lit du cours d'eau et surtout les eaux souterraines (température quasi constante toute l'année) et l'inertie thermique liée au débit et à la profondeur. L'eau réagit donc plus lentement et différemment que l'air aux variations climatiques."
 confidence: elevee

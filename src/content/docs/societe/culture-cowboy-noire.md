@@ -1,5 +1,6 @@
 ---
 title: La culture cowboy est-elle une culture noire ?
+cardTitle: "La **culture** **cowboy** est-elle une culture noire ?"
 description: "Part réelle des cow-boys afro-américains dans l'Ouest américain (1866-1895) et invisibilisation par Hollywood, selon les historiens."
 answerShort: "Pas exclusivement, mais leur rôle a été largement effacé : environ un quart des 35 000 cow-boys ayant travaillé sur les pistes de transhumance entre 1866 et 1895 étaient afro-américains (5 000 à 9 000 personnes), et les tout premiers cow-boys de l'histoire étaient en réalité les vaqueros hispaniques du Mexique dès le XVIe siècle. Le mythe du cow-boy exclusivement blanc est une construction hollywoodienne du XXe siècle."
 confidence: elevee

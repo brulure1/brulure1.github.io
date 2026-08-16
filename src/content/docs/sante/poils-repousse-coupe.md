@@ -1,5 +1,6 @@
 ---
 title: Couper les poils les fait-il repousser plus vite ou différemment ?
+cardTitle: "Couper les **poils** les fait-il repousser plus vite ou différemment ?"
 description: "Le rasage accélère-t-il la repousse ou modifie-t-il l'épaisseur des poils ? Ce que montrent les études dermatologiques depuis 1928."
 answerShort: "Non sur les deux plans : ni la vitesse de croissance biologique, ni l'épaisseur, la couleur ou la densité du poil ne sont modifiées par la façon de le couper (rasoir, ciseaux) — mythe démenti depuis une étude de 1928 et confirmé par un essai clinique randomisé récent. L'illusion vient de la coupe nette du rasoir, qui laisse une extrémité plus rigide et visible qu'une pointe naturelle effilée."
 confidence: elevee

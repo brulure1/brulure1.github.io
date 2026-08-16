@@ -1,5 +1,6 @@
 ---
 title: Les riches partent-ils quand on augmente les impôts ?
+cardTitle: "Les **riches** partent-ils quand on augmente les **impôts** ?"
 description: "Impact d'une hausse fiscale sur l'exil des ménages à hauts revenus en France — données CAE (2025), DGFiP (2025-2026) et Sénat (2026)."
 answerShort: "Oui, mais marginalement : +1 point de taux effectif ≈ 0,02 à 0,23 % de foyers expatriés en plus (90 à 900 foyers/an pour le top 1 % du capital, sur 385 000 foyers). Le vrai risque n'est pas l'exil mais l'optimisation fiscale : 54 % d'une recette théorique s'évapore par ce biais, contre 20 % par l'exil (CAE, sept. 2025)."
 confidence: elevee

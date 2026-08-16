@@ -1,5 +1,6 @@
 ---
 title: Le baume du tigre est-il un simple effet placebo ?
+cardTitle: "Le **baume du tigre** est-il un simple effet **placebo** ?"
 description: "Ce que montrent les essais cliniques randomisés sur l'efficacité réelle du baume du tigre contre les céphalées de tension et les douleurs musculaires."
 answerShort: "Non pour les douleurs musculaires et céphalées : un essai randomisé en double aveugle montre un effet significativement supérieur au placebo. Mais oui pour la congestion nasale par inhalation : une étude contrôlée montre que le menthol inhalé n'améliore pas objectivement la résistance des voies aériennes, seulement une sensation subjective de mieux respirer. Attention en plus au vrai risque physique d'une application dans/sous le nez chez le jeune enfant (détresse respiratoire documentée)."
 confidence: moyenne

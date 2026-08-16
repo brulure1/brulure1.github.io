@@ -1,5 +1,6 @@
 ---
 title: Quelle proportion des riches sont devenus riches « par eux-mêmes » ?
+cardTitle: "Quelle **proportion** des **riches** sont **devenus** **riches** « par eux-**mêmes** » ?"
 description: "Part de l'héritage dans la richesse en France : patrimoine national, top 1 %, et milliardaires self-made vs héritiers (Piketty, Insee, UBS, Forbes)."
 answerShort: "Cela dépend du niveau observé. À l'échelle du patrimoine national, l'héritage représente 60 % de la richesse totale des Français en 2025 (contre 35 % en 1970). Chez les 500 plus grandes fortunes françaises, deux sources indépendantes et politiquement opposées (Fondation Jean-Jaurès, think tank de gauche, et UBS/Forbes) convergent vers 43 % d'héritiers / 57 % de \"self-made\" — mais ce taux d'héritiers grimpe à 60 % dans le seul top 100, et la moitié des \"self-made\" sont eux-mêmes enfants de cadres ou dirigeants."
 confidence: moyenne

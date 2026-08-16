@@ -1,5 +1,6 @@
 ---
 title: Réformer ou supprimer l'héritage pourrait-il réduire les inégalités ?
+cardTitle: "**Réformer** ou **supprimer** **l'héritage** **pourrait**-il **réduire** les **inégalités** ?"
 description: "Ce que montrent les rapports du Conseil des prélèvements obligatoires (2025), du CAE (2021) et les propositions de Piketty sur la fiscalité successorale et les inégalités de patrimoine en France."
 answerShort: "Selon les organismes officiels d'évaluation (Cour des comptes/CPO 2025, CAE 2021), oui : la fiscalité française du patrimoine ne parvient pas à corriger la concentration croissante du patrimoine (le 1 % le plus riche détient 27 % de la richesse nationale). Pour une suppression quasi totale, le scénario le plus chiffré (Piketty, 2021) propose un capital de 120 000 € versé à chaque citoyen à 25 ans, financé à 80 % par un ISF renforcé — avec un effet contre-intuitif documenté : taxer plus l'héritage pousse les héritiers à travailler davantage, pas moins."
 confidence: elevee

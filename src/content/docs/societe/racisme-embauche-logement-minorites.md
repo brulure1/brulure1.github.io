@@ -1,5 +1,6 @@
 ---
 title: Toutes les minorités subissent-elles un racisme équivalent à l'embauche et au logement ?
+cardTitle: "Toutes les **minorités** subissent-elles un **racisme** équivalent à l'embauche et au **logement** ?"
 description: "Comparaison des taux de discrimination à l'embauche selon l'origine (maghrébine, subsaharienne, asiatique, portugaise) selon les testings DARES/Insee."
 answerShort: "Non, les écarts varient fortement selon l'origine perçue. Les candidats d'origine maghrébine ou d'Afrique subsaharienne subissent les discriminations les plus fortes (jusqu'à 32 % de rappels en moins à l'embauche, taux de chômage de 30-38 % contre 21 % pour les personnes sans ascendance migratoire), tandis que les personnes d'origine portugaise ont un taux comparable au groupe de référence et celles d'origine asiatique un taux de chômage inférieur (15 %)."
 confidence: elevee

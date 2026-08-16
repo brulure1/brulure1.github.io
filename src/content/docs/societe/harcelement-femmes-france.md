@@ -1,5 +1,6 @@
 ---
 title: Quel pourcentage de femmes subissent du harcèlement sexuel en France ?
+cardTitle: "Quel **pourcentage** de **femmes** subissent du **harcèlement** sexuel en France ?"
 description: "Proportion de femmes victimes de harcèlement sexuel selon l'enquête SSMSI-VRS (données 2023) et les victimes enregistrées par la police (2025)."
 answerShort: "En 2023, 5 % des femmes de 18 ans et plus (≈ 1,37 million) déclarent harcèlement sexuel, exhibition ou images non sollicitées — un risque 6× supérieur à celui des hommes à caractéristiques comparables. Seules 2 % portent plainte ; les données policières 2025 n'en enregistrent qu'une infime fraction."
 confidence: elevee

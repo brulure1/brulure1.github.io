@@ -1,5 +1,6 @@
 ---
 title: LFI est-elle factuellement d'extrême gauche ?
+cardTitle: "**LFI** est-elle factuellement d'extrême gauche ?"
 description: "Classification de La France Insoumise selon le ministère de l'Intérieur, la science politique (gauche radicale vs extrême gauche) et les enquêtes d'experts internationales (CHES)."
 answerShort: "Cela dépend de la définition retenue. Administrativement (ministère de l'Intérieur français) et selon la typologie classique de la science politique française, LFI est classée « gauche radicale », pas « extrême gauche » — une catégorie réservée aux mouvements révolutionnaires anticapitalistes hors du jeu électoral (NPA, Lutte Ouvrière). Mais sur l'échelle continue gauche-droite utilisée par les politologues internationaux (Chapel Hill Expert Survey, 421 experts, 2019), LFI obtient un score de 1,3 sur 10 (0 = extrême gauche) — la positionnant, en valeur numérique, à l'extrémité gauche du spectre, à un niveau proche de Podemos (1,9) et plus radical que Syriza (2,3)."
 confidence: moyenne

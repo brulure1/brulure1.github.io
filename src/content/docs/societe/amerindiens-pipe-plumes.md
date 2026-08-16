@@ -1,5 +1,6 @@
 ---
 title: Les Amérindiens fumaient-ils vraiment la pipe de la paix et portaient-ils des chapeaux de plumes ?
+cardTitle: "Les **Amérindiens** fumaient-ils vraiment la pipe de la paix et portaient-ils des chapeaux de plumes ?"
 description: "Réalité historique du calumet et de la coiffe de plumes (war bonnet) face aux clichés hollywoodiens sur les Amérindiens."
 answerShort: "En partie seulement, et de façon très déformée par Hollywood. Le calumet (à tort appelé « pipe de la paix ») est un objet sacré utilisé pour de multiples cérémonies religieuses, pas seulement pour sceller la paix. La coiffe de plumes (« war bonnet ») n'était portée que par certaines tribus des Grandes Plaines (Sioux, Cheyenne, Crow), pas par l'ensemble des peuples amérindiens, et chaque plume devait être individuellement méritée par un acte de bravoure — ce n'était en aucun cas un accessoire de mode généralisé."
 confidence: elevee

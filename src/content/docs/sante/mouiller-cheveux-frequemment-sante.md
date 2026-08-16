@@ -1,5 +1,6 @@
 ---
 title: Se mouiller les cheveux fréquemment (2 fois par jour) est-il bon ou mauvais ?
+cardTitle: "Se mouiller les **cheveux** fréquemment **(2 fois par jour)** est-il bon ou mauvais ?"
 description: "Ce que dit la science sur le fait de mouiller ses cheveux plusieurs fois par jour : gonflement de la fibre, 'fatigue hygrale' et santé du cuir chevelu."
 answerShort: "Ni franchement bon ni franchement mauvais en soi : l'eau seule fait gonfler réversiblement la fibre capillaire (mécanisme bien documenté), mais le concept de 'fatigue hygrale' souvent cité pour dire que ce cycle répété abîme les cheveux repose surtout sur des études... sur la laine, pas sur le cheveu humain. Le vrai facteur de risque documenté n'est pas l'eau elle-même mais ce qu'on fait autour : laisser les cheveux mouillés trop longtemps, les brosser/frotter mouillés, ou multiplier les shampoings (qui décapent les lipides protecteurs) plutôt que de simples rinçages à l'eau."
 confidence: moyenne

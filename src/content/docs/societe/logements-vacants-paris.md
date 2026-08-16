@@ -1,5 +1,6 @@
 ---
 title: Les logements sont-ils tous habités à Paris et sinon pourquoi ?
+cardTitle: "Les **logements** sont-ils tous habités à **Paris** et sinon pourquoi ?"
 description: "Part des logements vacants et des résidences secondaires à Paris selon l'Insee (2023-2024), et causes de la vacance immobilière."
 answerShort: "Non : 9,9 % du parc parisien (environ 128 000 à 138 000 logements) est vacant, et 9,9 % supplémentaires sont des résidences secondaires — soit près de 1 logement sur 5 non habité en résidence principale. La vacance résulte surtout d'une forte mobilité résidentielle (100 000 déménagements/an à Paris) et non d'une rétention volontaire massive, mais les résidences secondaires et la location touristique meublée réduisent réellement l'offre de logements à l'année."
 confidence: elevee

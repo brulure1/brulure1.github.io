@@ -1,5 +1,6 @@
 ---
 title: Manger des pois chiches est-il mauvais pour la santé ?
+cardTitle: "Manger des **pois chiches** est-il mauvais pour la santé ?"
 description: "Ce que disent les études sur les anti-nutriments (phytates, lectines) des pois chiches et leur impact réel sur la santé."
 answerShort: "Non. Les pois chiches contiennent des anti-nutriments (phytates, lectines) qui peuvent réduire l'absorption du fer et du zinc, mais l'EFSA a conclu que le risque toxicologique ne vient que d'une cuisson insuffisante, pas de l'aliment lui-même. Une fois bien cuits (et idéalement trempés), leurs bénéfices (protéines, fibres, prévention cardiovasculaire) dépassent largement ces inconvénients mineurs."
 confidence: elevee

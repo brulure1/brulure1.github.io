@@ -1,5 +1,6 @@
 ---
 title: Manger du maïs est-il mauvais pour la santé ?
+cardTitle: "Manger du **maïs** est-il mauvais pour la santé ?"
 description: "Mycotoxines (aflatoxines), risque historique de pellagre et débat OGM : ce que disent les données sur la consommation de maïs."
 answerShort: "Non pour une consommation occidentale normale et variée. Le vrai risque documenté concerne les mycotoxines (aflatoxines, classées cancérogènes avérées par le CIRC) en cas de stockage défectueux du maïs — un risque encadré par des seuils réglementaires stricts en Europe, mais plus préoccupant dans certaines régions du monde avec un stockage moins contrôlé. Le maïs n'est pas dangereux par lui-même : les OGM autorisés font l'objet d'un consensus scientifique de sécurité, et le seul vrai risque nutritionnel historique (la pellagre) ne concerne que les régimes reposant presque exclusivement sur du maïs non traité."
 confidence: elevee

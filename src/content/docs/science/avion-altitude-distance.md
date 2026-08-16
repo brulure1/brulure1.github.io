@@ -1,5 +1,6 @@
 ---
 title: Un avion qui vole plus haut a-t-il forcément plus de trajet à parcourir ?
+cardTitle: "Un **avion** qui vole plus haut a-t-il forcément plus de trajet à parcourir ?"
 description: "Pourquoi les avions de ligne choisissent leur altitude de croisière (9 000-13 000 m) selon la distance du vol, l'aérodynamique et le poids, pas l'inverse."
 answerShort: "Non, c'est l'inverse de la causalité intuitive : c'est la distance du vol (et le poids de l'appareil) qui déterminent l'altitude choisie, pas l'altitude qui allonge le trajet. Les vols longs montent plus haut (jusqu'à 12-13 km) car l'air y est moins dense (jusqu'à 4× moins qu'au niveau de la mer), ce qui réduit la traînée et la consommation de carburant — un avantage seulement rentable sur de longues distances. Les vols courts restent plus bas car ils n'ont pas le temps d'exploiter cet avantage avant de redescendre."
 confidence: elevee

@@ -1,5 +1,6 @@
 ---
 title: Boire du thé quotidiennement est-il mauvais pour la santé ?
+cardTitle: "Boire du **thé** quotidiennement est-il mauvais pour la santé ?"
 description: "Effet du thé sur l'absorption du fer, la fluorose dentaire et l'exposition à l'aluminium, selon les études scientifiques disponibles."
 answerShort: "Non pour la population générale. Le principal risque documenté est la réduction de l'absorption du fer non-héminique (jusqu'à -60 %) si le thé est bu PENDANT le repas — un vrai problème pour les végétariens, femmes enceintes et enfants, mais sans effet mesuré sur le statut en fer à long terme dans les études épidémiologiques de population générale. Le fluor et l'aluminium du thé restent, sauf consommation extrême, dans les limites de sécurité."
 confidence: moyenne

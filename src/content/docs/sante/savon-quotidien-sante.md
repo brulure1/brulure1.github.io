@@ -1,5 +1,6 @@
 ---
 title: Se laver au savon tous les jours est-il mauvais pour la santé ?
+cardTitle: "Se laver au **savon** tous les **jours** est-il mauvais pour la santé ?"
 description: "Effet du lavage quotidien sur le microbiome cutané et la barrière hydrolipidique, selon les études dermatologiques et microbiologiques récentes."
 answerShort: "Pas pour le microbiome (résilient : il se reconstitue en 2-3 heures après un lavage, quelle que soit la fréquence), mais oui pour la barrière cutanée en cas d'usage de savons trop détergents ou de lavage excessif du corps entier : risque de sécheresse et d'eczéma. Les dermatologues recommandent de cibler les zones à transpiration (aisselles, pieds, parties intimes) plutôt que de savonner systématiquement tout le corps."
 confidence: elevee

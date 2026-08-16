@@ -1,5 +1,6 @@
 ---
 title: La Chine a-t-elle proportionnellement plus de caméras de surveillance que les pays francophones ?
+cardTitle: "La **Chine** a-t-elle proportionnellement plus de caméras de **surveillance** que les pays francophones ?"
 description: "Comparaison de la densité de caméras de surveillance en Chine, en France et en Belgique selon les estimations disponibles (IHS Markit, Comparitech, 2024-2026)."
 answerShort: "Oui, très largement. La Chine compte environ 494 caméras officielles pour 1 000 habitants (près d'1 caméra pour 2 habitants), contre environ 5 caméras pour 1 000 habitants dans l'agglomération parisienne — un écart d'environ 100 fois. Ces comparaisons restent toutefois fragiles methodologiquement, faute de recensement mondial standardisé et exhaustif."
 confidence: moyenne

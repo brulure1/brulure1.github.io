@@ -1,5 +1,6 @@
 ---
 title: Le boycott sert-il à quelque chose et dans quelles conditions ?
+cardTitle: "Le **boycott** sert-il à quelque chose et dans quelles conditions ?"
 description: "Efficacité économique du boycott de consommateurs selon les études d'analyse économique et de théorie des jeux (2007-2019)."
 answerShort: "Oui, mais seulement sous certaines conditions précises : une étude sur 125 boycotts américains (1978-2017) montre un effet négatif statistiquement significatif sur la valeur boursière des entreprises ciblées, surtout en cas de forte concurrence sectorielle. Mais la théorie économique montre que la majorité des boycotts échouent à changer le comportement de l'entreprise, en raison du passager clandestin (chacun compte sur les autres) et des problèmes de coordination entre consommateurs dispersés."
 confidence: moyenne

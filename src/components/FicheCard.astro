@@ -1,12 +1,12 @@
 ---
 import type { CategoryId } from '../lib/categories';
-import { highlightQuestionTitle } from '../lib/highlightTitle';
+import { renderCardTitle } from '../lib/renderCardTitle';
 import CategoryIcon from './CategoryIcon.astro';
 
 interface Props {
 	href: string;
 	title: string;
-	tags?: string[];
+	cardTitle?: string;
 	confidenceClass?: string;
 	confidenceLabel?: string;
 	categoryLabel?: string;
@@ -18,7 +18,7 @@ interface Props {
 const {
 	href,
 	title,
-	tags = [],
+	cardTitle,
 	confidenceClass = '',
 	confidenceLabel,
 	categoryLabel,
@@ -27,7 +27,7 @@ const {
 	index = 0,
 } = Astro.props;
 
-const titleHtml = highlightQuestionTitle(title, tags);
+const titleHtml = renderCardTitle(cardTitle ?? title);
 const delay = `${index * 0.05}s`;
 ---
 

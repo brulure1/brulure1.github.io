@@ -1,5 +1,6 @@
 ---
 title: Ceux qui travaillent plus gagnent-ils plus ?
+cardTitle: "Ceux qui **travaillent** plus gagnent-ils plus ?"
 description: "Corrélation entre heures travaillées et revenu salarial selon la catégorie socioprofessionnelle en France (Insee, 2024)."
 answerShort: "Oui pour une partie de l'écart, mais il est largement disproportionné : les cadres travaillent en moyenne 42,0 heures/semaine contre 37,3 à 37,6 heures pour les employés et ouvriers (+12 % d'heures), mais gagnent 2,3 à 2,8 fois plus. L'essentiel de l'écart de revenu tient donc au taux horaire (qualification, statut, secteur), pas au nombre d'heures travaillées — et les très hauts revenus (capital, dividendes) sont largement déconnectés du temps de travail."
 confidence: elevee

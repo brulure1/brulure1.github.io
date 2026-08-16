@@ -1,5 +1,6 @@
 ---
 title: Voit-on déjà l'effet du mode de consommation capitaliste sur la santé physique ?
+cardTitle: "Voit-on déjà **l'effet** du mode de **consommation** **capitaliste** sur la **santé** physique ?"
 description: "Impact documenté des aliments ultra-transformés (classification Nova) sur la santé, selon les méta-analyses et l'avis Anses 2025."
 answerShort: "Oui, sur un point précis et bien documenté : la consommation d'aliments ultra-transformés (classification Nova 4), conçus industriellement pour maximiser la consommation et le profit, est associée de façon convaincante (preuve de classe I) à un risque accru de déclin de la fonction rénale et de sifflements respiratoires chez l'enfant, et de façon très probable à l'obésité, au diabète de type 2, à la dépression et à la mortalité cardiovasculaire (revue-parapluie de 45 méta-analyses, BMJ 2024)."
 confidence: moyenne

@@ -1,5 +1,6 @@
 ---
 title: Y a-t-il vraiment de plus en plus de cancers ?
+cardTitle: "Y a-t-il vraiment de plus en plus de **cancers** ?"
 description: "Décomposition de la hausse du nombre de cancers en France entre croissance démographique, vieillissement et hausse réelle du risque (Inca, Santé publique France)."
 answerShort: "Le nombre de nouveaux cas a doublé depuis 1990 (433 136 en 2023), mais l'essentiel de cette hausse (78 % chez l'homme, 57 % chez la femme) s'explique par la croissance et le vieillissement de la population. Le risque de cancer à âge égal est stable chez l'homme depuis 2012, mais continue d'augmenter chez la femme (+0,9 %/an depuis 1990), notamment via le cancer du poumon."
 confidence: elevee
