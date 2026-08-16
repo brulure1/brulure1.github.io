@@ -1,31 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
+import { CATEGORY_BY_ID } from '../lib/categories';
 import FicheCard from './FicheCard.astro';
 
 interface Props {
 	limit?: number;
-	hideEmpty?: boolean;
 }
 
-const { limit, hideEmpty = false } = Astro.props;
-
-const CATEGORY_ICONS: Record<string, string> = {
-	economie: '💶',
-	travail: '👷',
-	societe: '⚖️',
-	sante: '🏥',
-	culture: '🎬',
-	science: '🔬',
-};
-
-const CATEGORY_LABELS: Record<string, string> = {
-	economie: 'Économie & fiscalité',
-	travail: 'Travail & inégalités',
-	societe: 'Société & justice',
-	sante: 'Santé & nutrition',
-	culture: 'Culture & médias',
-	science: 'Science & nature',
-};
+const { limit } = Astro.props;
 
 const CONFIDENCE_CLASS: Record<string, string> = {
 	elevee: 'sp-badge--high',
@@ -48,70 +30,51 @@ const fiches = docs
 	.filter((doc) => !doc.data.draft)
 	.sort((a, b) => a.data.title.localeCompare(b.data.title, 'fr'));
 
-const limitedFiches = limit ? fiches.slice(0, limit) : fiches;
+const displayFiches = limit ? fiches.slice(0, limit) : fiches;
 
-const categories = Object.entries(CATEGORY_LABELS)
-	.map(([key, label]) => ({
-		key,
-		label,
-		items: fiches.filter((f) => f.data.category === key),
-	}))
-	.filter((cat) => !hideEmpty || cat.items.length > 0);
-
-const cardProps = (fiche: (typeof fiches)[number], index = 0) => ({
-	href: `/${fiche.id}/`,
-	title: fiche.data.title,
-	confidenceClass: fiche.data.confidence ? CONFIDENCE_CLASS[fiche.data.confidence] : '',
-	confidenceLabel: fiche.data.confidence ? CONFIDENCE_LABEL[fiche.data.confidence] : undefined,
-	accent: fiche.data.category ?? 'default',
-	index,
-});
+const cardProps = (fiche: (typeof fiches)[number], index = 0) => {
+	const cat = fiche.data.category ? CATEGORY_BY_ID[fiche.data.category] : undefined;
+	return {
+		href: `/${fiche.id}/`,
+		title: fiche.data.title,
+		confidenceClass: fiche.data.confidence ? CONFIDENCE_CLASS[fiche.data.confidence] : '',
+		confidenceLabel: fiche.data.confidence ? CONFIDENCE_LABEL[fiche.data.confidence] : undefined,
+		categoryIcon: cat?.icon,
+		categoryLabel: cat?.label,
+		accent: fiche.data.category ?? 'default',
+		index,
+	};
+};
 ---
 
-<div class="sp-fiche-grid">
-	{
-		limit ? (
-			<ul class="sp-fiche-cards">
-				{limitedFiches.map((fiche, i) => (
-					<FicheCard {...cardProps(fiche, i)} />
-				))}
-			</ul>
-		) : (
-			categories.map(({ key, label, items }) => (
-				<section class="sp-fiche-section" id={key} data-accent={key}>
-					<div class="sp-fiche-section__head">
-						<h2>
-							<span class="sp-section-icon" aria-hidden="true">{CATEGORY_ICONS[key]}</span>
-							{label}
-						</h2>
-						<span class="sp-fiche-section__count">
-							{items.length} fiche{items.length > 1 ? 's' : ''}
-						</span>
-					</div>
-					{items.length === 0 ? (
-						<p class="sp-fiche-empty">Aucune fiche publiée dans cette catégorie pour l'instant.</p>
-					) : (
-						<ul class="sp-fiche-cards">
-							{items.map((fiche, i) => (
-								<FicheCard {...cardProps(fiche, i)} />
-							))}
-						</ul>
-					)}
-				</section>
-			))
-		)
-	}
+<div class="sp-fiche-grid" id="sp-fiche-catalog">
+	<div class="sp-fiche-filter-head" id="sp-fiche-filter-head" hidden>
+		<h2>
+			<span class="sp-fiche-filter-head__icon sp-section-icon" aria-hidden="true"></span>
+			<span class="sp-fiche-filter-head__label"></span>
+		</h2>
+		<span class="sp-fiche-filter-head__count sp-fiche-section__count"></span>
+	</div>
+	<ul class="sp-fiche-cards">
+		{displayFiches.map((fiche, i) => (
+			<FicheCard {...cardProps(fiche, i)} category={fiche.data.category} />
+		))}
+	</ul>
 </div>
 
 <style>
 	.sp-fiche-grid {
-		display: flex;
-		flex-direction: column;
-		gap: 2.75rem;
 		margin-top: 1rem;
+		scroll-margin-top: calc(var(--sl-nav-height) + var(--sl-mobile-toc-height, 3rem) + 3.5rem);
 	}
 
-	.sp-fiche-section__head {
+	@media (min-width: 50rem) {
+		.sp-fiche-grid {
+			scroll-margin-top: calc(var(--sl-nav-height) + 4rem);
+		}
+	}
+
+	.sp-fiche-filter-head {
 		display: flex;
 		align-items: baseline;
 		justify-content: space-between;
@@ -121,20 +84,32 @@ const cardProps = (fiche: (typeof fiches)[number], index = 0) => ({
 		border-bottom: 1px solid var(--sp-border);
 	}
 
-	.sp-fiche-section__head h2 {
+	.sp-fiche-filter-head h2 {
+		display: flex;
+		align-items: center;
 		font-size: 1.375rem;
 		font-weight: 800;
 		margin: 0;
 		letter-spacing: -0.03em;
 	}
 
-	.sp-fiche-section__count {
-		font-size: 0.75rem;
-		font-weight: 600;
-		color: var(--sp-muted);
-		padding: 0.25rem 0.65rem;
-		border-radius: 999px;
-		background: var(--sp-tag-bg);
+	.sp-fiche-filter-head[data-accent='economie'] h2 {
+		color: var(--sp-cat-economie);
+	}
+	.sp-fiche-filter-head[data-accent='societe'] h2 {
+		color: var(--sp-cat-societe);
+	}
+	.sp-fiche-filter-head[data-accent='travail'] h2 {
+		color: var(--sp-cat-travail);
+	}
+	.sp-fiche-filter-head[data-accent='sante'] h2 {
+		color: var(--sp-cat-sante);
+	}
+	.sp-fiche-filter-head[data-accent='culture'] h2 {
+		color: var(--sp-cat-culture);
+	}
+	.sp-fiche-filter-head[data-accent='science'] h2 {
+		color: var(--sp-cat-science);
 	}
 
 	.sp-fiche-cards {
@@ -144,17 +119,5 @@ const cardProps = (fiche: (typeof fiches)[number], index = 0) => ({
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
 		gap: 1.125rem;
-	}
-
-	.sp-fiche-empty {
-		color: var(--sp-muted);
-		font-size: 0.9375rem;
-		margin: 0;
-		padding: 1.5rem;
-		border-radius: 1rem;
-		border: 1px dashed var(--sp-border);
-		background: var(--sp-surface);
-		backdrop-filter: blur(8px);
-		text-align: center;
 	}
 </style>

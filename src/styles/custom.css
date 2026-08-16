@@ -306,37 +306,6 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	box-shadow: 0 10px 28px var(--sp-glow);
 }
 
-/* Ancres catégories — offset header + TOC mobile */
-.sp-fiche-section {
-	scroll-margin-top: calc(var(--sl-nav-height) + var(--sl-mobile-toc-height, 3rem) + 0.75rem);
-}
-
-@media (min-width: 50rem) {
-	.sp-fiche-section {
-		scroll-margin-top: calc(var(--sl-nav-height) + 3.5rem);
-	}
-}
-
-/* ── Grille fiches ── */
-.sp-fiche-section[data-accent='economie'] .sp-fiche-section__head h2 {
-	color: var(--sp-cat-economie);
-}
-.sp-fiche-section[data-accent='societe'] .sp-fiche-section__head h2 {
-	color: var(--sp-cat-societe);
-}
-.sp-fiche-section[data-accent='travail'] .sp-fiche-section__head h2 {
-	color: var(--sp-cat-travail);
-}
-.sp-fiche-section[data-accent='sante'] .sp-fiche-section__head h2 {
-	color: var(--sp-cat-sante);
-}
-.sp-fiche-section[data-accent='culture'] .sp-fiche-section__head h2 {
-	color: var(--sp-cat-culture);
-}
-.sp-fiche-section[data-accent='science'] .sp-fiche-section__head h2 {
-	color: var(--sp-cat-science);
-}
-
 /* Badge confiance discret — coin supérieur droit */
 .sp-fiche-card__badge {
 	position: absolute;
@@ -354,6 +323,26 @@ main[data-pagefind-body].splash .sl-markdown-content {
 
 .sp-fiche-card[data-has-confidence='true'] h3 {
 	padding-inline-end: 4.25rem;
+}
+
+.sp-fiche-card__cat-icon {
+	position: absolute;
+	top: 0.72rem;
+	left: 0.78rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	font-size: 0.75rem;
+	line-height: 1;
+	border-radius: 0.4375rem;
+	background: color-mix(in srgb, var(--sp-border) 35%, transparent);
+	opacity: 0.9;
+}
+
+.sp-fiche-card:has(.sp-fiche-card__cat-icon) h3 {
+	padding-inline-start: 2.1rem;
 }
 
 .sp-fiche-card-wrap {
@@ -703,27 +692,42 @@ main[data-pagefind-body].splash::after {
 	color: var(--sp-accent);
 }
 
-.sp-cat-nav__link[data-cat='economie']:hover {
+.sp-cat-nav__link.is-active {
+	font-weight: 700;
+}
+
+.sp-cat-nav__link[data-cat='all'].is-active {
+	background: color-mix(in srgb, var(--sp-accent) 14%, transparent);
+	color: var(--sp-accent);
+}
+
+.sp-cat-nav__link[data-cat='economie']:hover,
+.sp-cat-nav__link[data-cat='economie'].is-active {
 	background: rgb(59 130 246 / 0.12);
 	color: var(--sp-cat-economie);
 }
-.sp-cat-nav__link[data-cat='societe']:hover {
+.sp-cat-nav__link[data-cat='societe']:hover,
+.sp-cat-nav__link[data-cat='societe'].is-active {
 	background: rgb(139 92 246 / 0.12);
 	color: var(--sp-cat-societe);
 }
-.sp-cat-nav__link[data-cat='travail']:hover {
+.sp-cat-nav__link[data-cat='travail']:hover,
+.sp-cat-nav__link[data-cat='travail'].is-active {
 	background: rgb(245 158 11 / 0.12);
 	color: var(--sp-cat-travail);
 }
-.sp-cat-nav__link[data-cat='sante']:hover {
+.sp-cat-nav__link[data-cat='sante']:hover,
+.sp-cat-nav__link[data-cat='sante'].is-active {
 	background: rgb(16 185 129 / 0.12);
 	color: var(--sp-cat-sante);
 }
-.sp-cat-nav__link[data-cat='culture']:hover {
+.sp-cat-nav__link[data-cat='culture']:hover,
+.sp-cat-nav__link[data-cat='culture'].is-active {
 	background: rgb(236 72 153 / 0.12);
 	color: var(--sp-cat-culture);
 }
-.sp-cat-nav__link[data-cat='science']:hover {
+.sp-cat-nav__link[data-cat='science']:hover,
+.sp-cat-nav__link[data-cat='science'].is-active {
 	background: rgb(6 182 212 / 0.12);
 	color: var(--sp-cat-science);
 }
@@ -863,9 +867,13 @@ main[data-pagefind-body].splash .sl-markdown-content > h2 {
 	box-shadow: 0 2px 8px rgb(0 0 0 / 0.06);
 }
 
-.sp-fiche-section__head h2 {
-	display: flex;
-	align-items: center;
+.sp-fiche-section__count {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: var(--sp-muted);
+	padding: 0.25rem 0.65rem;
+	border-radius: 999px;
+	background: var(--sp-tag-bg);
 }
 
 /* Recherche pill */

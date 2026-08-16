@@ -1,21 +1,91 @@
 ---
-const links = [
-	{ id: 'economie', label: 'Économie', icon: '💶' },
-	{ id: 'societe', label: 'Société', icon: '⚖️' },
-	{ id: 'culture', label: 'Culture', icon: '🎬' },
-	{ id: 'travail', label: 'Travail', icon: '👷' },
-	{ id: 'sante', label: 'Santé', icon: '🏥' },
-	{ id: 'science', label: 'Science', icon: '🔬' },
-];
+import { CATEGORIES } from '../lib/categories';
 ---
 
 <nav class="sp-cat-nav" aria-label="Filtrer par thème">
+	<a href="#" class="sp-cat-nav__link is-active" data-cat="all" data-cat-label="Toutes les fiches">
+		Tous
+	</a>
 	{
-		links.map(({ id, label, icon }) => (
-			<a href={`#${id}`} class="sp-cat-nav__link" data-cat={id}>
+		CATEGORIES.map(({ id, navLabel, label, icon }) => (
+			<a href={`#${id}`} class="sp-cat-nav__link" data-cat={id} data-cat-label={label}>
 				<span aria-hidden="true">{icon}</span>
-				{label}
+				{navLabel}
 			</a>
 		))
 	}
 </nav>
+
+<script>
+	import { CATEGORIES } from '../lib/categories';
+
+	const VALID = new Set(CATEGORIES.map((c) => c.id));
+
+	function applyFilter(catId: string) {
+		const head = document.getElementById('sp-fiche-filter-head');
+		const cards = document.querySelectorAll<HTMLElement>('.sp-fiche-card-wrap[data-category]');
+		const links = document.querySelectorAll<HTMLAnchorElement>('.sp-cat-nav__link');
+
+		const isAll = !catId || catId === 'all';
+
+		links.forEach((link) => {
+			link.classList.toggle('is-active', link.dataset.cat === (isAll ? 'all' : catId));
+		});
+
+		if (!head) return;
+
+		if (isAll) {
+			head.hidden = true;
+			head.removeAttribute('data-accent');
+			cards.forEach((card) => {
+				card.hidden = false;
+			});
+			return;
+		}
+
+		const activeLink = document.querySelector<HTMLAnchorElement>(`.sp-cat-nav__link[data-cat="${catId}"]`);
+		const label = activeLink?.dataset.catLabel ?? catId;
+		const icon = activeLink?.querySelector('span')?.textContent ?? '';
+
+		head.hidden = false;
+		head.dataset.accent = catId;
+		const iconEl = head.querySelector('.sp-fiche-filter-head__icon');
+		const labelEl = head.querySelector('.sp-fiche-filter-head__label');
+		const countEl = head.querySelector('.sp-fiche-filter-head__count');
+		if (iconEl) iconEl.textContent = icon;
+		if (labelEl) labelEl.textContent = label;
+
+		let count = 0;
+		cards.forEach((card) => {
+			const show = card.dataset.category === catId;
+			card.hidden = !show;
+			if (show) count += 1;
+		});
+		if (countEl) {
+			countEl.textContent = `${count} fiche${count > 1 ? 's' : ''}`;
+		}
+	}
+
+	function readHash(): string {
+		const id = location.hash.slice(1);
+		return VALID.has(id as (typeof CATEGORIES)[number]['id']) ? id : 'all';
+	}
+
+	function onFilterClick(event: Event) {
+		const link = (event.target as Element).closest<HTMLAnchorElement>('.sp-cat-nav__link');
+		if (!link) return;
+		event.preventDefault();
+		const catId = link.dataset.cat ?? 'all';
+		applyFilter(catId);
+		if (catId !== 'all') {
+			history.replaceState(null, '', `#${catId}`);
+		} else {
+			history.replaceState(null, '', location.pathname + location.search);
+		}
+	}
+
+	document.querySelector('.sp-cat-nav')?.addEventListener('click', onFilterClick);
+
+	applyFilter(readHash());
+	window.addEventListener('hashchange', () => applyFilter(readHash()));
+</script>

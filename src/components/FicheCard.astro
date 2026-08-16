@@ -4,6 +4,9 @@ interface Props {
 	title: string;
 	confidenceClass?: string;
 	confidenceLabel?: string;
+	categoryIcon?: string;
+	categoryLabel?: string;
+	category?: string;
 	accent?: string;
 	index?: number;
 }
@@ -13,6 +16,9 @@ const {
 	title,
 	confidenceClass = '',
 	confidenceLabel,
+	categoryIcon,
+	categoryLabel,
+	category,
 	accent = 'default',
 	index = 0,
 } = Astro.props;
@@ -23,9 +29,15 @@ const delay = `${index * 0.05}s`;
 <li
 	class="sp-fiche-card-wrap sp-animate-in"
 	data-accent={accent}
+	data-category={category}
 	style={`animation-delay: ${delay}`}
 >
 	<a href={href} class="sp-fiche-card" data-has-confidence={confidenceLabel ? 'true' : undefined}>
+		{categoryIcon && (
+			<span class="sp-fiche-card__cat-icon" title={categoryLabel} aria-hidden="true">
+				{categoryIcon}
+			</span>
+		)}
 		{confidenceLabel && (
 			<span class={`sp-badge sp-fiche-card__badge ${confidenceClass}`}>{confidenceLabel}</span>
 		)}
