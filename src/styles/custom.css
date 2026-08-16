@@ -306,12 +306,18 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	box-shadow: 0 10px 28px var(--sp-glow);
 }
 
-/* Badge confiance discret — coin supérieur droit */
+/* Badge confiance — à côté du titre, sans chevauchement */
+.sp-fiche-card__main {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.625rem;
+	flex: 1;
+	min-width: 0;
+}
+
 .sp-fiche-card__badge {
-	position: absolute;
-	top: 0.75rem;
-	right: 0.85rem;
-	z-index: 1;
+	flex-shrink: 0;
+	margin-top: 0.2rem;
 	font-size: 0.5625rem;
 	font-weight: 600;
 	text-transform: none;
@@ -319,10 +325,7 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	padding: 0.12rem 0.4rem;
 	line-height: 1.2;
 	opacity: 0.88;
-}
-
-.sp-fiche-card[data-has-confidence='true'] h3 {
-	padding-inline-end: 4.25rem;
+	white-space: nowrap;
 }
 
 .sp-fiche-card__cat-icon {
@@ -340,9 +343,8 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	opacity: 0.85;
 }
 
-.sp-fiche-card:has(.sp-fiche-card__cat-icon) h3 {
-	padding-inline-end: 0;
-	padding-block-end: 1.75rem;
+.sp-fiche-card:has(.sp-fiche-card__cat-icon) .sp-fiche-card__main {
+	padding-block-end: 1.25rem;
 }
 
 .sp-fiche-card-wrap {
@@ -404,6 +406,7 @@ main[data-pagefind-body].splash .sl-markdown-content {
 
 .sp-fiche-card h3 {
 	flex: 1;
+	min-width: 0;
 	font-size: clamp(1.125rem, 0.5rem + 1.1vw, 1.3125rem);
 	font-weight: 700;
 	line-height: 1.45;

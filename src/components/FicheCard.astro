@@ -32,11 +32,13 @@ const delay = `${index * 0.05}s`;
 	data-category={category}
 	style={`animation-delay: ${delay}`}
 >
-	<a href={href} class="sp-fiche-card" data-has-confidence={confidenceLabel ? 'true' : undefined}>
-		{confidenceLabel && (
-			<span class={`sp-badge sp-fiche-card__badge ${confidenceClass}`}>{confidenceLabel}</span>
-		)}
-		<h3>{title}</h3>
+	<a href={href} class="sp-fiche-card">
+		<div class="sp-fiche-card__main">
+			<h3>{title}</h3>
+			{confidenceLabel && (
+				<span class={`sp-badge sp-fiche-card__badge ${confidenceClass}`}>{confidenceLabel}</span>
+			)}
+		</div>
 		{categoryIcon && (
 			<span class="sp-fiche-card__cat-icon" title={categoryLabel} aria-hidden="true">
 				{categoryIcon}
