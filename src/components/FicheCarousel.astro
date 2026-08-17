@@ -4,7 +4,7 @@ import { getCatalogFiches, shuffleFiches, toCardProps } from '../lib/ficheCardPr
 
 const fiches = shuffleFiches(await getCatalogFiches());
 const track = [...fiches, ...fiches];
-// ~3,5 s par carte — défilement lent
+// ~3,5 s par carte — défilement lent (desktop uniquement)
 const durationSec = Math.max(48, Math.round(fiches.length * 3.5));
 ---
 
@@ -15,8 +15,19 @@ const durationSec = Math.max(48, Math.round(fiches.length * 3.5));
 >
 	<div class="sp-fiche-carousel__fade sp-fiche-carousel__fade--left" aria-hidden="true"></div>
 	<div class="sp-fiche-carousel__fade sp-fiche-carousel__fade--right" aria-hidden="true"></div>
-	<div class="sp-fiche-carousel__viewport">
-		<ul class="sp-fiche-carousel__track">
+
+	<!-- Mobile / scroll manuel -->
+	<div class="sp-fiche-carousel__viewport sp-fiche-carousel__viewport--scroll" tabindex="0">
+		<ul class="sp-fiche-carousel__track sp-fiche-carousel__track--scroll">
+			{fiches.map((fiche, i) => (
+				<FicheCard {...toCardProps(fiche, i)} category={fiche.data.category} />
+			))}
+		</ul>
+	</div>
+
+	<!-- Desktop / défilement auto -->
+	<div class="sp-fiche-carousel__viewport sp-fiche-carousel__viewport--auto">
+		<ul class="sp-fiche-carousel__track sp-fiche-carousel__track--auto">
 			{track.map((fiche, i) => (
 				<FicheCard {...toCardProps(fiche, i)} category={fiche.data.category} />
 			))}
@@ -32,7 +43,11 @@ const durationSec = Math.max(48, Math.round(fiches.length * 3.5));
 		margin: 1.25rem calc(50% - 50vw) 1.5rem;
 	}
 
-	.sp-fiche-carousel__viewport {
+	.sp-fiche-carousel__viewport--scroll {
+		display: none;
+	}
+
+	.sp-fiche-carousel__viewport--auto {
 		overflow: hidden;
 	}
 
@@ -73,10 +88,13 @@ const durationSec = Math.max(48, Math.round(fiches.length * 3.5));
 		list-style: none;
 		margin: 0;
 		padding: 0.125rem 0;
+	}
+
+	.sp-fiche-carousel__track--auto {
 		animation: sp-carousel-scroll var(--sp-carousel-duration, 90s) linear infinite;
 	}
 
-	.sp-fiche-carousel__track:hover {
+	.sp-fiche-carousel__track--auto:hover {
 		animation-play-state: paused;
 	}
 
@@ -84,6 +102,7 @@ const durationSec = Math.max(48, Math.round(fiches.length * 3.5));
 		flex: 0 0 22rem;
 		width: 22rem;
 		animation: none;
+		scroll-snap-align: start;
 	}
 
 	.sp-fiche-carousel :global(.sp-fiche-card) {
@@ -115,19 +134,52 @@ const durationSec = Math.max(48, Math.round(fiches.length * 3.5));
 		}
 	}
 
-	@media (prefers-reduced-motion: reduce) {
-		.sp-fiche-carousel__fade {
+	@media (max-width: 49.999rem) {
+		.sp-fiche-carousel__fade,
+		.sp-fiche-carousel__viewport--auto {
 			display: none;
 		}
 
-		.sp-fiche-carousel__viewport {
+		.sp-fiche-carousel__viewport--scroll {
+			display: block;
 			overflow-x: auto;
-			scrollbar-width: thin;
-			padding-inline: max(1rem, calc(50vw - 50%));
+			overflow-y: hidden;
+			-webkit-overflow-scrolling: touch;
+			overscroll-behavior-x: contain;
+			scroll-snap-type: x mandatory;
+			scroll-padding-inline: max(1rem, env(safe-area-inset-left));
+			touch-action: pan-x;
+			scrollbar-width: none;
 		}
 
-		.sp-fiche-carousel__track {
-			animation: none;
+		.sp-fiche-carousel__viewport--scroll::-webkit-scrollbar {
+			display: none;
+		}
+
+		.sp-fiche-carousel__track--scroll {
+			padding-inline: max(1rem, env(safe-area-inset-left)) max(1rem, env(safe-area-inset-right));
+		}
+
+		.sp-fiche-carousel :global(.sp-fiche-card-wrap) {
+			flex-basis: min(82vw, 20rem);
+			width: min(82vw, 20rem);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.sp-fiche-carousel__fade,
+		.sp-fiche-carousel__viewport--auto {
+			display: none;
+		}
+
+		.sp-fiche-carousel__viewport--scroll {
+			display: block;
+			overflow-x: auto;
+			scrollbar-width: thin;
+		}
+
+		.sp-fiche-carousel__track--scroll {
+			padding-inline: max(1rem, calc(50vw - 50%));
 		}
 	}
 </style>
