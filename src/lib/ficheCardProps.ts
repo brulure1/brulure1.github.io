@@ -17,6 +17,8 @@ export function toCardProps(fiche: CatalogFiche, index = 0) {
 		href: `/${fiche.id}/`,
 		title: fiche.data.title,
 		cardTitle: fiche.data.cardTitle,
+		cardImage: fiche.data.cardImage,
+		cardImageCredit: fiche.data.cardImageCredit,
 		categoryLabel: cat?.label,
 		accent: fiche.data.category ?? 'default',
 		index,

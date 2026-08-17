@@ -1,5 +1,7 @@
 ---
 title: Le bain de bouche sert-il réellement à quelque chose ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--bain-de-bouche-utilite.webp"
 cardTitle: "Le **bain de bouche** sert-il réellement à quelque chose ?"
 description: "Efficacité clinique des bains de bouche (chlorhexidine, huiles essentielles, fluor) en complément du brossage, selon les études et essais cliniques récents."
 answerShort: "Oui, mais uniquement en complément du brossage, jamais en remplacement. Les bains de bouche à base d'huiles essentielles réduisent la plaque dentaire de 20-30 %, ceux à la chlorhexidine de 50-60 % (usage limité à 10-15 jours), et les versions fluorées réduisent le risque de caries de 30 % chez l'enfant. Sans brossage mécanique associé, leur efficacité seule reste limitée."

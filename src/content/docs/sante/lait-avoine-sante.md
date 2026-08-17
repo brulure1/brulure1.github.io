@@ -1,5 +1,7 @@
 ---
 title: Le lait d'avoine est-il mauvais pour la santé ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--lait-avoine-sante.webp"
 cardTitle: "Le **lait** **d'avoine** est-il mauvais pour la santé ?"
 description: "Résidus de glyphosate, sucres ajoutés et transformation industrielle : ce que disent réellement les données sur le lait d'avoine."
 answerShort: "Pas de danger avéré pour une consommation normale, mais deux points de vigilance réels : (1) des résidus de glyphosate sont détectés dans la quasi-totalité des laits d'avoine non bio (l'herbicide est utilisé en pré-récolte sur l'avoine conventionnelle), bien en dessous des limites légales EPA/EFSA mais au-dessus du seuil, bien plus strict et contesté, de l'ONG EWG ; (2) les versions industrielles sont souvent ultra-transformées avec sucres ajoutés, sans les protéines et le calcium naturels du lait de vache (sauf enrichissement)."

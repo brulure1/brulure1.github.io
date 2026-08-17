@@ -1,5 +1,7 @@
 ---
 title: Manger des lentilles corail est-il mauvais pour la santé ?
+cardImageCredit: "bobjudge — BY, via Openverse"
+cardImage: "/cards/sante--lentilles-corail-sante.webp"
 cardTitle: "Manger des **lentilles corail** est-il mauvais pour la santé ?"
 description: "Bienfaits nutritionnels et risques réels (anti-nutriments, FODMAPs) des lentilles corail selon les études disponibles."
 answerShort: "Non. Les lentilles corail sont très riches en protéines, fibres, fer et folates (136 % des besoins journaliers en vitamine B9 pour 150 g cuites). Elles contiennent des anti-nutriments (phytates, lectines) neutralisés par la cuisson, et sont riches en FODMAPs — seul point de vigilance réel pour les personnes atteintes du syndrome de l'intestin irritable."

@@ -1,5 +1,7 @@
 ---
 title: Écart de salaire entre patron et salarié — quelle est la moyenne en France ?
+cardImageCredit: "AMagill — BY, via Openverse"
+cardImage: "/cards/travail--ecart-salaire-patron-salarie.webp"
 cardTitle: "**Écart** de **salaire** entre **patron** et **salarié** — quelle est la moyenne en France ?"
 description: "Ce que révèlent les données Insee, CPME et Proxinvest sur l'écart entre la rémunération des dirigeants et celle des salariés, du CAC 40 aux TPE."
 answerShort: "Tout dépend du \"patron\" dont on parle. Pour les 40 plus grandes entreprises cotées (CAC 40), un PDG gagne en moyenne 95 fois plus qu'un salarié de son entreprise — écart déjà comptabilisé avantages en nature et stock-options compris (Proxinvest, 2026). Pour les TPE-PME avec salariés, 20 % des dirigeants gagnent moins que le Smic (CPME) ; ce taux grimpe à 51 % chez les dirigeants sans aucun salarié (auto-entrepreneurs, indépendants solos) — une nuance essentielle que le chiffre SDI de \"1 sur 2\" (qui mélange les deux populations) ne fait pas apparaître."

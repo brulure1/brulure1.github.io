@@ -13,6 +13,10 @@ const ficheSchema = z.object({
 	category: z.enum(['economie', 'travail', 'societe', 'sante', 'science', 'culture', 'guide']).optional(),
 	/** Titre carte catalogue — **mots-clés** en gras (markdown minimal) */
 	cardTitle: z.string().optional(),
+	/** Vignette carte (chemin public /cards/…) */
+	cardImage: z.string().optional(),
+	/** Crédit image (Wikimedia, etc.) */
+	cardImageCredit: z.string().optional(),
 	/** Mots-clés pour recherche et filtrage */
 	tags: z.array(z.string()).default([]),
 });

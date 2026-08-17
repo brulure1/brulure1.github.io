@@ -1,5 +1,7 @@
 ---
 title: Est-ce mauvais pour la santé physique et mentale de boire du café quotidiennement ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--cafe-quotidien-sante.webp"
 cardTitle: "Est-ce mauvais pour la santé physique et mentale de boire du **café** quotidiennement ?"
 description: "Effets du café sur la santé cardiovasculaire, la mortalité et la santé mentale selon les méta-analyses récentes et l'Anses/EFSA."
 answerShort: "Non, plutôt l'inverse pour la santé physique : 3 à 5 tasses/jour sont associées à une baisse de la mortalité toutes causes et du risque cardiovasculaire (méta-analyses portant sur plus d'un million de participants). Pour la santé mentale, l'effet dépend de la dose : l'anxiété et les troubles du sommeil apparaissent dès 100-210 mg/jour chez les personnes sensibles, bien avant le seuil de sécurité de 400 mg/jour (Anses/EFSA)."

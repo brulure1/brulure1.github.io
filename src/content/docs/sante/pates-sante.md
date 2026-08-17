@@ -1,5 +1,7 @@
 ---
 title: Manger beaucoup de pâtes est-il mauvais pour la santé ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--pates-sante.webp"
 cardTitle: "Manger beaucoup de **pâtes** est-il mauvais pour la santé ?"
 description: "Effet d'une consommation élevée de pâtes sur la glycémie, le poids et le syndrome métabolique, selon les études nutritionnelles récentes."
 answerShort: "Pas intrinsèquement : les pâtes ont un index glycémique bas à modéré (32-65) grâce à leur structure protéique unique, surtout cuites al dente. Le risque documenté (syndrome métabolique, hypertension, carences) concerne la consommation excessive de pâtes blanches raffinées, en grande quantité et avec des sauces peu nutritives, pas les pâtes en tant que telles."

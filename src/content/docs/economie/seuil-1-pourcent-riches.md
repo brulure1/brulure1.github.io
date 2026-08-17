@@ -1,5 +1,7 @@
 ---
 title: Seuil des 1 % les plus riches en France
+cardImageCredit: "Wikimedia Commons — CC BY-SA 4.0"
+cardImage: "/cards/economie--seuil-1-pourcent-riches.webp"
 cardTitle: "**Seuil** des **1** % les plus **riches** en **France**"
 description: À partir de quel revenu net mensuel appartient-on au 1 % des niveaux de vie les plus élevés en France ?
 answerShort: "Environ 7 512 € net/mois pour une personne seule (niveau de vie, données Insee 2021, dernière année disponible pour ce percentile), soit ~630 000 personnes — à ne pas confondre avec le seuil de « richesse » (4 292 €/mois, 4,8 millions de personnes, Observatoire des inégalités 2026)."

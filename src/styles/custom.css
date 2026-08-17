@@ -325,17 +325,50 @@ main[data-pagefind-body].splash .sl-markdown-content {
 
 .sp-fiche-card__cat-icon {
 	position: absolute;
-	top: 0.85rem;
-	right: 0.85rem;
+	top: 0.55rem;
+	right: 0.55rem;
+	z-index: 2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: var(--sp-muted);
-	opacity: 0.85;
+	background: rgb(255 252 246 / 0.88);
+	border-radius: 999px;
+	padding: 0.22rem;
+	box-shadow: 0 1px 4px rgb(40 30 15 / 0.12);
+}
+
+.sp-fiche-card:not(:has(.sp-fiche-card__media)) .sp-fiche-card__cat-icon {
+	top: 0.65rem;
+	right: 0.65rem;
+}
+
+.sp-fiche-card__body {
+	position: relative;
+	padding: 0.85rem 1rem 1rem;
 }
 
 .sp-fiche-card:has(.sp-fiche-card__cat-icon) h3 {
 	padding-right: 1.35rem;
+}
+
+.sp-fiche-card__media {
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	background: color-mix(in srgb, var(--sp-accent) 8%, var(--sp-surface-2));
+}
+
+.sp-fiche-card__media img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.35s ease;
+}
+
+.sp-fiche-card-wrap:hover .sp-fiche-card__media img {
+	transform: scale(1.04);
 }
 
 /* Icônes Lucide — catégories */
@@ -397,9 +430,10 @@ main[data-pagefind-body].splash .sl-markdown-content {
 
 .sp-fiche-card {
 	position: relative;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
-	padding: 1rem 1.15rem;
+	padding: 0;
 	border-radius: 1.0625rem;
 	background: var(--sp-surface);
 	backdrop-filter: blur(12px);

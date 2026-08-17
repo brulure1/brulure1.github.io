@@ -1,5 +1,7 @@
 ---
 title: Pourquoi les fleurs sont-elles colorées ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/science--pourquoi-fleurs-colorees.webp"
 cardTitle: "Pourquoi les **fleurs** sont-elles colorées ?"
 description: "Rôle des pigments floraux (anthocyanines, caroténoïdes, flavonoïdes) dans l'attraction des pollinisateurs, selon la biologie évolutive."
 answerShort: "Pour attirer les pollinisateurs (insectes, oiseaux) via un signal visuel façonné par la coévolution : environ 90 % des plantes à fleurs sont pollinisées par des animaux. La couleur provient de pigments spécifiques (anthocyanines, caroténoïdes, flavonoïdes, bétalaïnes) dont la nature et la concentration varient selon l'espèce, et certains motifs, invisibles à l'œil humain mais visibles en ultraviolet par les abeilles, servent de guides directs vers le nectar."

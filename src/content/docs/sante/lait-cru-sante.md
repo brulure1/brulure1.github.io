@@ -1,5 +1,7 @@
 ---
 title: Le lait cru est-il particulièrement bon pour la santé ?
+cardImageCredit: "avlxyz — BY-SA, via Openverse"
+cardImage: "/cards/sante--lait-cru-sante.webp"
 cardTitle: "Le **lait cru** est-il particulièrement bon pour la santé ?"
 description: "Bénéfices nutritionnels supposés du lait cru face aux risques microbiologiques établis, selon l'Anses et la littérature scientifique."
 answerShort: "Non pour la nutrition (différences avec le lait pasteurisé minimes et sans effet démontré) — mais un vrai signal scientifique existe sur la protection contre l'asthme chez le jeune enfant, contrebalancé par des risques infectieux graves et bien documentés dans cette même population (Anses, études PASTURE/GABRIELA)."

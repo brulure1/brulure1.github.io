@@ -1,5 +1,7 @@
 ---
 title: Quel est le taux réel d'impôt des super-riches en France ?
+cardImageCredit: "401(K) 2013 — BY-SA, via Openverse"
+cardImage: "/cards/economie--taux-imposition-super-riches.webp"
 cardTitle: "Quel est le taux réel **d'impôt** des **super**-**riches** en **France** ?"
 description: "Taux d'imposition effectif des ultra-riches et milliardaires selon l'étude de référence de l'IPP (2023), et le débat sur la taxe Zucman (2025-2026)."
 answerShort: "Le système fiscal français est progressif jusqu'à un niveau très élevé de revenu (46 % pour les 0,1 % les plus riches), puis devient régressif tout en haut : le taux d'imposition effectif retombe à 32 % pour les 0,001 % les plus riches et à seulement 26 % pour les milliardaires (75 foyers, IPP, 2023, données 2016) — soit moins qu'un cadre supérieur moyen, en proportion de leurs revenus économiques réels."

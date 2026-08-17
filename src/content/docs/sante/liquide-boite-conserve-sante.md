@@ -1,5 +1,7 @@
 ---
 title: Faut-il manger le liquide des boîtes de conserve ?
+cardImageCredit: "thebittenword.com — BY, via Openverse"
+cardImage: "/cards/sante--liquide-boite-conserve-sante.webp"
 cardTitle: "Faut-il manger le **liquide** des **boîtes** de **conserve** ?"
 description: "Le jus des conserves de légumes, thon ou légumineuses : nutriments réels mais aussi sel et migration de composés du revêtement des boîtes, selon les études récentes."
 answerShort: "Globalement non recommandé, sauf exceptions. Le liquide contient bien des vitamines hydrosolubles et minéraux (d'où l'aquafaba des pois chiches), mais il concentre surtout le sel de conservation, et une étude espagnole (2024, avec l'agence de sécurité alimentaire) a mesuré une migration plus élevée de composés dérivés du bisphénol A (BADGE, cyclo-di-BADGE) dans le liquide des conserves grasses (thon à l'huile, à la sauce) que dans le produit égoutté — les chercheurs déconseillent explicitement d'assaisonner des plats avec ce liquide."

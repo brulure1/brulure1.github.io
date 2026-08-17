@@ -1,5 +1,7 @@
 ---
 title: Comment les minorités sont-elles représentées au cinéma ?
+cardImageCredit: "Wikimedia Commons — CC BY-SA 2.0"
+cardImage: "/cards/culture--representation-minorites-cinema.webp"
 cardTitle: "Comment les **minorités** sont-elles représentées au **cinéma** ?"
 description: "Part des personnages perçus comme non blancs au cinéma français (Cinégalités 2019) et des acteurs BIPOC dans les blockbusters US (UCLA 2023)."
 answerShort: "Cinéma FR 2019 : 22 % de personnages perçus non blancs (19 % des rôles principaux) sur 115 films — Collectif 50/50. Blockbusters US 2023 : 40,4 % d'acteurs BIPOC, 26,4 % de films à casting majoritairement BIPOC — UCLA."

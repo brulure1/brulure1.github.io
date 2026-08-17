@@ -1,5 +1,7 @@
 ---
 title: Attacher fréquemment ses cheveux est-il bon pour la santé du cuir chevelu ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--attacher-cheveux-frequemment-sante.webp"
 cardTitle: "Attacher fréquemment ses **cheveux** est-il bon pour la santé du **cuir chevelu** ?"
 description: "Alopécie de traction : ce que disent les études dermatologiques sur les coiffures serrées et fréquentes, et comment limiter le risque."
 answerShort: "Non, ce n'est pas 'bon' — c'est au mieux neutre, et au pire risqué si la coiffure est serrée et répétée toujours au même endroit. La traction répétée sur les racines peut provoquer une alopécie de traction, réversible au stade précoce mais pouvant devenir une perte de cheveux permanente et cicatricielle en cas de tension chronique non traitée. Le risque dépend surtout de la SERRURE et de la RÉPÉTITION AU MÊME ENDROIT, pas du simple fait d'attacher ses cheveux occasionnellement."

@@ -1,5 +1,7 @@
 ---
 title: Rester assis aux toilettes trop longtemps est-il mauvais pour la santé ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--rester-assis-toilettes-longtemps-sante.webp"
 cardTitle: "Rester assis aux **toilettes** trop longtemps est-il mauvais pour la santé ?"
 description: "Ce que montre une étude récente (PLOS One, 2025) sur le lien entre temps passé aux toilettes, usage du smartphone et risque d'hémorroïdes."
 answerShort: "Oui, probablement. Une étude de 2025 (Harvard Medical School, PLOS One, 125 adultes avec coloscopie) montre qu'utiliser son smartphone aux toilettes est associé à un risque d'hémorroïdes augmenté de 46 %, non pas à cause de la lecture elle-même mais parce que cela prolonge le temps assis au-delà de 5 minutes. La position assise sur une cuvette ouverte, sans soutien du périnée, augmente la pression sur les vaisseaux hémorroïdaires si elle est maintenue longtemps."

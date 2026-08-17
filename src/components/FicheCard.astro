@@ -7,6 +7,8 @@ interface Props {
 	href: string;
 	title: string;
 	cardTitle?: string;
+	cardImage?: string;
+	cardImageCredit?: string;
 	categoryLabel?: string;
 	category?: CategoryId;
 	accent?: string;
@@ -17,6 +19,8 @@ const {
 	href,
 	title,
 	cardTitle,
+	cardImage,
+	cardImageCredit,
 	categoryLabel,
 	category,
 	accent = 'default',
@@ -34,7 +38,21 @@ const delay = `${index * 0.05}s`;
 	style={`animation-delay: ${delay}`}
 >
 	<a href={href} class="sp-fiche-card">
-		<h3 set:html={titleHtml} />
+		{cardImage && (
+			<div class="sp-fiche-card__media" title={cardImageCredit}>
+				<img
+					src={cardImage}
+					alt=""
+					width="640"
+					height="360"
+					loading={index < 4 ? 'eager' : 'lazy'}
+					decoding="async"
+				/>
+			</div>
+		)}
+		<div class="sp-fiche-card__body">
+			<h3 set:html={titleHtml} />
+		</div>
 		{category && (
 			<span class="sp-fiche-card__cat-icon" title={categoryLabel}>
 				<CategoryIcon id={category} size={14} />

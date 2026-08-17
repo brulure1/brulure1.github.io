@@ -1,5 +1,7 @@
 ---
 title: Quel est le coût énergétique de la génération d'images et de vidéos par IA ?
+cardImageCredit: "Idaho National Laboratory — BY, via Openverse"
+cardImage: "/cards/science--cout-energetique-ia-generative.webp"
 cardTitle: "Quel est le coût **énergétique** de la **génération** **d'images** et de **vidéos** par **IA** ?"
 description: "Consommation électrique mesurée de la génération d'images et vidéos par IA, comparée au streaming, à la publication sur réseaux sociaux et à des usages du quotidien (Hugging Face, IEA, ADEME)."
 answerShort: "Très variable, mais la vidéo IA est de loin la plus coûteuse : une image générée consomme en moyenne 2,9 Wh (jusqu'à 11,5 Wh pour les modèles les plus lourds), soit environ 1/8 à 1/2 charge de smartphone. Une vidéo IA open-source coûte en moyenne 30 fois plus qu'une image (jusqu'à 110 Wh), et les estimations tierces sur Sora 2 avancent jusqu'à 936 Wh pour 10 secondes — soit l'équivalent de faire bouillir environ 8 bouilloires d'eau (110 Wh/L, Ademe), bien plus qu'une heure de streaming Netflix (~80 Wh, chiffre AIE)."

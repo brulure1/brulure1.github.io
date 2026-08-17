@@ -1,5 +1,7 @@
 ---
 title: Manger des aliments en boîte de conserve est-il bon pour la santé ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--aliments-boite-conserve-sante.webp"
 cardTitle: "Manger des aliments en **boîte de conserve** est-il bon pour la santé ?"
 description: "Nutriments préservés, sodium, BPA et sécurité microbiologique : ce que disent les études sur les aliments en conserve, sans idée reçue."
 answerShort: "Globalement oui, avec des réserves. Les conserves préservent bien la plupart des nutriments (les tomates en conserve sont même plus riches en lycopène que les fraîches) et sont microbiologiquement sûres grâce à la stérilisation. Le vrai point faible est le sodium (une seule boîte peut couvrir une grosse part de l'apport quotidien recommandé), et dans une moindre mesure la migration de bisphénol A ou de composés apparentés depuis le revêtement intérieur, surtout pour les conserves grasses — largement réduite en France depuis l'interdiction du BPA dans les emballages alimentaires (2015)."

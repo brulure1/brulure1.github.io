@@ -1,5 +1,7 @@
 ---
 title: Manger beaucoup de charcuterie est-il mauvais pour la santé ?
+cardImageCredit: "Wikimedia Commons — CC BY-SA 4.0"
+cardImage: "/cards/sante--charcuterie-sante.webp"
 cardTitle: "Manger beaucoup de **charcuterie** est-il mauvais pour la santé ?"
 description: "Classement de la viande transformée comme cancérogène par le CIRC/OMS et quantification du risque réel de cancer colorectal."
 answerShort: "Oui, avec un risque quantifié et classé « cancérogène certain » (Groupe 1) par le Centre international de recherche sur le cancer (OMS, 2015) : chaque portion quotidienne de 50 g de charcuterie augmente le risque de cancer colorectal d'environ 18 %, ce qui fait passer un risque de base de ~5 % à ~5,9 % sur toute une vie. C'est réel, mais pas énorme pour un individu. En revanche, comme des milliards de personnes en consomment dans le monde, cela représente tout de même environ 34 000 décès par cancer par an à l'échelle mondiale (Global Burden of Disease), ce qui en fait un enjeu de santé publique — à comparer aux ~1 million pour le tabac et 600 000 pour l'alcool."

@@ -1,5 +1,7 @@
 ---
 title: Récupère-t-on plus vite un muscle qu'on a déjà fait grossir avant ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--recuperation-musculaire-memoire.webp"
 cardTitle: "Récupère-t-on plus vite un **muscle** **qu'on** a déjà fait grossir avant ?"
 description: "La mémoire musculaire (muscle memory) selon les études récentes sur les myonoyaux et l'épigénétique du muscle squelettique."
 answerShort: "Oui, c'est un phénomène scientifiquement documenté appelé « mémoire musculaire ». Une étude norvégienne de 2023-2024 (>40 sujets) montre qu'après 20 semaines d'entraînement puis un arrêt total, il suffit de seulement 5 semaines de réentraînement pour retrouver le niveau initial — grâce à la persistance des myonoyaux acquis lors du premier entraînement et à des marques épigénétiques qui « préparent » les gènes musculaires à une réactivation plus rapide."

@@ -1,5 +1,7 @@
 ---
 title: Manger moins que son apport calorique fait-il toujours perdre du poids ?
+cardImage: "/cards/sante--deficit-calorique-perte-poids.webp"
+cardImageCredit: "-Paul H- — BY, via Openverse"
 cardTitle: "Manger **moins** que son **apport** **calorique** fait-il toujours perdre du poids ?"
 description: "Le modèle CICO (calories in, calories out) face à l'adaptation métabolique et hormonale documentée par les études scientifiques récentes."
 answerShort: "Oui sur le principe physique (un déficit calorique réel entraîne toujours une perte de poids), mais le corps réagit en réduisant sa dépense énergétique de 70 à 350 kcal/jour en moyenne (thermogenèse adaptative) et en modifiant plusieurs hormones (baisse de leptine et de T3, hausse de ghréline et de cortisol) — ce qui explique pourquoi le déficit calorique nécessaire pour continuer à perdre du poids doit souvent être réajusté au fil du temps, et pourquoi l'adaptation peut persister plusieurs mois voire années après le régime."

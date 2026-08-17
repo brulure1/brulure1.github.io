@@ -1,5 +1,7 @@
 ---
 title: Les "traits autistiques" sont-ils un vrai phénomène ou de l'autodiagnostic abusif ?
+cardImageCredit: "walkinred — BY-SA, via Openverse"
+cardImage: "/cards/sante--autodiagnostic-autisme.webp"
 cardTitle: "Les \"**traits** **autistiques**\" sont-ils un vrai phénomène ou de l'autodiagnostic abusif ?"
 description: "Ce que montrent les études sur la fiabilité des contenus TikTok sur l'autisme et sur les barrières réelles à l'accès au diagnostic officiel en France."
 answerShort: "Les deux à la fois : les traits autistiques existent bien sur un spectre scientifiquement reconnu (DSM-5), mais entre 41 % et 46 % des vidéos TikTok sur l'autisme contiennent des généralisations abusives, transformant des expériences humaines communes (fatigue sociale, sensibilité sensorielle) en « signes » d'autisme. En parallèle, l'autodiagnostic répond à une barrière réelle : le diagnostic officiel en France prend 3 à 4 ans dans le public (gratuit) ou coûte 350 à 1 500 € dans le privé."

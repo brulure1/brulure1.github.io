@@ -1,5 +1,7 @@
 ---
 title: Cuisiner uniquement dans des plats en inox est-il meilleur pour la santé ?
+cardImageCredit: "Jason Riedy — BY, via Openverse"
+cardImage: "/cards/sante--cuisson-inox-sante.webp"
 cardTitle: "Cuisiner uniquement dans des plats en **inox** est-il meilleur pour la santé ?"
 description: "Comparaison inox, Téflon, céramique et aluminium : migration de nickel et de chrome, risques réels selon les études scientifiques."
 answerShort: "Globalement oui, l'inox 18/10 est l'un des matériaux de cuisson les plus sûrs — bien plus stable que le Téflon rayé/surchauffé — mais ce n'est pas un matériau totalement inerte : il relargue du nickel et du chrome, surtout à l'état neuf et avec des aliments très acides mijotés longtemps (jusqu'à 88 µg de nickel par portion selon une étude de référence). Pour la population générale, ces quantités restent sous les seuils de sécurité de l'EFSA. La vraie exception concerne les 10 à 20 % de personnes allergiques au nickel, pour qui l'inox 18/10 n'est pas recommandé."

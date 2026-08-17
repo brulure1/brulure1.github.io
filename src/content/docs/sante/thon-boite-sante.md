@@ -1,5 +1,7 @@
 ---
 title: Manger du thon en boîte est-il mauvais pour la santé ?
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--thon-boite-sante.webp"
 cardTitle: "Manger du **thon** en **boîte** est-il mauvais pour la santé ?"
 description: "Risque lié au méthylmercure dans le thon en boîte selon l'Anses (étude EAT3, 2026) et recommandations de consommation."
 answerShort: "Pas en consommation ponctuelle, mais oui en cas de consommation régulière : le thon (prédateur en haut de la chaîne alimentaire) concentre du méthylmercure, un neurotoxique. L'Anses recommande de limiter sa consommation à 1 portion/semaine maximum pour l'adulte, et de l'éviter chez les femmes enceintes/allaitantes et les enfants de moins de 3 ans (dose hebdomadaire tolérable resserrée en 2026)."

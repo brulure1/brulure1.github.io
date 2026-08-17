@@ -1,5 +1,7 @@
 ---
 title: Manger du riz est-il mauvais pour la santé ? (le risque de l'arsenic)
+cardImageCredit: "Wikimedia Commons"
+cardImage: "/cards/sante--riz-sante.webp"
 cardTitle: "Manger du **riz** est-il mauvais pour la santé ? **(le risque de l'arsenic)**"
 description: "Ce que dit l'EFSA sur l'arsenic inorganique dans le riz, le risque réel pour les enfants et les adultes, et comment le réduire."
 answerShort: "Pas de danger pour une consommation modérée et variée chez l'adulte. Le vrai risque documenté par l'EFSA concerne l'arsenic inorganique (cancérogène avéré), que le riz accumule plus que les autres céréales, et concerne surtout les enfants de moins de 3 ans consommant beaucoup de produits à base de riz (galettes, riz au lait, boissons au riz). Rincer le riz et le cuire dans un grand volume d'eau réduit sa teneur en arsenic de 50 à 80 %."
