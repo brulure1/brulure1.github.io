@@ -77,7 +77,7 @@ async function searchCommons(query) {
 		origin: '*',
 	});
 	const res = await fetch(`https://commons.wikimedia.org/w/api.php?${params}`, {
-		headers: { 'User-Agent': 'ScriptumProbat/1.0 (https://brulure1.github.io; card images)' },
+		headers: { 'User-Agent': 'ScriptumProbat/1.0 (https://brulure1.github.io/scriptum-probat; card images)' },
 	});
 	if (res.status === 429) throw new Error('429');
 	if (!res.ok) throw new Error(`API ${res.status}`);
@@ -96,7 +96,7 @@ async function searchCommons(query) {
 async function download(url) {
 	const res = await fetch(url, {
 		redirect: 'follow',
-		headers: { 'User-Agent': 'ScriptumProbat/1.0 (https://brulure1.github.io; card images)' },
+		headers: { 'User-Agent': 'ScriptumProbat/1.0 (https://brulure1.github.io/scriptum-probat; card images)' },
 	});
 	if (!res.ok) throw new Error(`DL ${res.status}`);
 	const buf = Buffer.from(await res.arrayBuffer());

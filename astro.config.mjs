@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 const SITE_URL = 'https://brulure1.github.io';
-const BASE_PATH = '/';
+const BASE_PATH = '/scriptum-probat/';
 
 export default defineConfig({
 	site: SITE_URL,
