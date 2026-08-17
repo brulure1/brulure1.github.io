@@ -449,15 +449,27 @@ main[data-pagefind-body].splash .sl-markdown-content {
 
 .sp-fiche-card h3 {
 	font-size: clamp(1.0625rem, 0.5rem + 1vw, 1.25rem);
-	font-weight: 600;
-	line-height: 1.4;
+	font-weight: 500;
+	line-height: 1.45;
 	margin: 0;
-	letter-spacing: -0.028em;
+	letter-spacing: -0.02em;
+	color: var(--sp-muted);
 }
 
+/* Mots-clés des titres carte — contraste net avec le reste de la question */
 .sp-fiche-card h3 strong {
-	font-weight: 800;
-	color: var(--sp-text);
+	font-weight: 700;
+	background: linear-gradient(90deg, var(--sp-accent), var(--sp-accent-2));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	/* Surlignage discret pour repérage rapide au scan */
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+	padding-inline: 0.12em;
+	margin-inline: -0.04em;
+	border-radius: 0.2em;
+	box-shadow: inset 0 -0.55em 0 color-mix(in srgb, var(--sp-accent) 16%, transparent);
 }
 
 /* ── Fiches contenu ── */
