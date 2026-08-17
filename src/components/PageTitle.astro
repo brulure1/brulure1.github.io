@@ -4,37 +4,67 @@ const title = Astro.locals.starlightRoute.entry.data.title;
 
 <h1 id="_top">{title}</h1>
 
-<div class="sp-sticky-title" id="sp-sticky-title" aria-hidden="true">
-	<span class="sp-sticky-title__text">{title}</span>
-</div>
+<template id="sp-sticky-title-template">
+	<div class="sp-sticky-title" aria-hidden="true">
+		<span class="sp-sticky-title__text">{title}</span>
+	</div>
+</template>
 
 <script>
+	function readCssPx(name: string, fallback = 0) {
+		const raw = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+		if (!raw) return fallback;
+
+		const num = parseFloat(raw);
+		if (Number.isNaN(num)) return fallback;
+
+		if (raw.endsWith('rem')) {
+			const rootFont = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+			return num * rootFont;
+		}
+
+		return num;
+	}
+
 	function initStickyTitle() {
 		const heading = document.getElementById('_top');
-		const bar = document.getElementById('sp-sticky-title');
-		if (!heading || !bar || bar.dataset.bound === '1') return;
-		bar.dataset.bound = '1';
+		const template = document.getElementById('sp-sticky-title-template');
+		if (!heading || !template) return;
 
-		const navHeight = () => {
-			const raw = getComputedStyle(document.documentElement).getPropertyValue('--sl-nav-height');
-			return parseFloat(raw) || 56;
-		};
+		document.getElementById('sp-sticky-title')?.remove();
+
+		const bar = template.content.firstElementChild?.cloneNode(true) as HTMLElement | null;
+		if (!bar) return;
+
+		bar.id = 'sp-sticky-title';
+		document.body.appendChild(bar);
 
 		const setVisible = (visible: boolean) => {
 			document.documentElement.toggleAttribute('data-sp-sticky-title', visible);
 			bar.setAttribute('aria-hidden', visible ? 'false' : 'true');
 		};
 
+		const stickyOffset = () => readCssPx('--sl-nav-height', 56) + readCssPx('--sl-mobile-toc-height', 0);
+
 		const observer = new IntersectionObserver(
 			([entry]) => setVisible(!entry.isIntersecting),
 			{
-				rootMargin: `-${navHeight() + 8}px 0px 0px 0px`,
+				rootMargin: `-${stickyOffset() + 4}px 0px 0px 0px`,
 				threshold: 0,
 			},
 		);
 
 		observer.observe(heading);
-		document.addEventListener('astro:before-swap', () => observer.disconnect(), { once: true });
+
+		document.addEventListener(
+			'astro:before-swap',
+			() => {
+				observer.disconnect();
+				bar.remove();
+				document.documentElement.removeAttribute('data-sp-sticky-title');
+			},
+			{ once: true },
+		);
 	}
 
 	document.addEventListener('astro:page-load', initStickyTitle);

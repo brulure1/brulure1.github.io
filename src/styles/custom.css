@@ -1130,34 +1130,26 @@ html[data-sp-sticky-title] {
 
 .sp-sticky-title {
 	position: fixed;
-	z-index: var(--sl-z-index-toc);
+	z-index: calc(var(--sl-z-index-toc) + 1);
 	top: var(--sl-nav-height);
 	inset-inline: 0;
-	display: flex;
+	display: none;
 	align-items: center;
-	height: 2.625rem;
-	padding-inline: 1rem;
+	height: var(--sp-sticky-title-h, 2.625rem);
+	margin: 0;
+	padding-inline: var(--sl-content-pad-x, 1rem);
 	border-bottom: 1px solid var(--sp-border);
 	background: var(--sl-color-bg-nav);
 	backdrop-filter: blur(12px);
-	transform: translateY(-110%);
-	opacity: 0;
-	pointer-events: none;
-	transition:
-		transform 0.2s ease,
-		opacity 0.2s ease;
 }
 
 html[data-sp-sticky-title] .sp-sticky-title {
-	transform: none;
-	opacity: 1;
-	pointer-events: auto;
+	display: flex;
 }
 
 .sp-sticky-title__text {
 	display: block;
-	max-width: 72rem;
-	margin-inline: auto;
+	max-width: var(--sl-content-width);
 	width: 100%;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -1169,7 +1161,7 @@ html[data-sp-sticky-title] .sp-sticky-title {
 	color: var(--sl-color-text);
 }
 
-/* Mobile : « Sur cette page » passe sous le titre sticky */
+/* « Sur cette page » se place sous le titre sticky quand il est visible */
 mobile-starlight-toc nav {
 	top: calc(var(--sl-nav-height) + var(--sp-sticky-title-h) - 1px) !important;
 	transition: top 0.2s ease;
@@ -1177,7 +1169,8 @@ mobile-starlight-toc nav {
 
 @media (min-width: 50rem) {
 	.sp-sticky-title {
-		padding-inline: 1.5rem;
+		inset-inline-start: var(--sl-content-inline-start, 0);
+		padding-inline: var(--sl-content-pad-x, 1.5rem);
 	}
 
 	.sp-sticky-title__text {
@@ -1187,7 +1180,7 @@ mobile-starlight-toc nav {
 
 @media print {
 	.sp-sticky-title {
-		display: none;
+		display: none !important;
 	}
 }
 
