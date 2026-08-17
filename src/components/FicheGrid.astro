@@ -1,7 +1,6 @@
 ---
-import { getCollection } from 'astro:content';
-import { CATEGORY_BY_ID } from '../lib/categories';
 import FicheCard from './FicheCard.astro';
+import { getCatalogFiches, toCardProps } from '../lib/ficheCardProps';
 
 interface Props {
 	limit?: number;
@@ -9,42 +8,11 @@ interface Props {
 
 const { limit } = Astro.props;
 
-const CONFIDENCE_CLASS: Record<string, string> = {
-	elevee: 'sp-badge--high',
-	moyenne: 'sp-badge--mid',
-	faible: 'sp-badge--low',
-	controverse: 'sp-badge--warn',
-};
-
-const CONFIDENCE_LABEL: Record<string, string> = {
-	elevee: 'Élevée',
-	moyenne: 'Moyenne',
-	faible: 'Faible',
-	controverse: 'Controversé',
-};
-
-const docs = await getCollection('docs');
-
-const fiches = docs
-	.filter((doc) => doc.data.answerShort && doc.data.category && doc.data.category !== 'guide')
-	.filter((doc) => !doc.data.draft)
-	.sort((a, b) => a.data.title.localeCompare(b.data.title, 'fr'));
+const fiches = (await getCatalogFiches()).sort((a, b) =>
+	a.data.title.localeCompare(b.data.title, 'fr'),
+);
 
 const displayFiches = limit ? fiches.slice(0, limit) : fiches;
-
-const cardProps = (fiche: (typeof fiches)[number], index = 0) => {
-	const cat = fiche.data.category ? CATEGORY_BY_ID[fiche.data.category] : undefined;
-	return {
-		href: `/${fiche.id}/`,
-		title: fiche.data.title,
-		cardTitle: fiche.data.cardTitle,
-		confidenceClass: fiche.data.confidence ? CONFIDENCE_CLASS[fiche.data.confidence] : '',
-		confidenceLabel: fiche.data.confidence ? CONFIDENCE_LABEL[fiche.data.confidence] : undefined,
-		categoryLabel: cat?.label,
-		accent: fiche.data.category ?? 'default',
-		index,
-	};
-};
 ---
 
 <div class="sp-fiche-grid" id="sp-fiche-catalog">
@@ -57,7 +25,7 @@ const cardProps = (fiche: (typeof fiches)[number], index = 0) => {
 	</div>
 	<ul class="sp-fiche-cards">
 		{displayFiches.map((fiche, i) => (
-			<FicheCard {...cardProps(fiche, i)} category={fiche.data.category} />
+			<FicheCard {...toCardProps(fiche, i)} category={fiche.data.category} />
 		))}
 	</ul>
 </div>

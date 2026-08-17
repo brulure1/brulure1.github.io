@@ -1,0 +1,100 @@
+---
+import FicheCard from './FicheCard.astro';
+import { getCatalogFiches, shuffleFiches, toCardProps } from '../lib/ficheCardProps';
+
+const fiches = shuffleFiches(await getCatalogFiches());
+const track = [...fiches, ...fiches];
+// ~3,5 s par carte — défilement lent
+const durationSec = Math.max(48, Math.round(fiches.length * 3.5));
+---
+
+<section
+	class="sp-fiche-carousel"
+	aria-label="Aperçu aléatoire des fiches"
+	style={`--sp-carousel-duration: ${durationSec}s`}
+>
+	<div class="sp-fiche-carousel__viewport">
+		<ul class="sp-fiche-carousel__track">
+			{track.map((fiche, i) => (
+				<FicheCard {...toCardProps(fiche, i)} category={fiche.data.category} />
+			))}
+		</ul>
+	</div>
+</section>
+
+<style>
+	.sp-fiche-carousel {
+		margin: 1.25rem 0 1.5rem;
+	}
+
+	.sp-fiche-carousel__viewport {
+		overflow: hidden;
+		mask-image: linear-gradient(
+			90deg,
+			transparent,
+			#000 6%,
+			#000 94%,
+			transparent
+		);
+		-webkit-mask-image: linear-gradient(
+			90deg,
+			transparent,
+			#000 6%,
+			#000 94%,
+			transparent
+		);
+	}
+
+	.sp-fiche-carousel__track {
+		display: flex;
+		align-items: stretch;
+		gap: 1rem;
+		width: max-content;
+		list-style: none;
+		margin: 0;
+		padding: 0.25rem 0;
+		animation: sp-carousel-scroll var(--sp-carousel-duration, 90s) linear infinite;
+	}
+
+	.sp-fiche-carousel__track:hover {
+		animation-play-state: paused;
+	}
+
+	.sp-fiche-carousel :global(.sp-fiche-card-wrap) {
+		flex: 0 0 17.5rem;
+		width: 17.5rem;
+		animation: none;
+	}
+
+	.sp-fiche-carousel :global(.sp-fiche-card) {
+		min-height: 7.5rem;
+		padding: 1.1rem 1.2rem;
+	}
+
+	.sp-fiche-carousel :global(.sp-fiche-card h3) {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	@keyframes sp-carousel-scroll {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-50%);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.sp-fiche-carousel__viewport {
+			mask-image: none;
+			-webkit-mask-image: none;
+			overflow-x: auto;
+			scrollbar-width: thin;
+		}
+
+		.sp-fiche-carousel__track {
+			animation: none;
+		}
+	}
+</style>
