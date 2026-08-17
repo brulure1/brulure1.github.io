@@ -30,6 +30,16 @@ body {
 	--sp-shadow: 0 20px 50px rgb(40 30 15 / 0.1);
 	--sp-glow: rgb(168 120 40 / 0.32);
 
+	/* Plaques bronze — cartes catalogue */
+	--sp-bronze-highlight: #e8c878;
+	--sp-bronze-face-1: #c99840;
+	--sp-bronze-face-2: #a67c2e;
+	--sp-bronze-face-3: #8f6920;
+	--sp-bronze-shadow: #5c4214;
+	--sp-bronze-rim: #6b4f1a;
+	--sp-bronze-engrave: #2a1f0a;
+	--sp-bronze-engrave-strong: #150f05;
+
 	--sp-cat-economie: #3b82f6;
 	--sp-cat-societe: #8b5cf6;
 	--sp-cat-travail: #f59e0b;
@@ -59,6 +69,15 @@ body {
 	--sp-tag-bg: #2a241c;
 	--sp-shadow: 0 24px 60px rgb(0 0 0 / 0.45);
 	--sp-glow: rgb(219 184 98 / 0.22);
+
+	--sp-bronze-highlight: #c9a24a;
+	--sp-bronze-face-1: #9a7228;
+	--sp-bronze-face-2: #7d5c1e;
+	--sp-bronze-face-3: #634818;
+	--sp-bronze-shadow: #3d2c0e;
+	--sp-bronze-rim: #4a3610;
+	--sp-bronze-engrave: #f5ecd8;
+	--sp-bronze-engrave-strong: #fff8ea;
 
 	--sl-color-accent: var(--sp-accent);
 	--sl-color-accent-low: rgb(200 160 70 / 0.14);
@@ -330,8 +349,27 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--sp-muted);
-	opacity: 0.85;
+	color: var(--sp-bronze-rim);
+	opacity: 0.82;
+}
+
+.sp-fiche-card-wrap[data-accent='economie'] .sp-fiche-card__cat-icon {
+	color: color-mix(in srgb, var(--sp-cat-economie) 55%, var(--sp-bronze-rim));
+}
+.sp-fiche-card-wrap[data-accent='societe'] .sp-fiche-card__cat-icon {
+	color: color-mix(in srgb, var(--sp-cat-societe) 55%, var(--sp-bronze-rim));
+}
+.sp-fiche-card-wrap[data-accent='travail'] .sp-fiche-card__cat-icon {
+	color: color-mix(in srgb, var(--sp-cat-travail) 55%, var(--sp-bronze-rim));
+}
+.sp-fiche-card-wrap[data-accent='sante'] .sp-fiche-card__cat-icon {
+	color: color-mix(in srgb, var(--sp-cat-sante) 55%, var(--sp-bronze-rim));
+}
+.sp-fiche-card-wrap[data-accent='culture'] .sp-fiche-card__cat-icon {
+	color: color-mix(in srgb, var(--sp-cat-culture) 55%, var(--sp-bronze-rim));
+}
+.sp-fiche-card-wrap[data-accent='science'] .sp-fiche-card__cat-icon {
+	color: color-mix(in srgb, var(--sp-cat-science) 55%, var(--sp-bronze-rim));
 }
 
 .sp-fiche-card:has(.sp-fiche-card__cat-icon) h3 {
@@ -357,73 +395,148 @@ main[data-pagefind-body].splash .sl-markdown-content {
 	height: 1.125rem;
 }
 
+/* Cartes — rendu plaque de bronze */
 .sp-fiche-card-wrap {
 	position: relative;
-	border-radius: 1.125rem;
-	padding: 1px;
+	border-radius: 0.8125rem;
+	padding: 2px;
 	background: linear-gradient(
-		135deg,
-		color-mix(in srgb, var(--sp-accent) 50%, transparent),
-		transparent 50%,
-		color-mix(in srgb, var(--sp-accent-2) 40%, transparent)
+		145deg,
+		var(--sp-bronze-highlight) 0%,
+		var(--sp-bronze-face-2) 38%,
+		var(--sp-bronze-shadow) 72%,
+		var(--sp-bronze-rim) 100%
 	);
+	box-shadow:
+		0 3px 10px rgb(40 28 8 / 0.28),
+		inset 0 1px 0 rgb(255 235 180 / 0.35);
 	transition:
-		background 0.3s,
-		transform 0.25s;
-}
-
-.sp-fiche-card-wrap[data-accent='economie'] {
-	background: linear-gradient(135deg, rgb(59 130 246 / 0.55), transparent 55%, rgb(99 102 241 / 0.3));
-}
-.sp-fiche-card-wrap[data-accent='societe'] {
-	background: linear-gradient(135deg, rgb(139 92 246 / 0.55), transparent 55%, rgb(236 72 153 / 0.25));
-}
-.sp-fiche-card-wrap[data-accent='travail'] {
-	background: linear-gradient(135deg, rgb(245 158 11 / 0.55), transparent 55%, rgb(251 191 36 / 0.25));
-}
-.sp-fiche-card-wrap[data-accent='sante'] {
-	background: linear-gradient(135deg, rgb(16 185 129 / 0.55), transparent 55%, rgb(6 182 212 / 0.25));
-}
-.sp-fiche-card-wrap[data-accent='culture'] {
-	background: linear-gradient(135deg, rgb(236 72 153 / 0.55), transparent 55%, rgb(244 114 182 / 0.25));
-}
-.sp-fiche-card-wrap[data-accent='science'] {
-	background: linear-gradient(135deg, rgb(6 182 212 / 0.55), transparent 55%, rgb(59 130 246 / 0.25));
+		transform 0.25s,
+		box-shadow 0.25s;
 }
 
 .sp-fiche-card-wrap:hover {
-	transform: translateY(-3px);
+	transform: translateY(-2px);
+	box-shadow:
+		0 10px 26px rgb(40 28 8 / 0.34),
+		inset 0 1px 0 rgb(255 235 180 / 0.4);
 }
 
 .sp-fiche-card {
 	position: relative;
+	isolation: isolate;
 	display: block;
 	height: 100%;
 	padding: 1rem 1.15rem;
-	border-radius: 1.0625rem;
-	background: var(--sp-surface);
-	backdrop-filter: blur(12px);
+	border-radius: calc(0.8125rem - 2px);
+	background:
+		repeating-linear-gradient(
+			92deg,
+			transparent 0,
+			transparent 3px,
+			rgb(255 255 255 / 0.018) 3px,
+			rgb(0 0 0 / 0.018) 4px
+		),
+		linear-gradient(155deg, rgb(255 228 160 / 0.14) 0%, transparent 42%),
+		linear-gradient(
+			168deg,
+			var(--sp-bronze-face-1) 0%,
+			var(--sp-bronze-face-2) 28%,
+			var(--sp-bronze-face-3) 58%,
+			var(--sp-bronze-shadow) 100%
+		);
+	box-shadow:
+		inset 0 1px 0 rgb(255 228 160 / 0.42),
+		inset 0 -2px 5px rgb(40 28 8 / 0.28),
+		inset 1px 0 2px rgb(255 220 140 / 0.08);
 	text-decoration: none;
-	color: inherit;
+	color: var(--sp-bronze-engrave);
 	overflow: hidden;
 	transition: box-shadow 0.25s;
 }
 
+.sp-fiche-card::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+	background: radial-gradient(120% 80% at 18% 8%, rgb(255 235 190 / 0.22), transparent 52%);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.sp-fiche-card::after {
+	content: '';
+	position: absolute;
+	inset: 5px;
+	border: 1px solid rgb(255 228 160 / 0.14);
+	border-radius: calc(0.8125rem - 7px);
+	box-shadow: inset 0 0 0 1px rgb(40 28 8 / 0.12);
+	pointer-events: none;
+	z-index: 0;
+}
+
 .sp-fiche-card-wrap:hover .sp-fiche-card {
-	box-shadow: var(--sp-shadow);
+	box-shadow:
+		inset 0 1px 0 rgb(255 235 190 / 0.5),
+		inset 0 -2px 5px rgb(40 28 8 / 0.22),
+		inset 1px 0 2px rgb(255 220 140 / 0.1);
 }
 
 .sp-fiche-card h3 {
+	position: relative;
+	z-index: 1;
 	font-size: clamp(1.0625rem, 0.5rem + 1vw, 1.25rem);
 	font-weight: 600;
 	line-height: 1.4;
 	margin: 0;
-	letter-spacing: -0.028em;
+	letter-spacing: -0.018em;
+	color: var(--sp-bronze-engrave);
+	text-shadow: 0 1px 0 rgb(255 228 160 / 0.22);
 }
 
 .sp-fiche-card h3 strong {
 	font-weight: 800;
-	color: var(--sp-text);
+	color: var(--sp-bronze-engrave-strong);
+	text-shadow:
+		0 1px 0 rgb(255 228 160 / 0.32),
+		0 -1px 0 rgb(40 28 8 / 0.18);
+}
+
+.sp-fiche-card__cat-icon {
+	z-index: 1;
+}
+
+:root[data-theme='dark'] .sp-fiche-card-wrap {
+	box-shadow:
+		0 4px 14px rgb(0 0 0 / 0.45),
+		inset 0 1px 0 rgb(255 220 140 / 0.12);
+}
+
+:root[data-theme='dark'] .sp-fiche-card {
+	box-shadow:
+		inset 0 1px 0 rgb(255 220 140 / 0.16),
+		inset 0 -3px 6px rgb(0 0 0 / 0.35),
+		inset 1px 0 2px rgb(255 220 140 / 0.05);
+}
+
+:root[data-theme='dark'] .sp-fiche-card::before {
+	background: radial-gradient(120% 80% at 18% 8%, rgb(255 220 140 / 0.1), transparent 55%);
+}
+
+:root[data-theme='dark'] .sp-fiche-card::after {
+	border-color: rgb(255 220 140 / 0.08);
+	box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.28);
+}
+
+:root[data-theme='dark'] .sp-fiche-card h3 {
+	text-shadow: 0 1px 0 rgb(0 0 0 / 0.35);
+}
+
+:root[data-theme='dark'] .sp-fiche-card h3 strong {
+	text-shadow:
+		0 1px 0 rgb(255 235 190 / 0.12),
+		0 -1px 0 rgb(0 0 0 / 0.45);
 }
 
 /* ── Fiches contenu ── */
