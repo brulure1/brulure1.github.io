@@ -7,8 +7,6 @@ interface Props {
 	href: string;
 	title: string;
 	cardTitle?: string;
-	confidenceClass?: string;
-	confidenceLabel?: string;
 	categoryLabel?: string;
 	category?: CategoryId;
 	accent?: string;
@@ -19,8 +17,6 @@ const {
 	href,
 	title,
 	cardTitle,
-	confidenceClass = '',
-	confidenceLabel,
 	categoryLabel,
 	category,
 	accent = 'default',
@@ -38,12 +34,7 @@ const delay = `${index * 0.05}s`;
 	style={`animation-delay: ${delay}`}
 >
 	<a href={href} class="sp-fiche-card">
-		<div class="sp-fiche-card__main">
-			<h3 set:html={titleHtml} />
-			{confidenceLabel && (
-				<span class={`sp-badge sp-fiche-card__badge ${confidenceClass}`}>{confidenceLabel}</span>
-			)}
-		</div>
+		<h3 set:html={titleHtml} />
 		{category && (
 			<span class="sp-fiche-card__cat-icon" title={categoryLabel}>
 				<CategoryIcon id={category} size={14} />

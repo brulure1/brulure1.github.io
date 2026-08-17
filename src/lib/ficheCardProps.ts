@@ -2,20 +2,6 @@ import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import { CATEGORY_BY_ID } from './categories';
 
-export const CONFIDENCE_CLASS: Record<string, string> = {
-	elevee: 'sp-badge--high',
-	moyenne: 'sp-badge--mid',
-	faible: 'sp-badge--low',
-	controverse: 'sp-badge--warn',
-};
-
-export const CONFIDENCE_LABEL: Record<string, string> = {
-	elevee: 'Élevée',
-	moyenne: 'Moyenne',
-	faible: 'Faible',
-	controverse: 'Controversé',
-};
-
 export type CatalogFiche = CollectionEntry<'docs'>;
 
 export async function getCatalogFiches(): Promise<CatalogFiche[]> {
@@ -31,8 +17,6 @@ export function toCardProps(fiche: CatalogFiche, index = 0) {
 		href: `/${fiche.id}/`,
 		title: fiche.data.title,
 		cardTitle: fiche.data.cardTitle,
-		confidenceClass: fiche.data.confidence ? CONFIDENCE_CLASS[fiche.data.confidence] : '',
-		confidenceLabel: fiche.data.confidence ? CONFIDENCE_LABEL[fiche.data.confidence] : undefined,
 		categoryLabel: cat?.label,
 		accent: fiche.data.category ?? 'default',
 		index,
