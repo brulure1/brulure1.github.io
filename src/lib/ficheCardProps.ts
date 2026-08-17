@@ -1,6 +1,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import { CATEGORY_BY_ID } from './categories';
+import { withBase } from './withBase';
 
 export type CatalogFiche = CollectionEntry<'docs'>;
 
@@ -14,10 +15,10 @@ export async function getCatalogFiches(): Promise<CatalogFiche[]> {
 export function toCardProps(fiche: CatalogFiche, index = 0) {
 	const cat = fiche.data.category ? CATEGORY_BY_ID[fiche.data.category] : undefined;
 	return {
-		href: `/${fiche.id}/`,
+		href: withBase(`/${fiche.id}/`),
 		title: fiche.data.title,
 		cardTitle: fiche.data.cardTitle,
-		cardImage: fiche.data.cardImage,
+		cardImage: fiche.data.cardImage ? withBase(fiche.data.cardImage) : undefined,
 		cardImageCredit: fiche.data.cardImageCredit,
 		categoryLabel: cat?.label,
 		accent: fiche.data.category ?? 'default',

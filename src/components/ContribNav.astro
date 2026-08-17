@@ -1,13 +1,15 @@
 ---
+import { withBase } from '../lib/withBase';
+
 const links = [
 	{
-		href: '/comment-utiliser/',
+		href: withBase('/comment-utiliser/'),
 		label: 'Comment contribuer',
 		desc: 'Créer ou mettre à jour une fiche avec Cursor',
 		icon: '✍️',
 	},
 	{
-		href: '/methodologie/',
+		href: withBase('/methodologie/'),
 		label: 'Méthodologie',
 		desc: 'Sources, niveau de confiance, neutralité',
 		icon: '📐',
