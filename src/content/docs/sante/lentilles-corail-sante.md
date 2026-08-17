@@ -1,6 +1,6 @@
 ---
 title: Manger des lentilles corail est-il mauvais pour la santé ?
-cardImageCredit: "bobjudge — BY, via Openverse"
+cardImageCredit: "E4024 — CC BY-SA 4.0, via Wikimedia Commons"
 cardImage: "/cards/sante--lentilles-corail-sante.webp"
 cardTitle: "Manger des **lentilles corail** est-il mauvais pour la santé ?"
 description: "Bienfaits nutritionnels et risques réels (anti-nutriments, FODMAPs) des lentilles corail selon les études disponibles."

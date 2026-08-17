@@ -1,6 +1,6 @@
 ---
 title: Manger du maïs est-il mauvais pour la santé ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Auteur inconnu — CC0, via Openverse"
 cardImage: "/cards/sante--mais-sante.webp"
 cardTitle: "Manger du **maïs** est-il mauvais pour la santé ?"
 description: "Mycotoxines (aflatoxines), risque historique de pellagre et débat OGM : ce que disent les données sur la consommation de maïs."

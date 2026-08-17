@@ -1,6 +1,6 @@
 ---
 title: Le bain de bouche sert-il réellement à quelque chose ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "JohnLEE Brothers — CC0, via Wikimedia Commons"
 cardImage: "/cards/sante--bain-de-bouche-utilite.webp"
 cardTitle: "Le **bain de bouche** sert-il réellement à quelque chose ?"
 description: "Efficacité clinique des bains de bouche (chlorhexidine, huiles essentielles, fluor) en complément du brossage, selon les études et essais cliniques récents."

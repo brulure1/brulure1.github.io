@@ -1,6 +1,6 @@
 ---
 title: Écart de salaire entre patron et salarié — quelle est la moyenne en France ?
-cardImageCredit: "AMagill — BY, via Openverse"
+cardImageCredit: "Benjamin Child — CC0, via Openverse"
 cardImage: "/cards/travail--ecart-salaire-patron-salarie.webp"
 cardTitle: "**Écart** de **salaire** entre **patron** et **salarié** — quelle est la moyenne en France ?"
 description: "Ce que révèlent les données Insee, CPME et Proxinvest sur l'écart entre la rémunération des dirigeants et celle des salariés, du CAC 40 aux TPE."

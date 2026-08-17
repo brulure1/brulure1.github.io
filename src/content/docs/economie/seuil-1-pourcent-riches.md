@@ -1,6 +1,6 @@
 ---
 title: Seuil des 1 % les plus riches en France
-cardImageCredit: "Wikimedia Commons — CC BY-SA 4.0"
+cardImageCredit: "Alexas Fotos — CC0, via Openverse"
 cardImage: "/cards/economie--seuil-1-pourcent-riches.webp"
 cardTitle: "**Seuil** des **1** % les plus **riches** en **France**"
 description: À partir de quel revenu net mensuel appartient-on au 1 % des niveaux de vie les plus élevés en France ?

@@ -1,6 +1,6 @@
 ---
 title: Les logements sont-ils tous habités à Paris et sinon pourquoi ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Beyond My Ken — CC BY-SA 4.0, via Wikimedia Commons"
 cardImage: "/cards/societe--logements-vacants-paris.webp"
 cardTitle: "Les **logements** sont-ils tous habités à **Paris** et sinon pourquoi ?"
 description: "Part des logements vacants et des résidences secondaires à Paris selon l'Insee (2023-2024), et causes de la vacance immobilière."

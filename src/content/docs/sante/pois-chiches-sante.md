@@ -1,6 +1,6 @@
 ---
 title: Manger des pois chiches est-il mauvais pour la santé ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Auteur inconnu — CC0, via Openverse"
 cardImage: "/cards/sante--pois-chiches-sante.webp"
 cardTitle: "Manger des **pois chiches** est-il mauvais pour la santé ?"
 description: "Ce que disent les études sur les anti-nutriments (phytates, lectines) des pois chiches et leur impact réel sur la santé."

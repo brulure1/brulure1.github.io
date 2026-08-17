@@ -1,6 +1,6 @@
 ---
 title: Quel pourcentage de crimes sexuels sur mineurs sont commis par des hommes ?
-cardImageCredit: "Joe Gratz — CC0, via Openverse"
+cardImageCredit: "Dwight Burdette — CC BY 3.0, via Wikimedia Commons"
 cardImage: "/cards/societe--violences-sexuelles-mineurs-auteurs.webp"
 cardTitle: "Quel **pourcentage** de **crimes** **sexuels** sur **mineurs** sont commis par des hommes ?"
 description: "Part des hommes parmi les auteurs de violences sexuelles sur mineurs en France, selon la CIIVISE (2023), le SSMSI et le ministère de la Justice (2024-2025)."

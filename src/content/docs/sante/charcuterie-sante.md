@@ -1,6 +1,6 @@
 ---
 title: Manger beaucoup de charcuterie est-il mauvais pour la santé ?
-cardImageCredit: "Wikimedia Commons — CC BY-SA 4.0"
+cardImageCredit: "travelwayoflife — CC BY-SA 2.0, via Wikimedia Commons"
 cardImage: "/cards/sante--charcuterie-sante.webp"
 cardTitle: "Manger beaucoup de **charcuterie** est-il mauvais pour la santé ?"
 description: "Classement de la viande transformée comme cancérogène par le CIRC/OMS et quantification du risque réel de cancer colorectal."

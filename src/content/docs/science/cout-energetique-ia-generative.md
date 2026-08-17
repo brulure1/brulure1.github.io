@@ -1,6 +1,6 @@
 ---
 title: Quel est le coût énergétique de la génération d'images et de vidéos par IA ?
-cardImageCredit: "Idaho National Laboratory — BY, via Openverse"
+cardImageCredit: "Derrick Coetzee from Berkeley, CA, USA — CC0, via Wikimedia Commons"
 cardImage: "/cards/science--cout-energetique-ia-generative.webp"
 cardTitle: "Quel est le coût **énergétique** de la **génération** **d'images** et de **vidéos** par **IA** ?"
 description: "Consommation électrique mesurée de la génération d'images et vidéos par IA, comparée au streaming, à la publication sur réseaux sociaux et à des usages du quotidien (Hugging Face, IEA, ADEME)."

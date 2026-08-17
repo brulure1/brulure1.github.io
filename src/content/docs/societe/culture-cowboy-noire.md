@@ -1,6 +1,6 @@
 ---
 title: La culture cowboy est-elle une culture noire ?
-cardImageCredit: "nordique — BY, via Openverse"
+cardImageCredit: "U.S. National Archives — CC0, via Openverse"
 cardImage: "/cards/societe--culture-cowboy-noire.webp"
 cardTitle: "La **culture** **cowboy** est-elle une culture noire ?"
 description: "Part réelle des cow-boys afro-américains dans l'Ouest américain (1866-1895) et invisibilisation par Hollywood, selon les historiens."

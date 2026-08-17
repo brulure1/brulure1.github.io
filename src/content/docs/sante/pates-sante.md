@@ -1,6 +1,6 @@
 ---
 title: Manger beaucoup de pâtes est-il mauvais pour la santé ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Auteur inconnu — CC0, via Openverse"
 cardImage: "/cards/sante--pates-sante.webp"
 cardTitle: "Manger beaucoup de **pâtes** est-il mauvais pour la santé ?"
 description: "Effet d'une consommation élevée de pâtes sur la glycémie, le poids et le syndrome métabolique, selon les études nutritionnelles récentes."

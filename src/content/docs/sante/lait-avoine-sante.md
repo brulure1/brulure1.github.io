@@ -1,6 +1,6 @@
 ---
 title: Le lait d'avoine est-il mauvais pour la santé ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Mx. Granger — CC0, via Wikimedia Commons"
 cardImage: "/cards/sante--lait-avoine-sante.webp"
 cardTitle: "Le **lait** **d'avoine** est-il mauvais pour la santé ?"
 description: "Résidus de glyphosate, sucres ajoutés et transformation industrielle : ce que disent réellement les données sur le lait d'avoine."

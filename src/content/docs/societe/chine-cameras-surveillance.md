@@ -1,6 +1,6 @@
 ---
 title: La Chine a-t-elle proportionnellement plus de caméras de surveillance que les pays francophones ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Hustvedt — CC BY-SA 3.0, via Wikimedia Commons"
 cardImage: "/cards/societe--chine-cameras-surveillance.webp"
 cardTitle: "La **Chine** a-t-elle proportionnellement plus de caméras de **surveillance** que les pays francophones ?"
 description: "Comparaison de la densité de caméras de surveillance en Chine, en France et en Belgique selon les estimations disponibles (IHS Markit, Comparitech, 2024-2026)."

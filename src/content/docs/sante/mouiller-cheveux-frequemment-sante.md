@@ -1,6 +1,6 @@
 ---
 title: Se mouiller les cheveux fréquemment (2 fois par jour) est-il bon ou mauvais ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Gerd — CC BY 3.0, via Wikimedia Commons"
 cardImage: "/cards/sante--mouiller-cheveux-frequemment-sante.webp"
 cardTitle: "Se mouiller les **cheveux** fréquemment **(2 fois par jour)** est-il bon ou mauvais ?"
 description: "Ce que dit la science sur le fait de mouiller ses cheveux plusieurs fois par jour : gonflement de la fibre, 'fatigue hygrale' et santé du cuir chevelu."

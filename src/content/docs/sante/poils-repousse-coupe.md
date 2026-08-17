@@ -1,6 +1,6 @@
 ---
 title: Couper les poils les fait-il repousser plus vite ou différemment ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Hustvedt — CC BY-SA 3.0, via Wikimedia Commons"
 cardImage: "/cards/sante--poils-repousse-coupe.webp"
 cardTitle: "Couper les **poils** les fait-il repousser plus vite ou différemment ?"
 description: "Le rasage accélère-t-il la repousse ou modifie-t-il l'épaisseur des poils ? Ce que montrent les études dermatologiques depuis 1928."

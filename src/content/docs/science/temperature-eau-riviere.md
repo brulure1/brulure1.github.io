@@ -1,6 +1,6 @@
 ---
 title: Pourquoi l'eau d'une rivière n'est-elle pas à température ambiante ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Vashishtha Jogi — CC0, via Openverse"
 cardImage: "/cards/science--temperature-eau-riviere.webp"
 cardTitle: "Pourquoi **l'eau** **d'une** **rivière** **n'est**-elle pas à **température** **ambiante** ?"
 description: "Bilan thermique d'un cours d'eau : rayonnement solaire, évaporation, échanges avec l'air et les nappes souterraines, selon l'hydrologie physique."

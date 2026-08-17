@@ -1,6 +1,6 @@
 ---
 title: Quel est le taux réel d'impôt des super-riches en France ?
-cardImageCredit: "401(K) 2013 — BY-SA, via Openverse"
+cardImageCredit: "Wikimedia Commons"
 cardImage: "/cards/economie--taux-imposition-super-riches.webp"
 cardTitle: "Quel est le taux réel **d'impôt** des **super**-**riches** en **France** ?"
 description: "Taux d'imposition effectif des ultra-riches et milliardaires selon l'étude de référence de l'IPP (2023), et le débat sur la taxe Zucman (2025-2026)."

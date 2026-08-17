@@ -1,6 +1,6 @@
 ---
 title: Manger des aliments en boîte de conserve est-il bon pour la santé ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Daniel Case — CC BY-SA 3.0, via Wikimedia Commons"
 cardImage: "/cards/sante--aliments-boite-conserve-sante.webp"
 cardTitle: "Manger des aliments en **boîte de conserve** est-il bon pour la santé ?"
 description: "Nutriments préservés, sodium, BPA et sécurité microbiologique : ce que disent les études sur les aliments en conserve, sans idée reçue."

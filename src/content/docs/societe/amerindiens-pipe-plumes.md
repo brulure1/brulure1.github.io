@@ -1,6 +1,6 @@
 ---
 title: Les Amérindiens fumaient-ils vraiment la pipe de la paix et portaient-ils des chapeaux de plumes ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Unidentified painter — Public domain, via Wikimedia Commons"
 cardImage: "/cards/societe--amerindiens-pipe-plumes.webp"
 cardTitle: "Les **Amérindiens** fumaient-ils vraiment la pipe de la paix et portaient-ils des chapeaux de plumes ?"
 description: "Réalité historique du calumet et de la coiffe de plumes (war bonnet) face aux clichés hollywoodiens sur les Amérindiens."

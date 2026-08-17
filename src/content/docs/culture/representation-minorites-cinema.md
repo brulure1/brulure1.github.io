@@ -1,6 +1,6 @@
 ---
 title: Comment les minorités sont-elles représentées au cinéma ?
-cardImageCredit: "Wikimedia Commons — CC BY-SA 2.0"
+cardImageCredit: "Photograph by Greg O'Beirne — CC BY 2.5, via Wikimedia Commons"
 cardImage: "/cards/culture--representation-minorites-cinema.webp"
 cardTitle: "Comment les **minorités** sont-elles représentées au **cinéma** ?"
 description: "Part des personnages perçus comme non blancs au cinéma français (Cinégalités 2019) et des acteurs BIPOC dans les blockbusters US (UCLA 2023)."

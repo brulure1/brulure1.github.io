@@ -1,6 +1,6 @@
 ---
 title: Faut-il manger le liquide des boîtes de conserve ?
-cardImageCredit: "thebittenword.com — BY, via Openverse"
+cardImageCredit: "Wikimedia Commons"
 cardImage: "/cards/sante--liquide-boite-conserve-sante.webp"
 cardTitle: "Faut-il manger le **liquide** des **boîtes** de **conserve** ?"
 description: "Le jus des conserves de légumes, thon ou légumineuses : nutriments réels mais aussi sel et migration de composés du revêtement des boîtes, selon les études récentes."

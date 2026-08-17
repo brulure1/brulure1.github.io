@@ -1,6 +1,6 @@
 ---
 title: Réformer ou supprimer l'héritage pourrait-il réduire les inégalités ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Ian Poellet — CC BY-SA 3.0, via Wikimedia Commons"
 cardImage: "/cards/economie--heritage-baisse-inegalites.webp"
 cardTitle: "**Réformer** ou **supprimer** **l'héritage** **pourrait**-il **réduire** les **inégalités** ?"
 description: "Ce que montrent les rapports du Conseil des prélèvements obligatoires (2025), du CAE (2021) et les propositions de Piketty sur la fiscalité successorale et les inégalités de patrimoine en France."

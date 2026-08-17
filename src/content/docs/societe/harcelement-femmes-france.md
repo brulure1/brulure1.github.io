@@ -1,6 +1,6 @@
 ---
 title: Quel pourcentage de femmes subissent du harcèlement sexuel en France ?
-cardImageCredit: "david_shankbone — PDM, via Openverse"
+cardImageCredit: "Scott Webb — CC0, via Openverse"
 cardImage: "/cards/societe--harcelement-femmes-france.webp"
 cardTitle: "Quel **pourcentage** de **femmes** subissent du **harcèlement** sexuel en France ?"
 description: "Proportion de femmes victimes de harcèlement sexuel selon l'enquête SSMSI-VRS (données 2023) et les victimes enregistrées par la police (2025)."

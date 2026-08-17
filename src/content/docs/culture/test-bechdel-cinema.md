@@ -1,6 +1,6 @@
 ---
 title: Quelle part des films passent le test de Bechdel ?
-cardImageCredit: "Wikimedia Commons — CC BY-SA 3.0"
+cardImageCredit: "Auteur inconnu — CC0, via Openverse"
 cardImage: "/cards/culture--test-bechdel-cinema.webp"
 cardTitle: "Quelle part des **films** passent le test de **Bechdel** ?"
 description: "Proportion de longs-métrages validant les trois critères Bechdel — base communautaire, cinéma français et films familiaux US."

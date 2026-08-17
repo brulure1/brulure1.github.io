@@ -1,6 +1,6 @@
 ---
 title: Ceux qui travaillent plus gagnent-ils plus ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "S.J. de Waard — CC BY 3.0, via Wikimedia Commons"
 cardImage: "/cards/economie--travailler-plus-gagner-plus.webp"
 cardTitle: "Ceux qui **travaillent** plus gagnent-ils plus ?"
 description: "Corrélation entre heures travaillées et revenu salarial selon la catégorie socioprofessionnelle en France (Insee, 2024)."

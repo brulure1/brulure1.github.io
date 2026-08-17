@@ -1,6 +1,6 @@
 ---
 title: LFI est-elle factuellement d'extrême gauche ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Sunala — CC BY-SA 3.0, via Wikimedia Commons"
 cardImage: "/cards/societe--lfi-extreme-gauche.webp"
 cardTitle: "**LFI** est-elle factuellement d'extrême gauche ?"
 description: "Classification de La France Insoumise selon le ministère de l'Intérieur, la science politique (gauche radicale vs extrême gauche) et les enquêtes d'experts internationales (CHES)."

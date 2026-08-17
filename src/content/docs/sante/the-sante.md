@@ -1,6 +1,6 @@
 ---
 title: Boire du thé quotidiennement est-il mauvais pour la santé ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Thomas Berg from Oslo, Norway — CC BY-SA 2.0, via Wikimedia Commons"
 cardImage: "/cards/sante--the-sante.webp"
 cardTitle: "Boire du **thé** quotidiennement est-il mauvais pour la santé ?"
 description: "Effet du thé sur l'absorption du fer, la fluorose dentaire et l'exposition à l'aluminium, selon les études scientifiques disponibles."

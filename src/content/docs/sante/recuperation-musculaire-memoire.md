@@ -1,6 +1,6 @@
 ---
 title: Récupère-t-on plus vite un muscle qu'on a déjà fait grossir avant ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Sterling — CC BY 3.0, via Wikimedia Commons"
 cardImage: "/cards/sante--recuperation-musculaire-memoire.webp"
 cardTitle: "Récupère-t-on plus vite un **muscle** **qu'on** a déjà fait grossir avant ?"
 description: "La mémoire musculaire (muscle memory) selon les études récentes sur les myonoyaux et l'épigénétique du muscle squelettique."

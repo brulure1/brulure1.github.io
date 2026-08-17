@@ -1,6 +1,6 @@
 ---
 title: Le baume du tigre est-il un simple effet placebo ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Can Pac Swire from Toronto, Canada — CC BY-SA 2.0, via Wikimedia Commons"
 cardImage: "/cards/sante--baume-du-tigre-placebo.webp"
 cardTitle: "Le **baume du tigre** est-il un simple effet **placebo** ?"
 description: "Ce que montrent les essais cliniques randomisés sur l'efficacité réelle du baume du tigre contre les céphalées de tension et les douleurs musculaires."

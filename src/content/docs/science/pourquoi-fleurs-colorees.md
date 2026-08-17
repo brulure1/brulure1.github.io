@@ -1,6 +1,6 @@
 ---
 title: Pourquoi les fleurs sont-elles colorées ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Nature's Beauty — CC0, via Openverse"
 cardImage: "/cards/science--pourquoi-fleurs-colorees.webp"
 cardTitle: "Pourquoi les **fleurs** sont-elles colorées ?"
 description: "Rôle des pigments floraux (anthocyanines, caroténoïdes, flavonoïdes) dans l'attraction des pollinisateurs, selon la biologie évolutive."

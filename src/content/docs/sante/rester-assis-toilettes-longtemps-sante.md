@@ -1,6 +1,6 @@
 ---
 title: Rester assis aux toilettes trop longtemps est-il mauvais pour la santé ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Nenad Stojkovic — CC BY 2.0, via Wikimedia Commons"
 cardImage: "/cards/sante--rester-assis-toilettes-longtemps-sante.webp"
 cardTitle: "Rester assis aux **toilettes** trop longtemps est-il mauvais pour la santé ?"
 description: "Ce que montre une étude récente (PLOS One, 2025) sur le lien entre temps passé aux toilettes, usage du smartphone et risque d'hémorroïdes."

@@ -1,6 +1,6 @@
 ---
 title: Les riches partent-ils quand on augmente les impôts ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Pedro Ribeiro Simões from Lisboa, Portugal — CC BY 2.0, via Wikimedia Commons"
 cardImage: "/cards/economie--exil-fiscal-impots.webp"
 cardTitle: "Les **riches** partent-ils quand on augmente les **impôts** ?"
 description: "Impact d'une hausse fiscale sur l'exil des ménages à hauts revenus en France — données CAE (2025), DGFiP (2025-2026) et Sénat (2026)."

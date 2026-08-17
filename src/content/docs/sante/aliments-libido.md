@@ -1,6 +1,6 @@
 ---
 title: Des aliments augmentent-ils vraiment la libido ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Auteur inconnu — CC0, via Openverse"
 cardImage: "/cards/sante--aliments-libido.webp"
 cardTitle: "Des aliments augmentent-ils vraiment la **libido** ?"
 description: "Ce que dit la science sur les aliments et compléments dits aphrodisiaques : huîtres, chocolat, gingembre, maca, ginseng, safran."

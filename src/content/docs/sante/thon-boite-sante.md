@@ -1,6 +1,6 @@
 ---
 title: Manger du thon en boîte est-il mauvais pour la santé ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Daniel Case — CC BY-SA 3.0, via Wikimedia Commons"
 cardImage: "/cards/sante--thon-boite-sante.webp"
 cardTitle: "Manger du **thon** en **boîte** est-il mauvais pour la santé ?"
 description: "Risque lié au méthylmercure dans le thon en boîte selon l'Anses (étude EAT3, 2026) et recommandations de consommation."

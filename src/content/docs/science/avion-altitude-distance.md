@@ -1,6 +1,6 @@
 ---
 title: Un avion qui vole plus haut a-t-il forcément plus de trajet à parcourir ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Anders%20Jild%E9n — CC0, via Openverse"
 cardImage: "/cards/science--avion-altitude-distance.webp"
 cardTitle: "Un **avion** qui vole plus haut a-t-il forcément plus de trajet à parcourir ?"
 description: "Pourquoi les avions de ligne choisissent leur altitude de croisière (9 000-13 000 m) selon la distance du vol, l'aérodynamique et le poids, pas l'inverse."

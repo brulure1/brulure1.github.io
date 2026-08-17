@@ -1,6 +1,6 @@
 ---
 title: Cuisiner uniquement dans des plats en inox est-il meilleur pour la santé ?
-cardImageCredit: "Jason Riedy — BY, via Openverse"
+cardImageCredit: "me (w:User:pfctdayelise) — CC BY-SA 2.5, via Wikimedia Commons"
 cardImage: "/cards/sante--cuisson-inox-sante.webp"
 cardTitle: "Cuisiner uniquement dans des plats en **inox** est-il meilleur pour la santé ?"
 description: "Comparaison inox, Téflon, céramique et aluminium : migration de nickel et de chrome, risques réels selon les études scientifiques."

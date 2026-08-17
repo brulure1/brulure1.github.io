@@ -1,6 +1,6 @@
 ---
 title: Voit-on déjà l'effet du mode de consommation capitaliste sur la santé physique ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Wolfmann — CC BY-SA 4.0, via Wikimedia Commons"
 cardImage: "/cards/economie--capitalisme-consommation-sante.webp"
 cardTitle: "Voit-on déjà **l'effet** du mode de **consommation** **capitaliste** sur la **santé** physique ?"
 description: "Impact documenté des aliments ultra-transformés (classification Nova) sur la santé, selon les méta-analyses et l'avis Anses 2025."

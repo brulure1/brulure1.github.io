@@ -1,6 +1,6 @@
 ---
 title: Les "traits autistiques" sont-ils un vrai phénomène ou de l'autodiagnostic abusif ?
-cardImageCredit: "walkinred — BY-SA, via Openverse"
+cardImageCredit: "Wikimedia Commons"
 cardImage: "/cards/sante--autodiagnostic-autisme.webp"
 cardTitle: "Les \"**traits** **autistiques**\" sont-ils un vrai phénomène ou de l'autodiagnostic abusif ?"
 description: "Ce que montrent les études sur la fiabilité des contenus TikTok sur l'autisme et sur les barrières réelles à l'accès au diagnostic officiel en France."

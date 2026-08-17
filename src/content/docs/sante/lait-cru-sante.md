@@ -1,6 +1,6 @@
 ---
 title: Le lait cru est-il particulièrement bon pour la santé ?
-cardImageCredit: "avlxyz — BY-SA, via Openverse"
+cardImageCredit: "Wikimedia Commons"
 cardImage: "/cards/sante--lait-cru-sante.webp"
 cardTitle: "Le **lait cru** est-il particulièrement bon pour la santé ?"
 description: "Bénéfices nutritionnels supposés du lait cru face aux risques microbiologiques établis, selon l'Anses et la littérature scientifique."

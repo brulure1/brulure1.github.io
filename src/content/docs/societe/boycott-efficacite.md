@@ -1,6 +1,6 @@
 ---
 title: Le boycott sert-il à quelque chose et dans quelles conditions ?
-cardImageCredit: "Fibonacci Blue — BY, via Openverse"
+cardImageCredit: "Infrogmation — CC BY-SA 4.0, via Wikimedia Commons"
 cardImage: "/cards/societe--boycott-efficacite.webp"
 cardTitle: "Le **boycott** sert-il à quelque chose et dans quelles conditions ?"
 description: "Efficacité économique du boycott de consommateurs selon les études d'analyse économique et de théorie des jeux (2007-2019)."

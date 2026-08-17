@@ -1,6 +1,6 @@
 ---
 title: Attacher fréquemment ses cheveux est-il bon pour la santé du cuir chevelu ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Moses Griffith — Public domain, via Wikimedia Commons"
 cardImage: "/cards/sante--attacher-cheveux-frequemment-sante.webp"
 cardTitle: "Attacher fréquemment ses **cheveux** est-il bon pour la santé du **cuir chevelu** ?"
 description: "Alopécie de traction : ce que disent les études dermatologiques sur les coiffures serrées et fréquentes, et comment limiter le risque."

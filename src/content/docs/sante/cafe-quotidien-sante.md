@@ -1,6 +1,6 @@
 ---
 title: Est-ce mauvais pour la santé physique et mentale de boire du café quotidiennement ?
-cardImageCredit: "Wikimedia Commons"
+cardImageCredit: "Burst — CC0, via Openverse"
 cardImage: "/cards/sante--cafe-quotidien-sante.webp"
 cardTitle: "Est-ce mauvais pour la santé physique et mentale de boire du **café** quotidiennement ?"
 description: "Effets du café sur la santé cardiovasculaire, la mortalité et la santé mentale selon les méta-analyses récentes et l'Anses/EFSA."
